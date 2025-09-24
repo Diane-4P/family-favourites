@@ -1,5 +1,6 @@
 # Family Favourites
-[View (website name) deployed site here.](add the live link to the website).
+
+[View (website name) deployed site here.](https://dashboard.heroku.com/apps/family-favourites).
 
 ![Mochups of (website name)](image from Am I Responsive)
 
@@ -101,6 +102,16 @@
 
 ## Structure
 
+### Database model
+
+This Entity Relationship Diagram (ERD) has been generated using [Lucid Charts](https://lucid.app/documents#/home?folder_id=recent) - see below.
+
+<details>
+<summary>Entity Relationship Diagram</summary>
+
+![ERD](readme_documents/erd/erd-model.png)
+</details>
+
 ****
 
 ## Design choices
@@ -109,7 +120,23 @@
 
 ### Colour
 
+The colour palette I chose for the website came from the colour that I had chosen for the logo of Salome (#BBEEDD, rgb(187, 238, 221)). I then went onto the [mycolor.space](https://mycolor.space/?hex=%23BBEEDD&sub=1) website to create a colour palette for Salome, where I chose the Classy Palette, which I thought were nice soft colours which would not cause problems for people with colour blindness.
+
+I then went to [Robert Cooper's](https://colornamer.robertcooper.me/) website to obtain the names of the colours that I had chosen and also their rgb values.
+
+| Image with hex codes | ![Colour Palette](readme_documents/colour_scheme/colour-palette.png) |
+| --- | --- |
+|rgb values | rgb(187, 238, 221), rgb(54, 75, 68), rgb(152, 176, 168), rgb(172, 202, 235), rgb(118, 148, 180) |
+| Colour names | Salome, Garnet Black Green, Lovage Green, Baby Bunting, Ocean Ridge |
+
 ### Typography
+
+I got my inspiration for the font from restaurants that I researched for this project and were chosen for their clear readability, which was found on [Google Fonts](https://fonts.google.com/selection?preview.layout=grid). The League Gothic font for the headings was inspired by [The Barn Owl](https://www.barnowlpubworcester.co.uk/) and by [The Swan](https://www.theswanmartinhussingtreepub.co.uk/) which are both Marston's pubs. The Roboto Slab font for the body of the site was inspired by the [Toby Carvery](https://www.tobycarvery.co.uk/restaurants/midlands/worcesterworcestershire#/). If the fonts should fail to load for any reason I have chosen Sans Serif as a backup.
+
+| Image | Description |
+| --- | --- |
+| ![League Gothic](readme_documents/Fonts/league-gothic-headings-font.png) | League Gothic for Headings |
+| ![Roboto Slab](readme_documents/Fonts/roboto-slab-body-font.png) | Roboto Slab for Body |
 
 ### Imagery
 
@@ -246,7 +273,7 @@ To run the site locally, you can clone the repository into the code editor of yo
 3. Select the preferred cloning method of HTTPS, SSH, or GitHub CLI and click on the copy button of the web URL to your clipboard.
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory (using cd).
-6. In your IDE Terminal, type 'git clone' and paste the copied URL from your clipboard add the github link to the website.git e.g. https://github.com/Diane-4P/harry-potter-quiz.git.
+6. In your IDE Terminal, type 'git clone' and paste the copied URL from your clipboard add the github link to the website.git e.g. https://github.com/Diane-4P/family-favourites.git.
 7. When you press Enter your local clone has been created.
 8. To then stop using the repository and cut ties with it you type 'git remote rm origin' into the terminal.
 
