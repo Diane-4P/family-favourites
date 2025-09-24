@@ -119,6 +119,15 @@
 
 ## Wireframes
 
+Below are the initial wireframes for my project.
+
+- [Home page](readme_documents/wireframes/home-wireframe.png)
+- [Menu page](readme_documents/wireframes/menu-wireframe.png)
+- [Sign-up page](readme_documents/wireframes/signup-wireframe.png)
+- [Login page](readme_documents/wireframes/login-wireframe.png)
+- [Book a Table page](readme_documents/wireframes/book-a-table-wireframe.png)
+- [Booking Contact Details page](readme_documents/wireframes/booking-contact-details-wireframe.png)
+
 ****
 
 ## Features
