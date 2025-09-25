@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home import views as home_views
+from book_a_table import views as book_a_table_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_views.index, name='index'),
+    path('book-a-table/', book_a_table_views.book_a_table, name='book_a_table'),
 ]
