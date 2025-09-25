@@ -1,0 +1,59 @@
+{% load static %}
+
+<!-- App_url links -->
+{% url "index" as index_url %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html class="h-100" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Family Favourites</title>
+        <meta name="description" content="Family Favourites Restaurant, serving up delicious meals since 1990, with a cozy atmosphere and friendly service. Book your table today!">
+        <meta name="keywords" content="Family Favourites, Restaurant, Delicious Meals, Cozy Atmosphere, Friendly Service, Book Table">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Navigation -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="{{ index_url }}">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+         {% block content %}
+         <!-- Content goes here -->
+         {% endblock content %}
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Family Favourites. All rights reserved.</p>
+
+        <!-- Footer Social -->
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (opens in a new tab)"><img src="{% static 'images/facebook-icon.png' %}" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (opens in a new tab)"><img src="{% static 'images/twitter-icon.png' %}" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (opens in a new tab)"><img src="{% static 'images/instagram-icon.png' %}" alt="Instagram"></a>
+                <a href="#" aria-label="Contact us by email"><img src={% static "images/envelope-icon.png" %} alt="Email"></a>
+            </div>
+        </footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
