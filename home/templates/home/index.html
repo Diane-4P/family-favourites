@@ -4,6 +4,18 @@
 {% block content %}
 
 <!-- Home Page Content index.html -->
-<h1>Family Favourites</h1>
+<div class="container-fluid">
+    <!-- Hero image -->
+    <div>
+        <img src="{% static 'images/home-hero-image.jpg' %}" alt="Roast meats for carving and Yorkshire Puddings" style="width:100%; height:auto;">
+    </div>
+
+    <!-- About -->
+    <div class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to Family Favourites, where we serve up delicious meals in a cozy atmosphere. Since 1990, we've been dedicated to providing friendly service and memorable dining experiences. Whether you're craving classic comfort food or something new, our menu has something for everyone. Book your table today and join us for a meal that feels like home!</p>
+        <a href="#" class="btn">Book a Table</a>
+    </div>
+</div>
 
 {% endblock content %}
