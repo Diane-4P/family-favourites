@@ -21,7 +21,7 @@ class BookATableFormAdmin(forms.ModelForm):
     
     class Meta:
         model = BookATable
-        fields = ['user', 'first_name', 'last_name', 'email', 'phone_number', 'special_requests', 'occasion''booking_date', 'booking_time', 'number_of_guests']
+        fields = ['user', 'first_name', 'last_name', 'email', 'phone_number', 'special_requests', 'occasion', 'booking_date', 'booking_time', 'number_of_guests']
         labels = {
             'first_name': 'First Name',
             'last_name': 'Last Name',
