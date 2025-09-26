@@ -82,6 +82,7 @@ class BookingDetails(models.Model):
     booking_details_id = models.AutoField(primary_key=True)
     special_requests = models.TextField(blank=True, null=True)
     occasion = models.IntegerField(choices=OCCASIONS, default='0')
+    approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
     
     class Meta:
