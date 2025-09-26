@@ -6,6 +6,26 @@ from .forms import BookATableForm, BookingDetailsForm
 
 
 # Create your views here.
+def bookings(request):
+    """ 
+    View to display all bookings - admin only
+    Other users will only see their own bookings
+    Both views are ordered by date and time in descending order 
+    """
+    
+    if request.user.is_superuser:
+        messages.error(request, 'Only admin users can view all bookings.')
+            
+        bookings = BookATable.objects.all().order_by('-booking_date', '-booking_time')
+        context = {
+            'bookings': bookings,
+        }
+    else:
+        user_filter = BookATable.objects.filter(user=request.user).order_by('-booking_date', '-booking_time')
+        
+    return render(request, 'book_a_table/bookings.html', context)
+    
+
 def add_book_a_table(request):
     """ View to handle table booking form """
     
