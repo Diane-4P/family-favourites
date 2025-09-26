@@ -53,8 +53,7 @@ class BookATable(models.Model):
     booking_date = models.DateField()
     booking_time = models.IntegerField(choices=TIME_CHOICES, default='0')
     number_of_guests = models.PositiveIntegerField()
-    booking_details = models.ForeignKey(BookingDetails, on_delete=models.CASCADE, related_name='booking_details', null=True, blank=True)
-    
+        
     def validate_date(self):
         """ Ensure booking date is not in the past """
         if self.booking_date < date.today():
@@ -68,15 +67,6 @@ class BookATable(models.Model):
         return f'Booking for {self.user.username} on {self.booking_date} at {self.booking_time} for {self.number_of_guests} guests'
     
 class BookingDetails(models.Model):
-    booking_details_id = models.AutoField(primary_key=True)
-    special_requests = models.TextField(blank=True, null=True)
-    occasion = models.ForeignKey(Occasion, on_delete=models.CASCADE, related_name='booking_occasion', blank=True, null=True)
-    
-    def __str__(self):
-        return f'Booking Details: {self.occasion if self.occasion else "No Occasion"}'
-
-
-class Occasion(models.Model):
     
     OCCASIONS = (
         ('0', 'None'),
@@ -88,8 +78,10 @@ class Occasion(models.Model):
         ('6', 'Other'),
     )
     
-    occasion_id = models.AutoField(primary_key=True)
-    name = models.IntegerField(choices=OCCASIONS, default='0')
+    book_a_table = models.ForeignKey(BookATable, on_delete=models.CASCADE, related_name='table_booking')
+    booking_details_id = models.AutoField(primary_key=True)
+    special_requests = models.TextField(blank=True, null=True)
+    occasion = models.IntegerField(choices=OCCASIONS, default='0')
     
     def __str__(self):
-        return self.name
+        return f'Booking Details: {self.occasion if self.occasion else "No Occasion"}'
