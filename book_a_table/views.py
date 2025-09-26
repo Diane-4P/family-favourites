@@ -26,7 +26,7 @@ def bookings(request):
     return render(request, 'book_a_table/bookings.html', context)
     
 
-def add_book_a_table(request):
+def book_a_table(request):
     """ View to handle table booking form """
     
     if request.method == 'POST':
@@ -61,4 +61,26 @@ def add_book_a_table(request):
             form = BookATableForm()
     
     return render(request, 'book_a_table/book_a_table.html', {'form': form})
+
+
+def booking_details(request, booking_id):
+    """ View to handle booking details form """
+    
+    try:
+        booking = BookATable.objects.get(book_table_id=booking_id)
+    except BookATable.DoesNotExist:
+        messages.error(request, 'Booking does not exist.')
+        return render(request, 'book_a_table/bookings.html', {})
+    
+    if request.method == 'POST':
+        form = BookingDetailsForm(request.POST)
+        if form.is_valid():
+            details = form.save(commit=False)
+            details.book_a_table = booking
+            details.save()
+            messages.success(request, 'Booking details added successfully!')
+    else:
+        form = BookingDetailsForm()
+    
+    return render(request, 'book_a_table/booking_details.html', {'form': form, 'booking': booking})
 
