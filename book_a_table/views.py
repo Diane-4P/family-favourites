@@ -1,5 +1,6 @@
 """ Imports from django, book_a_table models and forms """
 from django.shortcuts import render
+from django.core.exceptions import ValidationError
 from django.contrib import messages
 from .models import BookATable, BookingDetails
 from .forms import BookATableForm, BookingDetailsForm
@@ -83,4 +84,37 @@ def booking_details(request, booking_id):
         form = BookingDetailsForm()
     
     return render(request, 'book_a_table/booking_details.html', {'form': form, 'booking': booking})
+
+
+def edit_booking(request, booking_id):
+    """ 
+    View to handle editing a booking - admin only 
+    Other users can edit their own bookings via a different view
+    """
+    
+    if request.user.is_superuser:
+        messages.error(request, 'Only admin users can edit bookings.')
+    
+    try:
+        booking = BookATable.objects.get(book_table_id=booking_id)
+    except BookATable.DoesNotExist:
+        messages.error(request, 'Booking does not exist.')
+        return render(request, 'book_a_table/bookings.html', {})
+    
+    if request.method == 'POST':
+        if request.user.is_superuser:
+            form = BookATableFormAdmin(request.POST, instance=booking)
+        if form.is_valid():
+            edited_booking = form.save(commit=False)
+            try:
+                edited_booking.validate_date()
+                edited_booking.save()
+                messages.success(request, 'Booking updated successfully!')
+            except ValidationError as e:
+                form.add_error('booking_date', e.message)
+    else:
+        form = BookATableFormAdmin(instance=booking)
+    
+    return render(request, 'book_a_table/edit_booking.html', {'form': form, 'booking': booking})
+
 
