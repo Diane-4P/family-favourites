@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'django.contrib.sites',
+    'phonenumber_field',
     'cloudinary',
     'home',
     'book_a_table',
