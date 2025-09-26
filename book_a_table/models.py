@@ -82,6 +82,10 @@ class BookingDetails(models.Model):
     booking_details_id = models.AutoField(primary_key=True)
     special_requests = models.TextField(blank=True, null=True)
     occasion = models.IntegerField(choices=OCCASIONS, default='0')
+    created_on = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ["-created_on"]
     
     def __str__(self):
-        return f'Booking Details: {self.occasion if self.occasion else "No Occasion"}'
+        return f'Booking Details: {self.special_requests if self.occasion else "No Occasion"}'
