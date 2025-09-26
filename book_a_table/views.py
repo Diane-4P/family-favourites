@@ -1,5 +1,5 @@
 """ Imports from django, book_a_table models and forms """
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from django.core.exceptions import ValidationError
 from django.contrib import messages
 from .models import BookATable, BookingDetails
@@ -80,6 +80,7 @@ def booking_details(request, booking_id):
             details.book_a_table = booking
             details.save()
             messages.success(request, 'Booking details added successfully!')
+            return redirect('bookings')
     else:
         form = BookingDetailsForm()
     
@@ -110,6 +111,7 @@ def edit_booking(request, booking_id):
                 edited_booking.validate_date()
                 edited_booking.save()
                 messages.success(request, 'Booking updated successfully!')
+                return redirect('bookings')
             except ValidationError as e:
                 form.add_error('booking_date', e.message)
     else:
@@ -118,3 +120,27 @@ def edit_booking(request, booking_id):
     return render(request, 'book_a_table/edit_booking.html', {'form': form, 'booking': booking})
 
 
+def delete_booking(request, booking_id):
+    """ 
+    View to handle deleting a booking - admin only 
+    Other users can delete their own bookings via a different view
+    """
+    
+    booking = get_object_or_404(BookATable, pk=booking_id)
+    if request.user.is_superuser:
+        messages.error(request, 'Only admin users can delete bookings.')
+    
+    try:
+        booking = BookATable.objects.get(book_table_id=booking_id)
+        booking.delete()
+        messages.success(request, 'Booking deleted successfully!')
+        return redirect('bookings')
+    except BookATable.DoesNotExist:
+        messages.error(request, 'Booking does not exist.')
+        
+    else:
+        user_filter = BookATable.objects.filter(user=request.user).order_by('-booking_date', '-booking_time')
+    
+    return render(request, 'book_a_table/bookings.html', {})
+
+    
