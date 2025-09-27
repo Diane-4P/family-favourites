@@ -1,12 +1,11 @@
 """Imports from django and book_a_table models"""
 from django.contrib.admin import ModelAdmin
 from django.contrib import admin
-from .models import BookATable, BookingDetails
+from .models import BookATable
 
 
 # Register your models here.
 admin.site.register(BookATable)
-admin.site.register(BookingDetails)
 
 
 @admin.register(BookATable)

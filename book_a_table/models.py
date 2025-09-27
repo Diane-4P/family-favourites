@@ -2,6 +2,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
+from phonenumber_field.modelfields import PhoneNumberField
 from datetime import date
 
 
@@ -66,7 +67,8 @@ class BookATable(models.Model):
     def __str__(self):
         return f'Booking for {self.user.username} on {self.booking_date} at {self.booking_time} for {self.number_of_guests} guests'
     
-class BookingDetails(models.Model):
+
+    """Booking details fields"""
     
     OCCASIONS = (
         ('0', 'None'),
@@ -78,14 +80,12 @@ class BookingDetails(models.Model):
         ('6', 'Other'),
     )
     
-    book_a_table = models.ForeignKey(BookATable, on_delete=models.CASCADE, related_name='table_booking')
-    booking_details_id = models.AutoField(primary_key=True)
     special_requests = models.TextField(blank=True, null=True)
     occasion = models.IntegerField(choices=OCCASIONS, default='0')
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     email = models.EmailField()
-    phone_number = models.CharField(max_length=15)
+    phonenumber = PhoneNumberField(max_length=15)
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
     
@@ -93,4 +93,4 @@ class BookingDetails(models.Model):
         ordering = ["-created_on"]
     
     def __str__(self):
-        return f'Booking Details: {self.special_requests if self.occasion else "No Occasion"}'
+        return f'Booking Details: {self.special_requests if self.occasion else "No Occasion"}. You will be contacted via {self.email} or {self.phone_number} of approval.'
