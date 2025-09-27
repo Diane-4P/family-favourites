@@ -82,6 +82,10 @@ class BookingDetails(models.Model):
     booking_details_id = models.AutoField(primary_key=True)
     special_requests = models.TextField(blank=True, null=True)
     occasion = models.IntegerField(choices=OCCASIONS, default='0')
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    email = models.EmailField()
+    phone_number = models.CharField(max_length=15)
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
     
