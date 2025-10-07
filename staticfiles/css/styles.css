@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'League Gothic', sans-serif;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #bed;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #7694b4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: left;
+    padding: 0 20px;
+    height: 60px;
+}
+
+nav .logo-link img{
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+nav .nav-item { 
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nav-links-container {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-book-container {    
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #bed;
+    color: black;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #ACCAEB;
+    color: #364B44;
+    text-decoration: underline;
+}
+
+.dropdown a {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    min-height: 50vh;
+}
+
+.card {
+    background-color: #98B0A8;
+    width: 75rem;
+    margin: 20px auto;
+}
+
+.about-section {
+    background-color: #98B0A8;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(152,176,168,0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 3.5rem;
+}
+
+footer {
+    background-color: #7694b4;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+    text-align: right;
+    color: black;
+
+}
+
+.social-icons p {
+    font-size: .75rem;
+}
+
+.fa-brands,
+.fa-solid,
+.fa-square-facebook,
+.fa-square-instagram,
+.fa-square-twitter,
+.fa-square-envelope {    
+    color: #364B44;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+}
+
+/* Responsive Design */
+@media screen (max-width: 330px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links-container {
+        order: 3;
+    }
+ 
+    .card {
+        width: 90vw;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Additional styles can be added below */
