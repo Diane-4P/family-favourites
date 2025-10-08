@@ -9,7 +9,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html class="h-100" lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +39,7 @@
 
                     <!-- Nav Links -->
                     <div class="col-lg-4 nav-links-container">                 
-                        <nav class="navbar navbar-expand-lg justify-align-content-between nav-underline">
+                        <nav class="navbar navbar-expand-lg justify-content-center nav-underline">
                             <div class="text-align-bottom" role="navigation">
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                                         <li class="nav-item m-2 p-2">
                                             <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}" href="{% url 'index' %}">Home</a>
                                         </li>
-                                        <li class="nav-item my-2 py-2">
+                                        <li class="nav-item m-2 p-2">
                                             <a class="nav-link {% if request.path == menu_url %}active" aria-current="page{% endif %}" href="#menu">Menu</a>
                                         </li>
                                         <li class="nav-item m-2 p-2">
@@ -116,17 +116,22 @@
          {% endblock content %}
 
         <!-- Footer -->
-        <footer class="footer mt-auto">
-            <p>&copy; 2024 Family Favourites. All rights reserved.</p>
+        <footer class="footer container-fluid mt-auto">
+            <div class="row">
+                <!-- Copyright -->
+                <div class="copyright col-12 col-lg-6">
+                    <p class="copy-icon">&copy; 2024 Family Favourites. All rights reserved.</p>
+                    <p class="education">This website is for educational purposes only.</p>
+                </div>
 
-        <!-- Footer Social -->
-             <div class="social-icons">
-                <p>Keep in touch on our social media</p>
-                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (opens in a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (opens in a new tab)"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#" aria-label="Contact us by email"><i class="fa-solid fa-square-envelope"></i></a>
-                <p>This website is for educational purposes only.</p>
+                <!-- Footer Social -->
+                <div class="social-icons col-12 col-lg-6">
+                    <p>Keep in touch on our social media</p>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (opens in a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (opens in a new tab)"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#" aria-label="Contact us by email"><i class="fa-solid fa-square-envelope"></i></a>                
+                </div>
             </div>
         </footer>
    
