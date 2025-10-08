@@ -88,14 +88,10 @@ main {
 
 .about-section {
     background-color: #98B0A8;
-    padding: 20px 0;
-    margin: 20px 0;
+    padding: 10px 0;
+    margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(152,176,168,0.1);
-}
-
-.card-body {
-    padding: 20px;
 }
 
 .card-title {
@@ -112,9 +108,23 @@ footer {
     bottom: 0;
 }
 
+.copyright {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.copyright .copy-icon {    
+    margin-bottom: .5rem;
+    font-size: .7rem;
+}
+
+.copyright .education {
+    font-size: .65rem;
+}
+
 .social-icons {
     margin-top: 10px;
-    text-align: right;
+    text-align: center;
     color: black;
 
 }
@@ -139,23 +149,62 @@ footer {
 }
 
 /* Responsive Design */
-@media screen (max-width: 330px) {
+@media (max-width: 320px) {
     .header {
         flex-direction: column;
         align-items: center;
     }
 
-    .nav-links-container {
+    .header-logo {
+        height: 60px;
+    }
+
+    .nav-links-container {   
+        height: 60px;     
         order: 3;
+    }
+
+    .nav-links-container {
+        display: flex;
+        justify-content: flex-start;
+        height: 50px;
+        margin-bottom: 5px;
+        order: 3;        
+    }
+
+    .navbar-toggler {
+        background-color: #bed;
+    }
+
+    .register-book-container{
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    nav .nav-links li {
+        margin: .5rem;
     }
  
     .card {
-        width: 90vw;
-        margin: 20px auto;
+        width: 85vw;
+        margin: 10px;
+    }
+
+    .card-body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .about-section .card-title {
+        font-size: 2rem;
+    }
+
+    .card-text {
+        font-size: .75rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     nav {
         flex-direction: column;
     }
