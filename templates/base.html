@@ -9,7 +9,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="en">
+<html class="h-100" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,7 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     </head>
-    <body>
+    <body class="d-flex flex-column h-100">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -38,7 +38,7 @@
                 <div class="row align-items-center text-left">                    
 
                     <!-- Nav Links -->
-                    <div class="col-lg-4 nav-links-container">                 
+                    <div class="col-md-2 col-lg-4 nav-links-container">                 
                         <nav class="navbar navbar-expand-lg justify-content-center nav-underline">
                             <div class="text-align-bottom" role="navigation">
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@
                     </div>
 
                     <!-- logo -->
-                    <div class="col-lg-4 logo-container">
+                    <div class="col-md-4 col-lg-4 logo-container">
                         <div class="header-logo text-center">
                             <a href="{% url 'index' %}" class="logo-link">
                                 <img src="{% static 'images/logo.webp' %}" alt="Family Favourites Logo">
@@ -71,7 +71,7 @@
                     </div>
 
                     <!-- Register and Book a table -->      
-                    <div class="col-lg-4 register-book-container">    
+                    <div class="col-md-6 col-lg-4 register-book-container">    
                             <!-- User Authentication Links -->
                         <div class="header_auth d-flex justify-content-end align-items-center">     
                             <div class="navbar-nav nav-underline" role="navigation">                                        
@@ -119,13 +119,13 @@
         <footer class="footer container-fluid mt-auto">
             <div class="row">
                 <!-- Copyright -->
-                <div class="copyright col-12 col-lg-6">
+                <div class="copyright col-12 col-md-6 col-lg-6">
                     <p class="copy-icon">&copy; 2024 Family Favourites. All rights reserved.</p>
                     <p class="education">This website is for educational purposes only.</p>
                 </div>
 
                 <!-- Footer Social -->
-                <div class="social-icons col-12 col-lg-6">
+                <div class="social-icons col-12 col-md-6 col-lg-6">
                     <p>Keep in touch on our social media</p>
                     <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (opens in a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a>
