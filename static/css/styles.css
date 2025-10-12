@@ -74,16 +74,15 @@ nav .nav-item {
     color: black;
     cursor: pointer;
 }
-
+/*
 main {
     padding: 20px;
     min-height: 50vh;
 }
-
+*/
 .card {
     background-color: #98B0A8;
-    width: 75rem;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .about-section {
@@ -103,8 +102,6 @@ footer {
     color: black;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
     bottom: 0;
 }
 
@@ -145,7 +142,10 @@ footer {
     padding: 2px;
     margin-right: 10px;
     font-size: 1.5rem;
+}
 
+.book-a-table p {
+    display: inline-grid;
 }
 
 /* Responsive Design */
@@ -186,8 +186,7 @@ footer {
     }
  
     .card {
-        width: 85vw;
-        margin: 10px;
+        width: 88vw;
     }
 
     .card-body {
@@ -217,7 +216,21 @@ footer {
     nav .nav-links li {
         margin: 10px 0;
     }
+
+    .card {
+        width: 85vw;
+        margin: 25px auto;
+        padding: 20px;
+    }
 }
 
+@media (min-width: 1200px){
+    .hero-img {
+        width: 85vw;
+        margin: auto;
+    }
 
-/* Additional styles can be added below */
+    .card {
+        margin: 5px auto;
+    }
+}
