@@ -15,12 +15,12 @@ def bookings(request):
     """
     
     if request.user.is_superuser:
-        bookings = BookATable.objects.all().order_by('-booking_date', '-booking_time')
+        bookings = BookATable.objects.all().order_by('-date', '-time')
     elif not request.user.is_authenticated:
         messages.error(request, 'You must be logged in to view your bookings.')
         return redirect('login')
     else:
-        bookings = BookATable.objects.filter(user=request.user).order_by('-booking_date', '-booking_time')
+        bookings = BookATable.objects.filter(user=request.user).order_by('-date', '-time')
     context = {
             'bookings': bookings,
         }
@@ -55,7 +55,7 @@ def book_a_table(request):
                     booking.save()
                     messages.success(request, 'Table booked successfully! Pending confirmation from Family Favourites.')
                 except ValidationError as e:
-                    form.add_error('booking_date', e.message)
+                    form.add_error('date', e.message)
     else:
         if request.user.is_superuser:
             form = BookATableFormAdmin()
@@ -84,7 +84,7 @@ def edit_booking(request, booking_id):
                 messages.success(request, 'Booking updated successfully!')
                 return redirect('bookings')
             except ValidationError as e:
-                form.add_error('booking_date', e.message)
+                form.add_error('date', e.message)
     else:
         request.user.is_authenticated
         form = BookATableForm(request.POST, instance=booking)

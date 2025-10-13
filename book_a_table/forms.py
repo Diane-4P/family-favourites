@@ -9,21 +9,21 @@ class BookATableForm(forms.ModelForm):
     
     class Meta:
         model = BookATable
-        fields = ['booking_date', 'booking_time', 'number_of_guests', 'first_name', 'last_name', 'email', 'phonenumber', 'special_requests', 'occasion']
+        fields = ['date', 'time', 'number_of_guests', 'first_name', 'last_name', 'email', 'phonenumber', 'occasion', 'special_requests']
         labels = {
             'first_name': 'First Name',
             'last_name': 'Last Name',
             'phonenumber': 'Telephone Number',
-            'special_requests': 'Special Requests (optional)',
             'occasion': 'Occasion (optional)',
+            'special_requests': 'Special Requests (optional)',            
         }
         widgets = {
-            'booking_date': forms.DateInput(attrs={'type': 'date'}),
-            'booking_time': forms.Select(),
-            'number_of_guests': forms.NumberInput(attrs={'min': 1}),
+            'date': forms.DateInput(attrs={'type': 'date'}),
+            'time': forms.Select(),
+            'number_of_guests': forms.NumberInput(attrs={'min': 1, 'max': 10}),
             'phonenumber': forms.NumberInput(attrs={'max': 11}),
-            'special_requests': forms.Textarea(attrs={'rows': 4}),
             'occasion': forms.Select(),
+            'special_requests': forms.Textarea(attrs={'rows': 4}),            
         }
         
 class BookATableFormAdmin(forms.ModelForm):
@@ -31,20 +31,20 @@ class BookATableFormAdmin(forms.ModelForm):
     
     class Meta:
         model = BookATable
-        fields = ['booking_date', 'booking_time', 'number_of_guests', 'user', 'first_name', 'last_name', 'email', 'phonenumber', 'special_requests', 'occasion']
+        fields = ['date', 'time', 'number_of_guests', 'user', 'first_name', 'last_name', 'email', 'phonenumber', 'occasion', 'special_requests']
         labels = {
             'first_name': 'First Name',
             'last_name': 'Last Name',
             'phonenumber': 'Telephone Number',
-            'special_requests': 'Special Requests (optional)',
             'occasion': 'Occasion (optional)',
+            'special_requests': 'Special Requests (optional)',            
         }
         widgets = {
-            'booking_date': forms.DateInput(attrs={'type': 'date'}),
-            'booking_time': forms.Select(),
+            'date': forms.DateInput(attrs={'type': 'date'}),
+            'time': forms.Select(),
             'number_of_guests': forms.NumberInput(attrs={'min': 1}),
             'phonenumber': forms.NumberInput(attrs={'max': 11}),
-            'special_requests': forms.Textarea(attrs={'rows': 4}),
             'occasion': forms.Select(),
+            'special_requests': forms.Textarea(attrs={'rows': 4}),            
         }
         

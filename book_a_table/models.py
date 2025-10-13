@@ -1,9 +1,9 @@
 """ Imports from django and other modules """
+from datetime import date
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.contrib.auth.models import User
-from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
-from datetime import date
 
 
 """ Model to represent a table booking """
@@ -59,19 +59,35 @@ class BookATable(models.Model):
         (6, 'Other'),
     )
     
+    APPROVED = (
+        (0, "Awaiting Booking Confirmation"),
+        (1, "Booking Confirmed"),
+    )
+    
+    def validate_date(self):
+        """
+        Display error message, if the date selected is in the past.
+        """
+        if self < date.today():
+            raise ValidationError("Date cannot be in the past.")
+        
+    date = models.DateField(
+        validators=[validate_date]
+    )
+    
     book_table_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_bookings')
-    booking_date = models.DateField()
-    booking_time = models.IntegerField(choices=TIME_CHOICES, default=0)
+    time = models.IntegerField(choices=TIME_CHOICES, default=0)
     number_of_guests = models.PositiveIntegerField()
     special_requests = models.TextField(blank=True, null=True)
     occasion = models.IntegerField(choices=OCCASIONS, default=0)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    email = models.EmailField()
-    phonenumber = PhoneNumberField()
-    approved = models.BooleanField(default=False)
+    email = models.EmailField(max_length=50)
+    phonenumber = PhoneNumberField(max_length=11)
+    approved = models.IntegerField(choices=APPROVED, default=0)
     created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
      
 class Meta:
             ordering = ["-created_on"]
@@ -86,4 +102,13 @@ def clean(self):
         raise ValidationError('Number of guests must be at least 1.')
         
 def __str__(self):
-    return f'Booking for {self.user.username} on {self.booking_date} at {self.get_booking_time_display()} for {self.number_of_guests} guests. Occasion: {self.get_occasion_display()}. Special Requests: {self.special_requests if self.special_requests else "None"}. You will be contacted via {self.email} or {self.phonenumber} of confirmation of booking.'
+    return f'Booking for {self.user.username} on {self.date} at {self.get_time_display()} for {self.number_of_guests} guests. Occasion: {self.get_occasion_display()}. Special Requests: {self.special_requests if self.special_requests else "None"}. You will be contacted via {self.email} or {self.phonenumber} of confirmation of booking.'
+
+@property
+def past_date(self):
+    """
+    Decorator to check if date is in the past.
+    """
+    today = date.today()
+    if self.date < today:
+        return True
