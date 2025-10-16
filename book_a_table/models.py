@@ -74,17 +74,17 @@ class BookATable(models.Model):
     date = models.DateField(
         validators=[validate_date]
     )
-    
+       
     book_table_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_bookings')
     time = models.IntegerField(choices=TIME_CHOICES, default=0)
     number_of_guests = models.PositiveIntegerField()
     special_requests = models.TextField(blank=True, null=True)
     occasion = models.IntegerField(choices=OCCASIONS, default=0)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    email = models.EmailField(max_length=50)
-    phonenumber = PhoneNumberField(max_length=11)
+    first_name = models.CharField(max_length=50, blank=True, null=True)
+    last_name = models.CharField(max_length=50, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+    phonenumber = PhoneNumberField(unique=True, null=False, blank=False, max_length=13, default='+441234567890')
     approved = models.IntegerField(choices=APPROVED, default=0)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
