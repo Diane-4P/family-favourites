@@ -74,12 +74,7 @@ nav .nav-item {
     color: black;
     cursor: pointer;
 }
-/*
-main {
-    padding: 20px;
-    min-height: 50vh;
-}
-*/
+
 .card {
     background-color: #98B0A8;
     margin: 10px auto;
@@ -144,10 +139,6 @@ footer {
     font-size: 1.5rem;
 }
 
-.book-a-table p {
-    display: inline-grid;
-}
-
 /* Responsive Design */
 @media (max-width: 320px) {
     .header {
@@ -201,6 +192,10 @@ footer {
     .card-text {
         font-size: .75rem;
     }
+
+    .book-now-btn .btn-primary {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -222,6 +217,10 @@ footer {
         margin: 25px auto;
         padding: 20px;
     }
+}
+
+.row {
+    align-items: center;
 }
 
 @media (min-width: 1200px){
