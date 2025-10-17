@@ -87,15 +87,15 @@
                                                     </li>
                                                     {% if user.is_authenticated %}
                                                     <li class="dropdown-item">
-                                                        <a class="dropdown-link {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="#account_logout">Logout</a>
+                                                        <a class="dropdown-link {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="account_logout">Logout</a>
                                                     </li>
                                                     {% else %}
                                                     <li class="dropdown-item">
                                                         <a class="dropdown-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
-                                                            href="#account_signup">Register</a>
+                                                            href="account_signup">Register</a>
                                                     </li>
                                                     <li class="dropdown-item">
-                                                        <a class="dropdown-link {% if request.path == login_url %}active" aria-current="page{% endif %}" href="#account_login">Login</a>
+                                                        <a class="dropdown-link {% if request.path == login_url %}active" aria-current="page{% endif %}" href="account_login">Login</a>
                                                     </li>
                                                     {% endif %}
                                                 </ul>
