@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Bookings{% endblock %}
+
+{% block content %}
+
+<!-- Alert for error messages -->
+ <div id="error-alert" class="alert alert-danger" role="alert" style="display: none;">
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+</div>
+
+<!-- Bookings using Bootstrap 5.3.0 -->
+<div class="container-fluid my-2">
+    <div class="card">
+        <h2 class="card-header text-center mb-4">Bookings</h2>
+        <div class="card-body">
+            <div class="row g-3 justify-content-center text-center">
+                
+                <div class="booking-summary">
+                    <!-- Welcome user and display upcoming bookings -->
+                     <p>Welcome {{ user.ursername }}. These are your bookings. Where you can view your existing booking, make changes or cancel upcoming bookings.</p>
+                     <a href=" url 'book_a_table'" class="btn action-btn mb-3 px-2 py-2">Make a Booking</a>
+                     <a href="#collapse-bookings" class="btn action-btn mb-3 px-2 py-2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-bookings">View Bookings</a>
+                </div>
+
+                <div class="container-fluid my-2">
+                    <!-- Table of bookings  -->
+                    <table class="table page-card-body">
+                        <thead>
+                            <tr>
+                                <!-- If superuser, they should see user heading -->
+                                {% if user.is_superuser %}
+                                <th scope="col">User</th>
+                                {% endif %}
+                                <th scope="col">Name</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Number of Guests</th>
+                                <th scope="col">Other details</th>
+                                <th scope="col">Confirmation</th>
+                                <th scope="col">Change/Cancel</th>
+                             </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Iterate through bookings to add each booking to the table -->
+                            {% for booking in bookings %}
+                            <tr>
+                                <!-- If superuser, they should see the user field -->
+                                {% if user.is_superuser %}
+                                <td class="table-text">{{ booking.user }}</td>
+                                {% endif %}
+                                <td class="table-text">{{ booking.first_name }} {{ booking.last_name}}</td>
+                                <td class="table-text">{{ booking.date }}</td>
+                                <td class="table-text">{{ booking.get_time_display }}</td>
+                                <td class="table-text">{{ booking.number_of_guests }}</td>
+                                <td class="table-text">{{ booking.occasion }}, {{ booking.special_requests }}</td>
+                                <td>
+                                    <!-- If booking approval has been confirmed, else awaiting confirmation -->
+                                    <div class="table-text">
+                                        {% if booking.approved %}
+                                        <p>Confirmed</p>
+                                        {% else %}
+                                        <p>Awaiting Confirmation</p>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="change_cancel_btn">
+                                        <!--  
+                                            If booking is not in the past then show the Change/Cancel buttons, else show comment saying booking cannot be amended
+                                        -->
+                                        {% if booking.past_date != True %}
+                                        <a href="edit/{{ booking.id }}" class="btn action-btn">Change</a>
+                                        <a href="delete/{{ booking.id }}" class="btn action-btn">Cancel</a>
+                                        {% else %}
+                                        <p>Booking cannot be amended.</p>
+                                        {% endif %}
+                                    </div>
+                                </td>                            
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
