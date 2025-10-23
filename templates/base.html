@@ -3,6 +3,7 @@
 <!-- App_url links -->
 {% url "index" as index_url %}
 {% url "book_a_table" as book_a_table_url %}
+{% url "contact" as contact_url %}
 {% url "account_login" as login_url %}
 {% url "account_signup" as signup_url %}
 {% url "account_logout" as logout_url %}
@@ -56,7 +57,7 @@
                                             <a class="nav-link {% if request.path == menu_url %}active" aria-current="page{% endif %}" href="#menu">Menu</a>
                                         </li>
                                         <li class="nav-item m-2 p-2">
-                                            <a class="nav-link {% if request.path == contact_url %}active" aria-current="page{% endif %}" href="#contact">Contact</a>
+                                            <a class="nav-link {% if request.path == contact_url %}active" aria-current="page{% endif %}" href="{% url 'contact' %}">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -76,39 +77,41 @@
                     <!-- Register and Book a table -->      
                     <div class="col-md-6 col-lg-4 register-book-container">    
                             <!-- User Authentication Links -->
-                        <div class="header_auth d-flex justify-content-end align-items-center">     
-                            <div class="navbar-nav nav-underline" role="navigation">                                        
-                                    <div>
-                                        <li class="dropdown m-2 p-2 ">
-                                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Register/Login
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    </li>
-                                                    {% if user.is_authenticated %}
-                                                    <li class="dropdown-item">
-                                                        <a class="dropdown-link {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="account_logout">Logout</a>
-                                                    </li>
-                                                    {% else %}
-                                                    <li class="dropdown-item">
-                                                        <a class="dropdown-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
-                                                            href="account_signup">Register</a>
-                                                    </li>
-                                                    <li class="dropdown-item">
-                                                        <a class="dropdown-link {% if request.path == login_url %}active" aria-current="page{% endif %}" href="account_login">Login</a>
-                                                    </li>
-                                                    {% endif %}
-                                                </ul>
-                                    </div>
+                        <div class="d-flex justify-content-end">     
+                            
+                                <div class="register"> 
+                               
+                                        <div class="dropdown m-2 p-2">
+                                            <a class="dropdown-toggle m-2 p-2 btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Register/Login
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu">
+                                                {% if user.is_authenticated %}
+                                                <li>
+                                                    <a class="dropdown-item {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="{{ logout_url }}">Logout</a>
+                                                </li>
+                                                {% else %}
+                                                <li>
+                                                    <a class="dropdown-item {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{{ signup.url }}">Register</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {% if request.path == login_url %}active" aria-current="page{% endif %}" href="{{ login_url }}">Login</a>
+                                                </li>
+                                                {% endif %}
+                                            </ul>
+                                        </div>
                                 </div>
-                                <div class="register header_primary">
-                                    <button class="book-table-btn btn btn-primary m-2 p-2">
+                                <div class="book-a-table m-2 p-2">
+                                    <button class="book-table-btn btn btn-primary hidden m-2 p-2">
                                         <a class="nav-link {% if request.path == book_a_table_url %}active" aria-current="page{% endif %}" href="{% url 'book_a_table' %}">Book a Table</a>
                                     </button>
                                 </div>
+                          
+                            
                         </div>
-                        
                     </div>
+                    
                 </div>
             </div>
         </header>
