@@ -113,6 +113,17 @@ footer {
     font-size: .65rem;
 }
 
+.contact-us .contact-address,
+.times .opening-times,
+.times .serving-times {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+.contact-us .contact-telephone {
+    font-size: .75rem;
+}
+
 .social-icons {
     margin-top: 10px;
     text-align: center;
