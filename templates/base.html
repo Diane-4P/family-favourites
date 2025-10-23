@@ -4,6 +4,7 @@
 {% url "index" as index_url %}
 {% url "book_a_table" as book_a_table_url %}
 {% url "contact" as contact_url %}
+{% url "register" as register_url %}
 {% url "account_login" as login_url %}
 {% url "account_signup" as signup_url %}
 {% url "account_logout" as logout_url %}
@@ -30,6 +31,7 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
     </head>
     <body class="d-flex flex-column h-100">
         <!--[if lt IE 7]>
@@ -82,7 +84,7 @@
                                 <div class="register"> 
                                
                                         <div class="dropdown m-2 p-2">
-                                            <a class="dropdown-toggle m-2 p-2 btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown-toggle m-2 p-2 btn btn-primary {% if request.path == register_url %}active" aria-current="page{% endif %}" href="{{ register_url }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Register/Login
                                             </a>
                                             
@@ -93,7 +95,7 @@
                                                 </li>
                                                 {% else %}
                                                 <li>
-                                                    <a class="dropdown-item {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{{ signup.url }}">Register</a>
+                                                    <a class="dropdown-item {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{{ signup_url }}">Register</a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item {% if request.path == login_url %}active" aria-current="page{% endif %}" href="{{ login_url }}">Login</a>

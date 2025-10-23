@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from allauth.account.forms import SignupForm
 from .models import Contact
 from .forms import ContactForm, ContactFormAdmin
 
@@ -55,3 +56,24 @@ def contacts(request):
         }
     
     return render(request, 'contact/contact.html', context)
+
+
+def register_signup(request):
+    """ View to handle contact form """
+    
+    if request.method == 'POST':
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            register_signup = form.save(commit=False)
+            register_signup.user = request.user
+            try:
+                register_signup.full_clean()
+                register_signup.save()
+                messages.success(request, 'Registration successfully! Please signin.')
+                return redirect('signin') 
+            except:
+                messages.add_error(request, 'Registration failed!')
+    else:
+        form = SignupForm()
+    
+    return render(request, 'register/register.html', {'form': form})
