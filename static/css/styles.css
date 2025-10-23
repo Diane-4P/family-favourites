@@ -243,9 +243,3 @@ footer {
         margin: 5px auto;
     }
 }
-
-@media (min-width: 1800px){
-    .card {
-        width: 60vw;
-    }
-}
