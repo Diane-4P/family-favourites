@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'cloudinary',
     'home',
+    'menu',
     'contact',
     'book_a_table',
 ]

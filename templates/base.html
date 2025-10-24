@@ -56,7 +56,7 @@
                                             <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}" href="{% url 'index' %}">Home</a>
                                         </li>
                                         <li class="nav-item m-2 p-2">
-                                            <a class="nav-link {% if request.path == menu_url %}active" aria-current="page{% endif %}" href="#menu">Menu</a>
+                                            <a class="nav-link {% if request.path == menu_url %}active" aria-current="page{% endif %}" href="{% url 'menu' %}">Menu</a>
                                         </li>
                                         <li class="nav-item m-2 p-2">
                                             <a class="nav-link {% if request.path == contact_url %}active" aria-current="page{% endif %}" href="{% url 'contact' %}">Contact</a>
