@@ -39,8 +39,8 @@ class Menu(models.Model):
     main_title = models.IntegerField(choices=MAIN_TITLE_LIST)
     sub_menu_title = models.IntegerField(choices=SUB_MENU_LIST)
     item_name = models.CharField(max_length=50)
-    price = models.IntegerField()
-    description = models.TextField()
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+    description = models.TextField(default='')
     
     def __str__(self):
         return self.item_name

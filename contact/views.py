@@ -76,4 +76,4 @@ def register_signup(request):
     else:
         form = SignupForm()
     
-    return render(request, 'register/register.html', {'form': form})
+    return render(request, 'contact/register.html', {'form': form})
