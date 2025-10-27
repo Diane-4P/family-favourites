@@ -1,12 +1,15 @@
 """ Imports from django, book_a_table models and forms """
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.exceptions import ValidationError
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import BookATable
 from .forms import BookATableForm, BookATableFormAdmin
 
 
+
 # Create your views here.
+@login_required
 def bookings(request):
     """ 
     View to display all bookings - admin only
@@ -16,9 +19,6 @@ def bookings(request):
     
     if request.user.is_superuser:
         bookings = BookATable.objects.all().order_by('-date', '-time')
-    elif not request.user.is_authenticated:
-        messages.error(request, 'You must be logged in to view your bookings.')
-        return redirect('login')
     else:
         bookings = BookATable.objects.filter(user=request.user).order_by('-date', '-time')
     context = {
@@ -28,23 +28,22 @@ def bookings(request):
     return render(request, 'book_a_table/bookings.html', context)
     
 
+@login_required
 def book_a_table(request):
     """ View to handle table booking form """
     
     if request.method == 'POST':
         if request.user.is_superuser:
-            messages.error(request, 'You must be logged in to book a table.')
-            return render(request, 'book_a_table/book_a_table.html', {'form': BookATableForm()})
-        form = BookATableFormAdmin(request.POST)
-        if form.is_valid():
-            booking = form.save(commit=False)
-            booking.user = request.user
-            try:
-                booking.full_clean()
-                booking.save()
-                messages.success(request, 'Table booked successfully!')
-            except ValidationError as e:
-                form.add_error('booking_date', e.message)
+            form = BookATableFormAdmin(request.POST)
+            if form.is_valid():
+                booking = form.save(commit=False)
+                booking.user = request.user
+                try:
+                    booking.full_clean()
+                    booking.save()
+                    messages.success(request, 'Table booked successfully!')
+                except ValidationError as e:
+                    form.add_error('booking_date', e.message)
         else:        
             form = BookATableForm(request.POST)
             if form.is_valid():
@@ -65,6 +64,7 @@ def book_a_table(request):
     return render(request, 'book_a_table/book_a_table.html', {'form': form})
 
 
+@login_required
 def edit_booking(request, booking_id):
     """ 
     View to handle editing a booking - admin only 
@@ -92,6 +92,7 @@ def edit_booking(request, booking_id):
     return render(request, 'book_a_table/edit_booking.html', {'form': form, 'booking': booking})
 
 
+@login_required
 def delete_booking(request, booking_id):
     """ 
     View to handle deleting a booking - admin only 
