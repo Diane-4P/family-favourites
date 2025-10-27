@@ -6,8 +6,8 @@ from django.contrib.auth.models import User
 from phonenumber_field.modelfields import PhoneNumberField
 
 
-""" Model to represent a table booking """
 class BookATable(models.Model):
+    """ Model to represent a table booking """
     
     TIME_CHOICES = (
         (0, '12:00 PM'),
@@ -89,26 +89,26 @@ class BookATable(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
      
-class Meta:
-            ordering = ["-created_on"]
-   
-def clean(self):
-    # Ensure booking date is not in the past
-    if self.booking_date <= date.today():
-        raise ValidationError('Booking date cannot be in the past.')
+    class Meta:
+                ordering = ["-created_on"]
+    
+    def clean(self):
+        # Ensure booking date is not in the past
+        if self.booking_date <= date.today():
+            raise ValidationError('Booking date cannot be in the past.')
 
-    # Ensure number of guests is at least 1
-    if self.number_of_guests <= 1:
-        raise ValidationError('Number of guests must be at least 1.')
-        
-def __str__(self):
-    return f'Booking for {self.user.username} on {self.date} at {self.get_time_display()} for {self.number_of_guests} guests. Occasion: {self.get_occasion_display()}. Special Requests: {self.special_requests if self.special_requests else "None"}. You will be contacted via {self.email} or {self.phonenumber} of confirmation of booking.'
+        # Ensure number of guests is at least 1
+        if self.number_of_guests <= 1:
+            raise ValidationError('Number of guests must be at least 1.')
+            
+    def __str__(self):
+        return f'Booking for {self.user.username} on {self.date} at {self.get_time_display()} for {self.number_of_guests} guests. Occasion: {self.get_occasion_display()}. Special Requests: {self.special_requests if self.special_requests else "None"}. You will be contacted via {self.email} or {self.phonenumber} of confirmation of booking.'
 
-@property
-def past_date(self):
-    """
-    Decorator to check if date is in the past.
-    """
-    today = date.today()
-    if self.date < today:
-        return True
+    @property
+    def past_date(self):
+        """
+        Decorator to check if date is in the past.
+        """
+        today = date.today()
+        if self.date < today:
+            return True
