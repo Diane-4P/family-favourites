@@ -5,5 +5,4 @@ from . import views
 # URL patterns for contact app
 urlpatterns = [
     path('', views.contact, name='contact'),
-    path('register/', views.register_signup, name='register'),
 ]
