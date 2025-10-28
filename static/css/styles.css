@@ -57,7 +57,7 @@ nav .nav-item {
 }
 
 .btn-primary {
-    background-color: #bed;
+    background-color: #bed !important;
     color: black;
     border: none;
 }
@@ -149,6 +149,11 @@ footer {
     font-size: 1.5rem;
 }
 
+.veggies-kids-menu p,
+.sides-kids-menu p {
+    margin-bottom: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 320px) {
     .header {
@@ -223,14 +228,19 @@ footer {
     }
 
     .card {
-        width: 85vw;
+        /* max-width: 50vw; */
         margin: 25px auto;
         padding: 20px;
     }
-}
 
-.row {
+    .row {
     align-items: center;
+    }
+
+    .grid-template-kids-menu {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+    }
 }
 
 @media (min-width: 1200px){
@@ -241,5 +251,9 @@ footer {
 
     .card {
         margin: 5px auto;
+    }
+
+    .grid-template-kids-menu {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

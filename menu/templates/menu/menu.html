@@ -8,28 +8,33 @@
 <div class="container-fluid my-2 py-2">
     <h1 class="card-header text-center mb-4">Menus</h1>
     <div class="card h-auto col">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Main</button>
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item mx-3 px-3 mb-3 fs-5 btn btn-primary" role="presentation">
+                <button class="nav-link active btn-primary" id="main-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Main</button>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Kids</button>
+            <li class="nav-item mx-3 px-3 mb-3 fs-5 btn btn-primary" role="presentation">
+                <button class="nav-link btn-primary" id="kids-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Kids</button>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Drinks</button>
+            <li class="nav-item mx-3 px-3 mb-3 fs-5 btn btn-primary" role="presentation">
+                <button class="nav-link btn-primary" id="Drinks-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Drinks</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+            <div class="tab-pane fade d-flex justify-content-evenly" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 <div class="my-2 p-2">
-                    <h3>Pick & Mix</h3>
-                    <p>Pick Either: Main + 2 Veggies or Main + Side + Veggie. 5.00</p>
                     <div>
-                        <h5>Mains</h5>
-                        <div class="row row-cols-2">
+                        <h3 class="text-uppercase d-block">Pick & Mix</h3>
+                        <p class="d-block">Pick Either: Main + 2 Veggies or Main + Side + Veggie - <span><strong>5.00</strong></span></p>
+                    </div>
+                    <div class="d-block mx-1">
+                    <div class="grid-template-kids-menu d-grid g-3">
+                    <div class="p-4">
+                        <h5 class="text-uppercase">Mains</h5>
+                        <div class="col">
                             <article class="col p-1">
                             <p><strong>Two Pork Sausages</strong>
                             <p class="card-text">Served with gravy.</p>
@@ -48,44 +53,61 @@
                             </article>
                         </div>
                     </div>
-                    <div class="row row-cols-2">
-                        <section class="col">
-                            <h5>Veggies</h5>
-                            <div>
-                                <article class="col p-1">
-                                <p><strong>Corn on the Cob</strong>
-                                </article>
-                                <article class="col p-1">
+                    <div class="p-4">
+                        <section class="p-4">
+                            <h5 class="text-uppercase">Veggies</h5>
+                            <div class="veggies-kids-menu col">
+                                <p class="col"><strong>Corn on the Cob</strong>
                                 <p><strong>Baked Beans</strong>
-                                </article>
-                                <article class="col p-1">
                                 <p><strong>Carrot & Cucumber Sticks</strong>
-                                </article>
-                                <article class="col p-1">
                                 <p><strong>Garden Peas</strong>
-                                </article>
                             </div>
                         </section>
-                        <section class="col">
-                            <h5>Sides</h5>
-                            <div>
-                                <article class="col p-1">
-                                <p><strong>Jacket Potato</strong>
-                                </article>
-                                <article class="col p-1">
+                        <section class="p-4">
+                            <h5 class="text-uppercase">Sides</h5>
+                            <div class="sides-kids-menu col">
+                                <p class="col"><strong>Jacket Potato</strong>
                                 <p><strong>Mashed Potato</strong>
-                                </article>
-                                <article class="col p-1">
                                 <p><strong>Chips</strong>
-                                </article>
-                                <article class="col p-1">
                                 <p><strong>Garlic Bread</strong>
-                                </article>
                             </div>
                         </section>
+                    </div>                    
+                        <div class="p-4">
+                            <h5 class="text-uppercase">Desserts</h5>
+                            <div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                    <p><strong>Chocolate Brownie<span>2.00</span></strong>
+                                    <p class="card-text">With chocolate sauce and vanilla flavour ice cream.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                    <p><strong>Brownie & Rainbow Chocolate Sundae<span>2.00</span></strong>
+                                    <p class="card-text">One scoop of vanilla and one scoop of chocolate flavoured ice cream, topped with chocolate brownie pieces, rainbow shelled chocolate drops and cream.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <br>
+                            <div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                    <p><strong>Strawberry Sundae<span>2.00</span></strong>
+                                    <p class="card-text">Two scoops of vanilla flavour ice cream topped with strawberry pieces, strawberry flavour sauce and cream.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                    <p><strong>Ice Cream<span>2.00</span></strong>
+                                    <p class="card-text">Two scoops. (one scoop 1.00) Flavours: Vanilla, Chocolate, Lemon Sorbet, Vegan Vanilla. Sauce: Chocolate, Strawberry.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
+
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
             </div>
         </div>
