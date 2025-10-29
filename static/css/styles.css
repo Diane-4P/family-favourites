@@ -67,8 +67,11 @@ nav .nav-item {
     text-decoration: underline;
 }
 
+.dropdown-menu {
+    background-color: #bed;
+}
+
 .dropdown a {
-    background: none;
     border: none;
     color: black;
     cursor: pointer;
