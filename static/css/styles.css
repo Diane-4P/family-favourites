@@ -67,6 +67,10 @@ nav .nav-item {
     text-decoration: underline;
 }
 
+.btn-secondary {
+    border: none;
+}
+
 .dropdown-menu {
     background-color: #bed;
 }
