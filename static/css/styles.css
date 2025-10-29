@@ -150,7 +150,9 @@ footer {
 }
 
 .veggies-kids-menu p,
-.sides-kids-menu p {
+.sides-kids-menu p,
+.beers-kids-menu p,
+.ciders-kids-menu p {
     margin-bottom: 0;
 }
 
