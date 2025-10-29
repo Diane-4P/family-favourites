@@ -16,7 +16,8 @@ class ContactForm(forms.ModelForm):
             'phonenumber': 'Telephone Number',           
         }
         widgets = {
-            'phonenumber': forms.NumberInput(attrs={'max': 11}),          
+            'phonenumber': forms.NumberInput(attrs={'max': 11}),
+            'message': forms.Textarea(attrs={'rows': 4}),                 
         }
         
         
@@ -32,5 +33,6 @@ class ContactFormAdmin(forms.ModelForm):
             'phonenumber': 'Telephone Number',           
         }
         widgets = {
-            'phonenumber': forms.NumberInput(attrs={'max': 11}),          
+            'phonenumber': forms.NumberInput(attrs={'max': 11}),
+            'message': forms.Textarea(attrs={'rows': 4}),              
         }
