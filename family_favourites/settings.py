@@ -118,6 +118,11 @@ DATABASES = {
 
 if 'test' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
+    
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.herokuapp.com'
+]
 
 
 # Password validation
