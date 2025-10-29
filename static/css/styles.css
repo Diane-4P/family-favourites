@@ -218,6 +218,12 @@ footer {
     }
 }
 
+@media (max-width: 768px) {    
+    .book-a-table {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     nav {
         flex-direction: column;
@@ -233,7 +239,7 @@ footer {
     }
 
     .card {
-        /* max-width: 50vw; */
+        width: 80vw;
         margin: 25px auto;
         padding: 20px;
     }
@@ -248,7 +254,7 @@ footer {
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .hero-img {
         width: 85vw;
         margin: auto;
@@ -260,5 +266,13 @@ footer {
 
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 2500px) {
+    .hero-img,
+    .card {
+        width: 65vw;
+        margin: auto;
     }
 }
