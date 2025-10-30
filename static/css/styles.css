@@ -47,6 +47,7 @@ nav .nav-item {
     text-align: left;
     margin-bottom: 10px;
 }
+
 .logo-container {
     text-align: center;
     margin-bottom: 10px;
@@ -61,6 +62,7 @@ nav .nav-item {
     color: black;
     border: none;
 }
+
 .btn-primary:hover {
     background-color: #ACCAEB;
     color: #364B44;
@@ -69,6 +71,10 @@ nav .nav-item {
 
 .btn-secondary {
     border: none;
+}
+
+a {
+    color: black;
 }
 
 .dropdown-menu {
@@ -82,8 +88,13 @@ nav .nav-item {
 }
 
 .card {
+    width: 80vw;
     background-color: #98B0A8;
     margin: 10px auto;
+}
+
+.card-title {
+    font-size: 3.5rem;
 }
 
 .about-section {
@@ -92,10 +103,6 @@ nav .nav-item {
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(152,176,168,0.1);
-}
-
-.card-title {
-    font-size: 3.5rem;
 }
 
 footer {
@@ -164,7 +171,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .header {
         flex-direction: column;
         align-items: center;
@@ -209,12 +216,18 @@ footer {
         font-size: 2rem;
     }
 
-    .card-text {
+    .card-text,
+    .login,
+    .form-control {
         font-size: .75rem;
     }
 
     .book-now-btn .btn-primary {
         margin-bottom: 1.5rem;
+    }
+    
+    .book-a-table {
+        display: none;
     }
 
     .signup-container,
@@ -228,7 +241,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
     nav {
         flex-direction: column;
     }
@@ -252,17 +265,13 @@ footer {
     align-items: center;
     }
 
-    .book-a-table {
-        display: none;
-    }
-
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr;
         margin: 0 1rem;
     }
 }
 
-@media (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .hero-img {
         width: 85vw;
         margin: auto;
@@ -278,7 +287,7 @@ footer {
     }
 }
 
-@media (max-width: 1800px) {
+@media screen and (min-width: 1800px) {
     .card {
         width: 50vw;
         margin: 5px auto;
@@ -286,7 +295,7 @@ footer {
 
 }
 
-@media (min-width: 2500px) {
+@media screen and (min-width: 2500px) {
     .hero-img,
     .card {
         width: 65vw;
