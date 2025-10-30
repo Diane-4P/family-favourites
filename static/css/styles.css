@@ -200,10 +200,6 @@ footer {
         margin: .5rem;
     }
  
-    .card {
-        width: 88vw;
-    }
-
     .card-body {
         margin: 10px;
         padding: 10px;
@@ -220,15 +216,19 @@ footer {
     .book-now-btn .btn-primary {
         margin-bottom: 1.5rem;
     }
-}
 
-@media (max-width: 768px) {    
-    .book-a-table {
-        display: none;
+    .signup-container,
+    .signup-text {
+        font-size: .85rem;
+    }
+
+    .form-btns button,
+    .form-btns a {
+        font-size: .75rem;
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
     }
@@ -242,8 +242,8 @@ footer {
         margin: 10px 0;
     }
 
-    .card {
-        width: 80vw;
+    .card {        
+        width: 70vw;
         margin: 25px auto;
         padding: 20px;
     }
@@ -252,25 +252,38 @@ footer {
     align-items: center;
     }
 
+    .book-a-table {
+        display: none;
+    }
+
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr;
         margin: 0 1rem;
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .hero-img {
         width: 85vw;
         margin: auto;
     }
 
     .card {
+        width: 60vw;
         margin: 5px auto;
     }
 
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+@media (max-width: 1800px) {
+    .card {
+        width: 50vw;
+        margin: 5px auto;
+    }
+
 }
 
 @media (min-width: 2500px) {
