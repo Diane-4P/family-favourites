@@ -63,7 +63,8 @@ nav .nav-item {
     border: none;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-secondary:hover {
     background-color: #ACCAEB;
     color: #364B44;
     text-decoration: underline;
@@ -77,7 +78,12 @@ a {
     color: black;
 }
 
-.dropdown-menu {
+.dropdown-menu li .active {
+    background-color: #7694b4;
+}
+
+.dropdown-menu,
+.dropdown-item:hover {
     background-color: #bed;
 }
 
@@ -227,7 +233,7 @@ footer {
     }
     
     .book-a-table {
-        display: none;
+        visibility: hidden;
     }
 
     .signup-container,
@@ -257,6 +263,10 @@ footer {
 
     nav .nav-links li {
         margin: 10px 0;
+    }
+        
+    .book-a-table {
+        visibility: visible;
     }
 
     .card {        
