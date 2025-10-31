@@ -9,20 +9,20 @@
 {% block content %}
 
 <div class="container-fluid my-2">
-  <div class="signup-container card h-auto">
+  <div class="signup-container card text-center h-auto">
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2"> 
-        <h2 class="card-header text-center my-2">{% trans "Sign Up" %}</h2>
+        <h2 class="card-header my-2">{% trans "Sign Up" %}</h2>
 
-        <p class="py-1">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+        <p class="text-center py-1">{% blocktrans %}Welcome to Family Favourites. If you already have an account? Then please <strong> <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</strong></p>
 
-        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        <form class="signup justify-content-center m-2 p-2" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}
           {{ form | crispy }}
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
-          <button class="btn btn-primary" type="submit">{% trans "Sign Up" %} &raquo;</button>
+          <button class="btn btn-primary signup-btn mb-2" type="submit">{% trans "Sign Up" %} &raquo;</button>
         </form>
       </div>  
     </div>

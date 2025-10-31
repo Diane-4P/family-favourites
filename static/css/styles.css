@@ -239,6 +239,10 @@ footer {
     .form-btns a {
         font-size: .75rem;
     }
+
+    .signup-btn {
+        font-size: .85rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
