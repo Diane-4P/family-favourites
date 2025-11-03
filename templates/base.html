@@ -42,7 +42,7 @@
         <!-- Navigation -->
         <header class="header">
             <div class="container-fluid justify-content-between">
-                <div class="row align-items-center text-left">                    
+                <div class="header-items text-left">                    
 
                     <!-- Nav Links -->
                     <div class="col-md-2 col-lg-4 nav-links-container">                 
@@ -53,13 +53,13 @@
                                 </button>
                                 <div class="nav-links collapse navbar-collapse" id="navbarText">
                                     <ul class="nav-list navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item m-2 p-2">
+                                        <li class="nav-item px-2">
                                             <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}" href="{% url 'index' %}">Home</a>
                                         </li>
-                                        <li class="nav-item m-2 p-2">
+                                        <li class="nav-item px-2">
                                             <a class="nav-link {% if request.path == menu_url %}active" aria-current="page{% endif %}" href="{% url 'menu' %}">Menu</a>
                                         </li>
-                                        <li class="nav-item m-2 p-2">
+                                        <li class="nav-item px-2">
                                             <a class="nav-link {% if request.path == contact_url %}active" aria-current="page{% endif %}" href="{% url 'contact' %}">Contact</a>
                                         </li>
                                     </ul>
@@ -78,38 +78,29 @@
                     </div>
 
                     <!-- Register and Book a table -->      
-                    <div class="col-md-6 col-lg-4 register-book-container">    
-                            <!-- User Authentication Links -->
-                        <div class="navbar navbar-expand-lg d-flex justify-content-end">
-                            <div class="text-align-bottom" role="navigation">
-                                <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="register collapse navbar-collapse">
-                                    <div class="navbar-nav">
-                                    <div class="nav-item dropdown m-2 p-2">
-                                        <a class="dropdown-toggle m-2 p-2 btn btn-primary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Register/Login
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            {% if user.is_authenticated %}
-                                            <li>
-                                                <a class="dropdown-item {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="{{ logout_url }}">Logout</a>
-                                            </li>
-                                            {% else %}
-                                            <li>
-                                            <a class="dropdown-item {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{{ signup_url }}">Register</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item {% if request.path == login_url %}active" aria-current="page{% endif %}" href="{{ login_url }}">Login</a>
-                                            </li>
-                                            {% endif %}
-                                        </ul>
-                                    </div>
-                                    </div>
+                    <div class="col-md-6 col-lg-4 register-book-container justify-content-end">    
+                            <!-- User Authentication Links for dropdown menu -->
+                        <div class="navbar-expand-lg register-book-btns">
+                                <div class="register-dropdown dropdown">
+                                    <a class="dropdown-toggle m-2 p-2 btn btn-primary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Register/Login
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        {% if user.is_authenticated %}
+                                        <li>
+                                            <a class="dropdown-item {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="{{ logout_url }}">Logout</a>
+                                        </li>
+                                        {% else %}
+                                        <li>
+                                        <a class="dropdown-item {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{{ signup_url }}">Register</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item {% if request.path == login_url %}active" aria-current="page{% endif %}" href="{{ login_url }}">Login</a>
+                                        </li>
+                                        {% endif %}
+                                    </ul>
                                 </div>
-                            </div>
-                                <div class="book-a-table m-2 p-2">
+                                <div class="book-a-table">
                                     <button class="book-table-btn btn btn-primary m-2 p-2">
                                         <a class="nav-link {% if request.path == book_a_table_url %}active" aria-current="page{% endif %}" href="{% url 'book_a_table' %}">Book a Table</a>
                                     </button>

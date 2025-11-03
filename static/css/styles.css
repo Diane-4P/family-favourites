@@ -39,7 +39,6 @@ nav .logo-link img{
 }
 
 nav .nav-item { 
-    justify-content: space-between;
     text-decoration: none;
 }
 
@@ -178,26 +177,19 @@ footer {
 
 /* Responsive Design */
 @media screen and (min-width: 320px) {
-    .header {
+    .header-items {
+        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .header-logo {
-        height: 60px;
-    }
-
-    .nav-links-container {   
-        height: 60px;     
-        order: 3;
+        order: 1;
     }
 
     .nav-links-container {
-        display: flex;
-        justify-content: flex-start;
         height: 50px;
         margin-bottom: 5px;
-        order: 3;        
+        order: 2;
     }
 
     .navbar-toggler {
@@ -209,8 +201,8 @@ footer {
         margin-bottom: 5px;
     }
 
-    nav .nav-links li {
-        margin: .5rem;
+    .nav-links {
+        background-color: #bed;
     }
  
     .card-body {
@@ -252,21 +244,23 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav .nav-links {
-        flex-direction: column;
+    .header-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
+    }
+    .nav-links-container {
+        order: -1;
     }
 
     nav .nav-links li {
         margin: 10px 0;
     }
-        
-    .book-a-table {
-        visibility: visible;
+    
+    .register-dropdown {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .card {        
@@ -275,13 +269,15 @@ footer {
         padding: 20px;
     }
 
-    .row {
-    align-items: center;
-    }
-
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr;
         margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-links {
+        background-color: transparent;
     }
 }
 
@@ -289,6 +285,15 @@ footer {
     .hero-img {
         width: 85vw;
         margin: auto;
+    }
+    
+    .book-a-table {
+        visibility: visible;
+    }
+
+    .register-book-btns {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .card {
