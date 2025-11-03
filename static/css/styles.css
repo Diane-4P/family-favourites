@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto+Slab:wght@100..900&display=swap');
 
-/* Reset some default styles */
+/* Asterisk wildcard selector to override some default styles added by the browser */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Generic styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'League Gothic', sans-serif;
     margin-bottom: 10px;
@@ -24,6 +25,7 @@ header {
     text-align: center;
 }
 
+/* Navigation section */
 nav {
     justify-content: space-between;
     align-items: left;
@@ -102,6 +104,7 @@ a {
     font-size: 3.5rem;
 }
 
+/* About section */
 .about-section {
     background-color: #98B0A8;
     padding: 10px 0;
@@ -110,6 +113,12 @@ a {
     box-shadow: 0 2px 5px rgba(152,176,168,0.1);
 }
 
+/* Menu section */
+.tab-pane.d-flex:not(.active) {
+    display: none !important;
+}
+
+/* Footer section */
 footer {
     background-color: #7694b4;
     color: black;
@@ -177,6 +186,7 @@ footer {
 
 /* Responsive Design */
 @media screen and (min-width: 320px) {
+    /* Navigation section */
     .header-items {
         display: flex;
         flex-direction: column;
@@ -244,6 +254,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    /* Navigation section */
     .header-items {
         display: flex;
         flex-direction: row;
@@ -269,6 +280,7 @@ footer {
         padding: 20px;
     }
 
+    /* Menu section */
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr;
         margin: 0 1rem;
@@ -276,12 +288,14 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+    /* Navigation section */
     .nav-links {
         background-color: transparent;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    /* Navigation section */
     .hero-img {
         width: 85vw;
         margin: auto;
@@ -301,6 +315,7 @@ footer {
         margin: 5px auto;
     }
 
+    /* Menu section */
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -315,6 +330,7 @@ footer {
 }
 
 @media screen and (min-width: 2500px) {
+    /* Hero image and card styling */
     .hero-img,
     .card {
         width: 65vw;
