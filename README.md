@@ -12,7 +12,7 @@
 
 ## Table of Contents
 
-- [User Experience](#user-experience-ux))
+- [User Experience](#user-experience-ux)
 - [Design](#design-choices)
 - [Wireframes](#wireframes)
 - [Features](#features)
@@ -298,7 +298,14 @@ When you fork a GitHub repository you will make a copy of it, which can be put i
 ## Acknowledgements
 
 - Mentor – Brian Macharia – for his helpful feedback
-- Inspiration for website came from ?????????
+- Inspiration for website came from the following restaurants in Worcester:
+  - Ye Olde Talbot
+  - The Swan
+  - Bluebell Farm
+  - The Barn Owl
+  - Harvester Timberdine
+  - The Toby Carvery
+  - Ounce
 
 ## Disclaimer
 
