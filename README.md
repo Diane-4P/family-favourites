@@ -102,6 +102,8 @@
 
 ## Structure
 
+The restaurant application shows what meals are the Family Favourites. In the application you can either contact the restaurant by phone or email for further information in the preparation of reserving a table at the restaurant. To save time and costs a user can book a table directly on the website, which will boost customer satisfaction and further drive repeat business. When the table is booked then the user will need to wait for confirmation on the booking. If the user needs to know what meals are available at the restaurant then they can view the menu on the site.
+
 ### Database model
 
 This Entity Relationship Diagram (ERD) has been generated using [Lucid Charts](https://lucid.app/documents#/home?folder_id=recent) - see below.
@@ -232,7 +234,6 @@ Below are the initial wireframes for my project.
 - To uniform the layout by formatting the code for CSS and HTML.
 - [Prettier]( https://prettier.io/)
 - To uniform the layout by formatting the code for JavaScript.
-
 
 ## Testing
 
