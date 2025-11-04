@@ -201,21 +201,37 @@ Below are the initial wireframes for my project.
   - Used for styling and make it more responsive.
 - [NCH Software(Pixillion)](https://www.nchsoftware.com/imageconverter/index.html)
   - Used for reducing and converting the Family Favourites logo.
+- [Django v4.2.24]( https://www.djangoproject.com/)
+  - Used as a framework to create a rapid, clean and secure application development.
+- [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html)
+  - Used for account registration and authentication.
+- [Django Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+  - Used for simplifying form rendering.
+- [Phonenumbers](https://django-phonenumber-field.readthedocs.io/en/latest/index.html)
+  - Used to add phone number field to form.
+- [Heroku](https://www.heroku.com/)
+  - Used for a cloud based deployment platform.
+- [Heroku PostreSQL](https://www.heroku.com/postgres/)
+  - Used as the database after the project was deployed into production.
+- [SQLite](https://www.sqlite.org/index.html)
+  - Used as a database before production deployment to Heroku.
+- [Gunicorn](https://gunicorn.org/)
+  - Used as the web server to run Django on Heroku.
+- [Cloudinary](https://cloudinary.com/)
+  - Used to store the images used in the application.
+- [psycopg2](https://pypi.org/project/psycopg2/)
+  - A database adapter used to support the connection to the Postgres db.
+- [dj_database_url](https://pypi.org/project/dj-database-url/)
+  - A library used to allow database urls to connect to the Postgres db.
+- [Whitenoise](https://whitenoise.readthedocs.io/en/latest/)
+  - Used to allow Heroku to serve its own static files.
+- [Lucidchart](https://www.lucidchart.com/pages/landing)
+  - Used to create the Entity Relationship Diagram (ERD).
+
 - [Beautifier]( https://beautifier.io/)
 - To uniform the layout by formatting the code for CSS and HTML.
 - [Prettier]( https://prettier.io/)
 - To uniform the layout by formatting the code for JavaScript.
-- [Django]( https://www.djangoproject.com/)
-  - Used as a framework to create a rapid, clean and secure application development.
-- [Django allauth]
-- [Django Crispy forms]
-- [Heroku]
-- [Heroku PostreSQL]
-- [Gunicorn]
-- [Cloudinary]
-- [psycopg2]
-- [dj_database_url]
-- [Lucidchart]
 
 
 ## Testing
