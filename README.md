@@ -197,6 +197,8 @@ Below are the initial wireframes for my project.
   - GitHub was used to store the website after being pushed from Git.
 - [Balsamiq]( https://balsamiq.com/)
   - Create wireframes for the layout of the site.
+- [Lucidchart](https://www.lucidchart.com/pages/landing)
+  - Used to create the Entity Relationship Diagram (ERD).
 - [Bootstrap v5.3.8 CDN via jsDelivr bundle with Popper]( https://getbootstrap.com/)
   - Used for styling and make it more responsive.
 - [NCH Software(Pixillion)](https://www.nchsoftware.com/imageconverter/index.html)
@@ -225,8 +227,6 @@ Below are the initial wireframes for my project.
   - A library used to allow database urls to connect to the Postgres db.
 - [Whitenoise](https://whitenoise.readthedocs.io/en/latest/)
   - Used to allow Heroku to serve its own static files.
-- [Lucidchart](https://www.lucidchart.com/pages/landing)
-  - Used to create the Entity Relationship Diagram (ERD).
 
 - [Beautifier]( https://beautifier.io/)
 - To uniform the layout by formatting the code for CSS and HTML.
