@@ -181,48 +181,42 @@ Below are the initial wireframes for my project.
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
-- [JavaScript (JS)](https://en.wikipedia.org/wiki/JavaScript)
-- Python
-- Flask
-- Django
-- MongoDB
--
+- [Python](https://www.python.org/)
 
 ### Frameworks, Libraries and Programs used
 
 - [Visual Studio](https://visualstudio.microsoft.com/)
--     -   IDE and code editor used to build the game.
-- [DaFont](https://www.dafont.com/)
-- The Harry Potter and Angel Wish fonts which were downloaded from DaFont and accessed on the CSS style.css file via the assets folder. Harry Potter being the main font with Angel Wish and Serif as fallbacks.
+  - IDE and code editor used to build the game.
 - [Google fonts]( https://fonts.google.com/)
-- To import font Montserrat, Rubik and Rouge Script onto the style.css file to be used on all pages. Also, Sans-serif and Serif were used as their fallbacks.
+  - To import font League Gothic and Roboto Slab onto the style.css file to be used on all pages. Also, Sans-serif and Serif were used as their fallbacks.
 - [Font Awesome](https://fontawesome.com/)
-- To download the wizard hat in svg format to create the favicon for the quiz using the [favicon](https://favicon.io/) generator.
-- Icons were added were added to all pages of the website for aesthetic and UX purposes.
+  - To download the FF (Family Favourites) icon in svg format to create the favicon for the restaurant using the [favicon](https://favicon.io/) generator.
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
-- Version Conrol System used to track changes in source code using the Gitpod terminal to commit messages and push to GitHub.
+  - Version Conrol System used to track changes in source code using the Gitpod terminal to commit messages and push to GitHub.
 - [GitHub](https://github.com/)
-- GitHub was used to store the website after being pushed from Git.
+  - GitHub was used to store the website after being pushed from Git.
 - [Balsamiq]( https://balsamiq.com/)
-- Create wireframes for the layout of the site.
-- [Miro]( https://miro.com/aq/ps/wireframing/)
-- Create wireframes for the layout of the site.
-- jQuery
--
-- [Bootstrap v5.3.3 CDN via jsDelivr]( https://getbootstrap.com/)
-- Used for styling and make it more responsive.
-- [Tiny PNG](https://tinypng.com/)
-- To compress all images to smaller file size.
-- [Image Compressor]( https://imagecompressor.com/)
-- The Image Compressor was used to compress the Opening Times image as the files size was too big for Tiny PNG.
-- [Tiny Wow]( https://tinywow.com/image/resize)
-- Used to resize images
-- Convert webp to jpg – an extension on Chrome
-- Used to convert jpg images to webp images
+  - Create wireframes for the layout of the site.
+- [Bootstrap v5.3.8 CDN via jsDelivr bundle with Popper]( https://getbootstrap.com/)
+  - Used for styling and make it more responsive.
+- [NCH Software(Pixillion)](https://www.nchsoftware.com/imageconverter/index.html)
+  - Used for reducing and converting the Family Favourites logo.
 - [Beautifier]( https://beautifier.io/)
 - To uniform the layout by formatting the code for CSS and HTML.
 - [Prettier]( https://prettier.io/)
 - To uniform the layout by formatting the code for JavaScript.
+- [Django]( https://www.djangoproject.com/)
+  - Used as a framework to create a rapid, clean and secure application development.
+- [Django allauth]
+- [Django Crispy forms]
+- [Heroku]
+- [Heroku PostreSQL]
+- [Gunicorn]
+- [Cloudinary]
+- [psycopg2]
+- [dj_database_url]
+- [Lucidchart]
+
 
 ## Testing
 
