@@ -300,8 +300,13 @@ When you fork a GitHub repository you will make a copy of it, which can be put i
 ## Credits (references)
 
 - Code
+  - [Bootstrap v5.3.8 CDN via jsDelivr bundle with Popper]( https://getbootstrap.com/) was used to create the cards for the about and forms. To use the dropdown button I also needed to include Popper with Bootstrap.
+  - I also included the tabs from Bootstrap but it showed a lot of blank space which was removed by doing a Google search and copying the flexbox issue code provided by the AI overview to add to the CSS.
 - Content
+  - The about content was written by the developer. The menus were created from [Ye Olde Talbot](https://www.greenekinginns.co.uk/hotels/worcestershire/ye-olde-talbot) menus.
 - Images
+  - Favicon image used was created through the favicon generator from the initials of the applications created Family Favourites which gave us FF.
+  - The main hero image was obtained from the [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm) restaurants header image.
 
 ****
 
@@ -309,13 +314,13 @@ When you fork a GitHub repository you will make a copy of it, which can be put i
 
 - Mentor – Brian Macharia – for his helpful feedback
 - Inspiration for website came from the following restaurants in Worcester:
-  - Ye Olde Talbot
-  - The Swan
-  - Bluebell Farm
-  - The Barn Owl
-  - Harvester Timberdine
-  - The Toby Carvery
-  - Ounce
+  - [Ye Olde Talbot](https://www.greenekinginns.co.uk/hotels/worcestershire/ye-olde-talbot)
+  - [The Swan](https://www.theswanmartinhussingtreepub.co.uk/)
+  - [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm)
+  - [The Barn Owl](https://www.barnowlpubworcester.co.uk/)
+  - [Harvester Timberdine](https://www.harvester.co.uk/restaurants/eastandwestmidlands/thetimberdineworcester#/)
+  - [The Toby Carvery](https://www.tobycarvery.co.uk/restaurants/midlands/worcesterworcestershire#/)
+  - [Ounce](https://ouncebar.co.uk/)
 
 ## Disclaimer
 
