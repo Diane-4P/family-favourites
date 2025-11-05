@@ -123,7 +123,7 @@ The favicon was designed using the first letters of the restaurants name and giv
 
 | Image | Description |
 | --- | --- |
-| ![Family Favourites](readme_documents/features/favicon-icon.png) | Favicon on tab beside the title of the site |
+| ![Family Favourites](readme_documents/features/favicon-icon.png) | Favicon on tab beside the title of the site. |
 
 - __F02 Navigation__
 
@@ -131,25 +131,36 @@ The logo consists of the full name of the site and the favicon icon. When the us
 
 The navigation menu links to the home, menu and contact pages. When the user hover over the links there is an underline and when a user is on the page the line shows which page you are on.
 
-There are also two buttons to **Register/Login** or to **Book a Table**. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always there.
+There are also two action buttons to __Register/Login__ or to __Book a Table__. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always there.
 
 | Image | Description |
 | --- | --- |
 | ![Logo](readme_documents/features/logo.png) | Logo shows the full name and the icon of the site |
-| ![Navigation Menu](readme_documents/features/navigation-menu.png) | Navigation menu when on the home page |
-| ![Register and Booking buttons](readme_documents/features/register-book-a-table-btns.png) | Navigation buttons for booking a table and to register or login |
-| ![logged in](readme_documents/features/logged-in.png) | Message when user is logged in |
-| ![Logged out](readme_documents/features/logged-out.png) | Message when user is logged out |
+| ![Navigation Menu](readme_documents/features/navigation-menu.png) | Navigation menu when on the home page. |
+| ![Register and Booking buttons](readme_documents/features/register-book-a-table-btns.png) | Navigation buttons for booking a table and to register or login. |
+| ![logged in](readme_documents/features/logged-in.png) | Message when user is logged in. |
+| ![Logged out](readme_documents/features/logged-out.png) | Message when user is logged out. |
 
-### Home
+- __F03 Footer__
 
-### About
+The copyright has the icon with a date and site name, with rights reserved. There are also social media icons which link to the home pages of Facebook, Twitter and Instagram. It also includes a envelope icon with a link to the contact page, if a user wants to contact via email. When a user hovers over the links the curser changes to a hand.
+
+The contact us gives details of address and phone number. There is also two action buttons of __Contact Us__ and __Book Now__. When you hover over the buttons they pale in colour, an underline appears and the curser changes to a hand. When the contact us button is clicked then the user is taken to the __Contact Us page__. when the book now button is clicked then if the user is logged in the user will go to the book a table page and if the user is not logged in then the user will go to the register or login page.
+
+Also, in the footer there are the opening times of the restaurant and serving times of the meals at the restaurant, so that the user is well informed.
+
+| Image | Description |
+| --- | --- |
+| ![Copyright icon](readme_documents/features/copyright-icon.png) | Copyright icon with date. |
+| ![Contact Us](readme_documents/features/contact-us-info.png) | Contact Us - in person, by phone, use contact page form, or book a table directly. |
+| ![Opening and Serving Times](readme_documents/features/opening-serving-times.png) | Opening times and Serving times of the restaurant. |
+| ![Social Media icons](readme_documents/features/social-media-icons.png) | Social media icons with links to home pages and the email links to the contact page. |
+
+### Home and About
 
 
 
 ### Contact form (buttons)
-
-### Footer
 
 ### Features to Implement in the Future
 
@@ -179,8 +190,8 @@ I then went to [Robert Cooper's](https://colornamer.robertcooper.me/) website to
 
 | Image with hex codes | ![Colour Palette](readme_documents/colour_scheme/colour-palette.png) |
 | --- | --- |
-|rgb values | rgb(187, 238, 221), rgb(54, 75, 68), rgb(152, 176, 168), rgb(172, 202, 235), rgb(118, 148, 180) |
-| Colour names | Salome, Garnet Black Green, Lovage Green, Baby Bunting, Ocean Ridge |
+|rgb values | rgb(187, 238, 221), rgb(54, 75, 68), rgb(152, 176, 168), rgb(172, 202, 235), rgb(118, 148, 180). |
+| Colour names | Salome, Garnet Black Green, Lovage Green, Baby Bunting, Ocean Ridge. |
 
 ### Typography
 
@@ -188,8 +199,8 @@ I got my inspiration for the font from restaurants that I researched for this pr
 
 | Image | Description |
 | --- | --- |
-| ![League Gothic](readme_documents/fonts/league-gothic-headings-font.png) | League Gothic for Headings |
-| ![Roboto Slab](readme_documents/fonts/roboto-slab-body-font.png) | Roboto Slab for Body |
+| ![League Gothic](readme_documents/fonts/league-gothic-headings-font.png) | League Gothic for Headings. |
+| ![Roboto Slab](readme_documents/fonts/roboto-slab-body-font.png) | Roboto Slab for the Body. |
 
 ### Imagery
 
