@@ -12,6 +12,10 @@
   - [Strategy](#strategy)
     - [Introduction](#introduction)
     - [Project Goals](#project-goals)
+  - [Scope](#scope)
+    - [User Stories](#user-stories)
+    - [Features](#features)
+    - [Features to Implement in the Future](#features-to-implement-in-the-future)
 - [Design](#design-choices)
 - [Wireframes](#wireframes)
 - [Features](#features)
@@ -107,6 +111,48 @@ The restaurant application shows what meals are the Family Favourites. The goal 
 
 ### What a User may want
 
+## Features
+
+### Universal across the site
+
+The header and footer of the site are purposefully the same on each page of the website to give the user the feel of consistency and to be able to navigate without any problems.
+
+- __F01 Favicon__
+
+The favicon was designed using the first letters of the restaurants name and given a background colour from the colour theme of the site. If the user has several tabs open in their browser then they can identifly the site from the favicon.about-section
+
+| Image | Description |
+| --- | --- |
+| ![Family Favourites](readme_documents/features/favicon-icon.png) | Favicon on tab beside the title of the site |
+
+- __F02 Navigation__
+
+The logo consists of the full name of the site and the favicon icon. When the user hover over the logo the curser changes to a hand and when its clicked the user will be taken back to the home page.
+
+The navigation menu links to the home, menu and contact pages. When the user hover over the links there is an underline and when a user is on the page the line shows which page you are on.
+
+There are also two buttons to **Register/Login** or to **Book a Table**. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always there.
+
+| Image | Description |
+| --- | --- |
+| ![Logo](readme_documents/features/logo.png) | Logo shows the full name and the icon of the site |
+| ![Navigation Menu](readme_documents/features/navigation-menu.png) | Navigation menu when on the home page |
+| ![Register and Booking buttons](readme_documents/features/register-book-a-table-btns.png) | Navigation buttons for booking a table and to register or login |
+| ![logged in](readme_documents/features/logged-in.png) | Message when user is logged in |
+| ![Logged out](readme_documents/features/logged-out.png) | Message when user is logged out |
+
+### Home
+
+### About
+
+
+
+### Contact form (buttons)
+
+### Footer
+
+### Features to Implement in the Future
+
 ## Structure
 
 ### Database model
@@ -142,8 +188,8 @@ I got my inspiration for the font from restaurants that I researched for this pr
 
 | Image | Description |
 | --- | --- |
-| ![League Gothic](readme_documents/Fonts/league-gothic-headings-font.png) | League Gothic for Headings |
-| ![Roboto Slab](readme_documents/Fonts/roboto-slab-body-font.png) | Roboto Slab for Body |
+| ![League Gothic](readme_documents/fonts/league-gothic-headings-font.png) | League Gothic for Headings |
+| ![Roboto Slab](readme_documents/fonts/roboto-slab-body-font.png) | Roboto Slab for Body |
 
 ### Imagery
 
@@ -161,24 +207,6 @@ Below are the initial wireframes for my project.
 - [Login page](readme_documents/wireframes/login-wireframe.png)
 - [Book a Table page](readme_documents/wireframes/book-a-table-wireframe.png)
 - [Booking Contact Details page](readme_documents/wireframes/booking-contact-details-wireframe.png)
-
-****
-
-## Features
-
-### Universal across the site
-
-### Home
-
-### About
-
-### Gallery (images)
-
-### Contact form (buttons)
-
-### Footer
-
-### Features to Implement in the Future
 
 ****
 
