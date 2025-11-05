@@ -6,13 +6,12 @@
 
 ****
 
-## Introduction
-
-****
-
 ## Table of Contents
 
 - [User Experience](#user-experience-ux)
+  - [Strategy](#strategy)
+    - [Introduction](#introduction)
+    - [Project Goals](#project-goals)
 - [Design](#design-choices)
 - [Wireframes](#wireframes)
 - [Features](#features)
@@ -27,6 +26,14 @@
 ## User Experience UX
 
 ## Strategy
+
+### Introduction
+
+I created the restaurant site as I love to go to a restaurant and have their carvery meals, which made me think of all the favourite meals that family like to have when they go out. With this in mind I created the Family Favourites restaurant.
+
+### Project Goals
+
+The restaurant application shows what meals are the Family Favourites. The goal of the restaurant is to help users to contact the restaurant by any means to book a table. Users can contact the restaurant by email, phone or directly on the website, which will save time, costs, boost customer satisfaction and to further drive repeat business to the restaurant. To let the user needs to know what meals are available at the restaurant, they can view the menu on the site, which will also drive custom to the restaurant.
 
 ## Scope
 
@@ -101,8 +108,6 @@
 ### What a User may want
 
 ## Structure
-
-The restaurant application shows what meals are the Family Favourites. In the application you can either contact the restaurant by phone or email for further information in the preparation of reserving a table at the restaurant. To save time and costs a user can book a table directly on the website, which will boost customer satisfaction and further drive repeat business. When the table is booked then the user will need to wait for confirmation on the booking. If the user needs to know what meals are available at the restaurant then they can view the menu on the site.
 
 ### Database model
 
