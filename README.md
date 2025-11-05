@@ -111,7 +111,7 @@ This Entity Relationship Diagram (ERD) has been generated using [Lucid Charts](h
 <details>
 <summary>Entity Relationship Diagram</summary>
 
-![ERD](readme_documents/erd/erd-model.png)
+![ERD](readme_documents/erd/ERD%20for%20Family%20Favourites.jpeg)
 </details>
 
 ****
