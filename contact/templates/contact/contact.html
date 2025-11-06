@@ -23,7 +23,7 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <button type="submit" class="contact-btn btn btn-primary mx-4">Send</button>
-                    <a href="{% url 'contact' %}" class="btn btn-secondary mx-4">Cancel</a>
+                    <a href="{% url 'index' %}" class="btn btn-secondary mx-4">Cancel</a>
                 </form>
             </div>
         </div>
