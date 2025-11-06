@@ -131,7 +131,7 @@ The logo consists of the full name of the site and the favicon icon. When the us
 
 The navigation menu links to the home, menu and contact pages. When the user hover over the links there is an underline and when a user is on the page the line shows which page you are on.
 
-There are also two action buttons to __Register/Login__ or to __Book a Table__. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always there.
+There are also two call to action buttons to __Register/Login__ or to __Book a Table__. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always there.
 
 | Image | Description |
 | --- | --- |
@@ -145,7 +145,7 @@ There are also two action buttons to __Register/Login__ or to __Book a Table__. 
 
 The copyright has the icon with a date and site name, with rights reserved. There are also social media icons which link to the home pages of Facebook, Twitter and Instagram. It also includes a envelope icon with a link to the contact page, if a user wants to contact via email. When a user hovers over the links the curser changes to a hand.
 
-The contact us gives details of address and phone number. There is also two action buttons of __Contact Us__ and __Book Now__. When you hover over the buttons they pale in colour, an underline appears and the curser changes to a hand. When the contact us button is clicked then the user is taken to the __Contact Us page__. when the book now button is clicked then if the user is logged in the user will go to the book a table page and if the user is not logged in then the user will go to the register or login page.
+The contact us gives details of address and phone number. There is also two call to action buttons of __Contact Us__ and __Book Now__. When you hover over the buttons they pale in colour, an underline appears and the curser changes to a hand. When the contact us button is clicked then the user is taken to the __Contact Us page__. when the book now button is clicked then if the user is logged in the user will go to the book a table page and if the user is not logged in then the user will go to the register or login page.
 
 Also, in the footer there are the opening times of the restaurant and serving times of the meals at the restaurant, so that the user is well informed.
 
@@ -156,11 +156,33 @@ Also, in the footer there are the opening times of the restaurant and serving ti
 | ![Opening and Serving Times](readme_documents/features/opening-serving-times.png) | Opening times and Serving times of the restaurant. |
 | ![Social Media icons](readme_documents/features/social-media-icons.png) | Social media icons with links to home pages and the email links to the contact page. |
 
-### Home and About
+### Body
 
+- __F04 Home and About Us Page__
 
+The hero image shows the user the purpose of the site with the stunning roast meats and vegetables that are available at the restaurant. This is accompanied by the about section which gives a description of the restaurant to encourage users by how family friendly and delicious the meals are. In the __About Us__ section there is a call to action button to __Book a Table__. When the button is clicked the user will be taken to the sign in or register page if the user is not logged in, or to the book a table if the user is logged in.
 
-### Contact form (buttons)
+| Image | Description |
+| --- | --- |
+| ![Hero image](readme_documents/features/hero-image.png) | Hero image on the Home page. |
+| ![About Us](readme_documents/features/about-us-info.png) | About Us gives details of the restaurant. |
+
+- __F05 Menus Page__
+
+The menus are separated to help the user find what they are looking for and is split between main, kids and drinks menus. Each menu gives the title of the dish, a description and price, and with its clear and readable layout will attract the user to book a table at the restaurant. When you hover over the menu tab the curser changes to a hand, an underline appears and a line stays under the tab title to show which menu the user is on.
+
+| Image | Description |
+| --- | --- |
+| ![Menus tabs](readme_documents/features/menus-tabs.png) | Tabs to take you to each menu page. |
+| ![Menu page](readme_documents/features/menu-page.png) | Tab underlined and page details of the menu. |
+
+- __F06 Contact Us Page__
+
+The contact form allows the users to contact the restaurant without having to book a table or logging in. The form takes information that would be needed for the restaurant to contact the user. There are two call to action buttons of __Send__ and __Cancel__. When the user clicks on the send button the information within the form is sent to the restaurant and if the user decides to cancel filling in or sending the form, then when the cancel button is clicked the user is redirected back to the home page. When the user hovers over the send button the curser changes to a hand, the word is underlined and fades. When the user hovers over the cancel button the curser changes to a hand, the word is underlined and the background colour changes to baby bunting blue.
+
+| Image | Description |
+| --- | --- |
+| ![Contact form](readme_documents/features/contact-form.png) | Form on contact page. |
 
 ### Features to Implement in the Future
 
