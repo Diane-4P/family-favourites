@@ -16,14 +16,30 @@
     - [User Stories](#user-stories)
     - [Features](#features)
     - [Features to Implement in the Future](#features-to-implement-in-the-future)
-- [Design](#design-choices)
-- [Wireframes](#wireframes)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
+  -[Structure](#structure)
+    - [Database Model](#database-model)
+    - [Applications](#applications)
+  - [Surface](#surface)
+    - [Design](#design-choices)
+      - [Colour Scheme](#colour)
+      - [Typography](#typography)
+      - [Imagery](#imagery)
+  - [Skeleton](#skeleton)
+    - [Wireframes](#wireframes)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Credits](#credits-references)
-- [Acknowledgements](#acknowledgements)
+  - [GitHub Pages](#github-pages)
+  - [Cloning](#cloning)
+  - [Forking](#forking)
+- [Credits](#credits)  
+  - [Technologies Used](#technologies-used)
+    -[Languages](#languages)
+    -[Frameworks, Libraries and Programs used](#frameworks-libraries-and-programs-used)
+  - [Credit References](#credit-references)
+    - [Code](#code)
+    - [Content](#content)
+    - [Imagery](#imagery)
+  - [Acknowledgements](#acknowledgements)
 
 ****
 
@@ -37,7 +53,9 @@ I created the restaurant site as I love to go to a restaurant and have their car
 
 ### Project Goals
 
-The restaurant application shows what meals are the Family Favourites. The goal of the restaurant is to help users to contact the restaurant by any means to book a table. Users can contact the restaurant by email, phone or directly on the website, which will save time, costs, boost customer satisfaction and to further drive repeat business to the restaurant. To let the user needs to know what meals are available at the restaurant, they can view the menu on the site, which will also drive custom to the restaurant.
+The restaurant application shows what meals are the Family Favourites. The goal of the restaurant is to help users to contact the restaurant by any means to book a table. Users can contact the restaurant by email, phone or directly on the website, which will save time, costs, boost customer satisfaction and to further drive repeat business to the restaurant. To let the user know what meals are available at the restaurant, users can view the menu on the site, which will also drive custom to the restaurant.
+
+****
 
 ## Scope
 
@@ -186,6 +204,8 @@ The contact form allows the users to contact the restaurant without having to bo
 
 ### Features to Implement in the Future
 
+****
+
 ## Structure
 
 ### Database model
@@ -198,11 +218,20 @@ This Entity Relationship Diagram (ERD) has been generated using [Lucid Charts](h
 ![ERD](readme_documents/erd/ERD%20for%20Family%20Favourites.jpeg)
 </details>
 
+### Applications
+
+I created four application for my project of Family Favourites.
+
+- Home - contains the hero image and information about us as a restaurant.
+- Menu - contains the three menus for users information.
+- Contact - contains a form to get in contact with the restaurant.
+- Book a Table - contains a model for booking a table, with add, edit, delete a booking, and a booking home page.
+
 ****
 
-## Design choices
-
 ## Surface
+
+## Design choices
 
 ### Colour
 
@@ -226,6 +255,8 @@ I got my inspiration for the font from restaurants that I researched for this pr
 
 ### Imagery
 
+The hero image for the home page was sourced from the [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm). As my favourite dinner is a Sunday roast carvery lunch I used this image as it was striking with its carved meats and Yorkshire puddings. 
+
 ****
 
 ## Skeleton
@@ -242,64 +273,6 @@ Below are the initial wireframes for my project.
 - [Booking Contact Details page](readme_documents/wireframes/booking-contact-details-wireframe.png)
 
 ****
-
-## Technologies Used
-
-### Languages
-
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-- [Python](https://www.python.org/)
-
-### Frameworks, Libraries and Programs used
-
-- [Visual Studio](https://visualstudio.microsoft.com/)
-  - IDE and code editor used to build the game.
-- [Google fonts]( https://fonts.google.com/)
-  - To import font League Gothic and Roboto Slab onto the style.css file to be used on all pages. Also, Sans-serif and Serif were used as their fallbacks.
-- [Font Awesome](https://fontawesome.com/)
-  - To download the FF (Family Favourites) icon in svg format to create the favicon for the restaurant using the [favicon](https://favicon.io/) generator.
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
-  - Version Conrol System used to track changes in source code using the Gitpod terminal to commit messages and push to GitHub.
-- [GitHub](https://github.com/)
-  - GitHub was used to store the website after being pushed from Git.
-- [Balsamiq]( https://balsamiq.com/)
-  - Create wireframes for the layout of the site.
-- [Lucidchart](https://www.lucidchart.com/pages/landing)
-  - Used to create the Entity Relationship Diagram (ERD).
-- [Bootstrap v5.3.8 CDN via jsDelivr bundle with Popper]( https://getbootstrap.com/)
-  - Used for styling and make it more responsive.
-- [NCH Software(Pixillion)](https://www.nchsoftware.com/imageconverter/index.html)
-  - Used for reducing and converting the Family Favourites logo.
-- [Django v4.2.24]( https://www.djangoproject.com/)
-  - Used as a framework to create a rapid, clean and secure application development.
-- [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html)
-  - Used for account registration and authentication.
-- [Django Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-  - Used for simplifying form rendering.
-- [Phonenumbers](https://django-phonenumber-field.readthedocs.io/en/latest/index.html)
-  - Used to add phone number field to form.
-- [Heroku](https://www.heroku.com/)
-  - Used for a cloud based deployment platform.
-- [Heroku PostreSQL](https://www.heroku.com/postgres/)
-  - Used as the database after the project was deployed into production.
-- [SQLite](https://www.sqlite.org/index.html)
-  - Used as a database before production deployment to Heroku.
-- [Gunicorn](https://gunicorn.org/)
-  - Used as the web server to run Django on Heroku.
-- [Cloudinary](https://cloudinary.com/)
-  - Used to store the images used in the application.
-- [psycopg2](https://pypi.org/project/psycopg2/)
-  - A database adapter used to support the connection to the Postgres db.
-- [dj_database_url](https://pypi.org/project/dj-database-url/)
-  - A library used to allow database urls to connect to the Postgres db.
-- [Whitenoise](https://whitenoise.readthedocs.io/en/latest/)
-  - Used to allow Heroku to serve its own static files.
-
-- [Beautifier]( https://beautifier.io/)
-- To uniform the layout by formatting the code for CSS and HTML.
-- [Prettier]( https://prettier.io/)
-- To uniform the layout by formatting the code for JavaScript.
 
 ## Testing
 
@@ -364,20 +337,93 @@ When you fork a GitHub repository you will make a copy of it, which can be put i
 
 ****
 
-## Credits (references)
+## Credits
 
-- Code
-  - [Bootstrap v5.3.8 CDN via jsDelivr bundle with Popper]( https://getbootstrap.com/) was used to create the cards for the about and forms. To use the dropdown button I also needed to include Popper with Bootstrap.
-  - I also included the tabs from Bootstrap but it showed a lot of blank space which was removed by doing a Google search and copying the flexbox issue code provided by the AI overview to add to the CSS.
-- Content
-  - The about content was written by the developer. The menus were created from [Ye Olde Talbot](https://www.greenekinginns.co.uk/hotels/worcestershire/ye-olde-talbot) menus.
-- Images
-  - Favicon image used was created through the favicon generator from the initials of the applications created Family Favourites which gave us FF.
-  - The main hero image was obtained from the [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm) restaurants header image.
+### Technologies Used
 
-****
+#### Languages
 
-## Acknowledgements
+These languages were used for this project:
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [Python](https://www.python.org/)
+
+#### Frameworks, Libraries and Programs used
+
+These programs etc were used for this project:
+
+- [Visual Studio](https://visualstudio.microsoft.com/)
+  - IDE and code editor used to build the game.
+- [Google fonts]( https://fonts.google.com/)
+  - To import font League Gothic and Roboto Slab onto the style.css file to be used on all pages. Also, Sans-serif and Serif were used as their fallbacks.
+- [Font Awesome](https://fontawesome.com/)
+  - To download the FF (Family Favourites) icon in svg format to create the favicon for the restaurant using the [favicon](https://favicon.io/) generator.
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+  - Version Conrol System used to track changes in source code using the Gitpod terminal to commit messages and push to GitHub.
+- [GitHub](https://github.com/)
+  - GitHub was used to store the website after being pushed from Git.
+- [Balsamiq]( https://balsamiq.com/)
+  - Create wireframes for the layout of the site.
+- [Lucidchart](https://www.lucidchart.com/pages/landing)
+  - Used to create the Entity Relationship Diagram (ERD).
+- [Bootstrap v5.3.8 CDN via jsDelivr bundle with Popper]( https://getbootstrap.com/)
+  - Used for styling and make it more responsive.
+- [NCH Software(Pixillion)](https://www.nchsoftware.com/imageconverter/index.html)
+  - Used for reducing and converting the Family Favourites logo.
+- [Django v4.2.24]( https://www.djangoproject.com/)
+  - Used as a framework to create a rapid, clean and secure application development.
+- [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html)
+  - Used for account registration and authentication.
+- [Django Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+  - Used for simplifying form rendering.
+- [Phonenumbers](https://django-phonenumber-field.readthedocs.io/en/latest/index.html)
+  - Used to add phone number field to form.
+- [Heroku](https://www.heroku.com/)
+  - Used for a cloud based deployment platform.
+- [Heroku PostreSQL](https://www.heroku.com/postgres/)
+  - Used as the database after the project was deployed into production.
+- [SQLite](https://www.sqlite.org/index.html)
+  - Used as a database before production deployment to Heroku.
+- [Gunicorn](https://gunicorn.org/)
+  - Used as the web server to run Django on Heroku.
+- [Cloudinary](https://cloudinary.com/)
+  - Used to store the images used in the application.
+- [psycopg2](https://pypi.org/project/psycopg2/)
+  - A database adapter used to support the connection to the Postgres db.
+- [dj_database_url](https://pypi.org/project/dj-database-url/)
+  - A library used to allow database urls to connect to the Postgres db.
+- [Whitenoise](https://whitenoise.readthedocs.io/en/latest/)
+  - Used to allow Heroku to serve its own static files.
+
+- [Beautifier]( https://beautifier.io/)
+- To uniform the layout by formatting the code for CSS and HTML.
+- [Prettier]( https://prettier.io/)
+- To uniform the layout by formatting the code for JavaScript.
+
+### Credit References
+
+#### Code
+
+The following was used to assist in this project:
+
+- [Bootstrap v5.3.8 CDN via jsDelivr bundle with Popper]( https://getbootstrap.com/) was used to create the cards for the about and forms. To use the dropdown button I also needed to include Popper with Bootstrap.
+- I also included the tabs from Bootstrap but it showed a lot of blank space which was removed by doing a Google search and copying the flexbox issue code provided by the AI overview to add to the CSS.
+
+#### Content
+
+The following was used to assist in this project:
+
+- The about content was written by the developer. The menus were created from [Ye Olde Talbot](https://www.greenekinginns.co.uk/hotels/worcestershire/ye-olde-talbot) menus.
+
+#### Images
+
+The following was used to assist in this project:
+
+- Favicon image used was created through the favicon generator from the initials of the applications created Family Favourites which gave us FF.
+- The main hero image was obtained from the [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm) restaurants header image.
+
+### Acknowledgements
 
 - Mentor – Brian Macharia – for his helpful feedback
 - Inspiration for website came from the following restaurants in Worcester:
@@ -389,6 +435,6 @@ When you fork a GitHub repository you will make a copy of it, which can be put i
   - [The Toby Carvery](https://www.tobycarvery.co.uk/restaurants/midlands/worcesterworcestershire#/)
   - [Ounce](https://ouncebar.co.uk/)
 
-## Disclaimer
+### Disclaimer
 
 This site and content are for educational purposes only.
