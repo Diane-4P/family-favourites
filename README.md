@@ -1,6 +1,6 @@
 # Family Favourites
 
-[View (website name) deployed site here.](https://dashboard.heroku.com/apps/family-favourites).
+[View Family Favourites deployed site here.](https://dashboard.heroku.com/apps/family-favourites).
 
 ![Mochups of (website name)](image from Am I Responsive)
 
@@ -26,11 +26,8 @@
       - [Imagery](#imagery)
   - [Skeleton](#skeleton)
     - [Wireframes](#wireframes)
-- [Testing](#testing)
+- [Testing Performed](#testing-performed)
 - [Deployment](#deployment)
-  - [GitHub Pages](#github-pages)
-  - [Cloning](#cloning)
-  - [Forking](#forking)
 - [Credits](#credits)  
   - [Technologies Used](#technologies-used)
     -[Languages](#languages)
@@ -255,7 +252,7 @@ I got my inspiration for the font from restaurants that I researched for this pr
 
 ### Imagery
 
-The hero image for the home page was sourced from the [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm). As my favourite dinner is a Sunday roast carvery lunch I used this image as it was striking with its carved meats and Yorkshire puddings. 
+The hero image for the home page was sourced from the [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm). As my favourite dinner is a Sunday roast carvery lunch I used this image as it was striking with its carved meats and Yorkshire puddings.
 
 ****
 
@@ -271,21 +268,6 @@ Below are the initial wireframes for my project.
 - [Login page](readme_documents/wireframes/login-wireframe.png)
 - [Book a Table page](readme_documents/wireframes/book-a-table-wireframe.png)
 - [Booking Contact Details page](readme_documents/wireframes/booking-contact-details-wireframe.png)
-
-****
-
-## Testing
-
-- [W3C Markup validator](https://validator.w3.org/)
-- Testing the validity of html files.
-- [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
-- Testing the validity of css files.
-- [Am I Responsive]( https://ui.dev/amiresponsive)
-- Checking the responsiveness of the website.
-- Lighthouse tab within Chrome Developer Tools
-- Testing the Performance, Accessibility, Best Practices and SEO of the site.
-- [Page Speed](https://pagespeed.web.dev/)
-- Used when Lighthouse didn’t work.
 
 ****
 
