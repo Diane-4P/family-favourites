@@ -134,7 +134,7 @@ The header and footer of the site are purposefully the same on each page of the 
 
 - __F01 Favicon__
 
-The favicon was designed using the first letters of the restaurants name and given a background colour from the colour theme of the site. If the user has several tabs open in their browser then they can identifly the site from the favicon.about-section
+The favicon was designed using the first letters of the restaurants name of Family Favourites, in Emilys Candy font of regular 400 of black font and given a background colour of Salome (#BED, rgb(187, 238, 221)) from the colour theme of the site. If the user has several tabs open in their browser then they can easily identifly the site from the favicon.
 
 | Image | Description |
 | --- | --- |
