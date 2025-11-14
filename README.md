@@ -32,6 +32,7 @@
   - [Technologies Used](#technologies-used)
     -[Languages](#languages)
     -[Frameworks, Libraries and Programs used](#frameworks-libraries-and-programs-used)
+    -[Testing Validation and Performance](#testing-validation-and-performance)
   - [Credit References](#credit-references)
     - [Code](#code)
     - [Content](#content)
@@ -130,7 +131,7 @@ The restaurant application shows what meals are the Family Favourites. The goal 
 
 ### Universal across the site
 
-The header and footer of the site are purposefully the same on each page of the website to give the user the feel of consistency and to be able to navigate without any problems.
+The header and footer of the site are purposefully the same on each page of the website to give the user the feel of consistency and to be able to navigate without any problems. The background colour for the header and footer is Ocean Ridge (#7694b4, rgb(118, 148, 180)), for the body of the site Salome (#BED, rgb(187, 238, 221)) was used and for the card background Lovage Green (#98B0A8, rgb(152, 176,168)) was used. The layout of the navigation bar was inspired by [colorlib](https://colorlib.com/wp/template/website-menu-10/).
 
 - __F01 Favicon__
 
@@ -142,11 +143,11 @@ The favicon was designed using the first letters of the restaurants name of Fami
 
 - __F02 Navigation__
 
-The logo consists of the full name of the site and the favicon icon. When the user hover over the logo the curser changes to a hand and when its clicked the user will be taken back to the home page.
+The logo consists of the full name of the site and the favicon icon. When the user hovers over the logo the curser changes to a hand and when its clicked the user will be taken back to the home page.
 
-The navigation menu links to the home, menu and contact pages. When the user hover over the links there is an underline and when a user is on the page the line shows which page you are on.
+The navigation menu links to the home, menu and contact pages. When the user hovers over the links there is an underline and when a user is on the page the line shows which page you are on.
 
-There are also two call to action buttons to __Register/Login__ or to __Book a Table__. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always there.
+There are also two call to action buttons to __Register/Login__ or to __Book a Table__. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always on show.
 
 | Image | Description |
 | --- | --- |
@@ -252,7 +253,7 @@ I got my inspiration for the font from restaurants that I researched for this pr
 
 ### Imagery
 
-The hero image for the home page was sourced from the [Bluebell Farm](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm). As my favourite dinner is a Sunday roast carvery lunch I used this image as it was striking with its carved meats and Yorkshire puddings.
+The hero image for the home page was sourced from the [Bluebell Farm's](https://www.farmhouseinns.co.uk/pubs/worcestershire/bluebell-farm) header image. As my favourite dinner is a Sunday roast carvery lunch I used this image as it was striking with its carved meats and Yorkshire puddings.
 
 ****
 
@@ -345,6 +346,20 @@ These programs etc were used for this project:
 - [Prettier]( https://prettier.io/)
 - To uniform the layout by formatting the code for JavaScript.
 
+#### Testing Validation and Performance
+
+- [W3C Markup validator](https://validator.w3.org/)
+  - Testing the validity of html files.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
+  - Testing the validity of css files.
+- [Am I Responsive]( https://ui.dev/amiresponsive)
+  - Checking the responsiveness of the website.
+
+- Lighthouse tab within Chrome Developer Tools
+  - Testing the Performance, Accessibility, Best Practices and SEO of the site.
+- [Page Speed](https://pagespeed.web.dev/)
+  - Used when Lighthouse didn’t work.
+
 ### Credit References
 
 #### Code
@@ -378,6 +393,7 @@ The following was used to assist in this project:
   - [Harvester Timberdine](https://www.harvester.co.uk/restaurants/eastandwestmidlands/thetimberdineworcester#/)
   - [The Toby Carvery](https://www.tobycarvery.co.uk/restaurants/midlands/worcesterworcestershire#/)
   - [Ounce](https://ouncebar.co.uk/)
+  - [colorlib](https://colorlib.com/wp/template/website-menu-10/)
 
 ### Disclaimer
 

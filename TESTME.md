@@ -8,7 +8,6 @@
 
 ## Table of Contents
 
-- [Testing](#testing)
 - [Browser Compatibility](#browser-compatibility)
 - [Responsiveness](#responsiveness)
 - [Validators](#validators)
@@ -16,21 +15,6 @@
 - [Testing User Stories](#testing-user-defined-stories-from-the-ux-section-of-readmemd)
 - [Manual Testing and Functionality](#manual-testing-and-functionality-on-each-page)
 - [Known Bugs](#known-bugs-discovered)
-
-****
-
-## Testing
-
-- [W3C Markup validator](https://validator.w3.org/)
-- Testing the validity of html files.
-- [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
-- Testing the validity of css files.
-- [Am I Responsive]( https://ui.dev/amiresponsive)
-- Checking the responsiveness of the website.
-- Lighthouse tab within Chrome Developer Tools
-- Testing the Performance, Accessibility, Best Practices and SEO of the site.
-- [Page Speed](https://pagespeed.web.dev/)
-- Used when Lighthouse didn’t work.
 
 ****
 
@@ -58,6 +42,11 @@ o Description of errors and warnings
 ****
 
 ## Lighthouse Performance / Page Speed
+
+- Lighthouse tab within Chrome Developer Tools
+  - Testing the Performance, Accessibility, Best Practices and SEO of the site.
+- [Page Speed](https://pagespeed.web.dev/)
+  - Used when Lighthouse didn’t work.
 
 ****
 
