@@ -94,7 +94,7 @@ class BookATable(models.Model):
     
     def clean(self):
         # Ensure booking date is not in the past
-        if self.booking_date < date.today():
+        if self.date < date.today():
             raise ValidationError('Booking date cannot be in the past.')
 
         # Ensure number of guests is at least 1
