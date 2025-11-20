@@ -7,7 +7,6 @@ from .models import BookATable
 from .forms import BookATableForm, BookATableFormAdmin
 
 
-
 # Create your views here.
 @login_required
 def bookings(request):
@@ -43,7 +42,11 @@ def book_a_table(request):
                     booking.save()
                     messages.success(request, 'Table booked successfully!')
                 except ValidationError as e:
-                    form.add_error('booking_date', e.message)
+                    form.add_error('date', e.message)
+                    return redirect('bookings')
+            else:
+                messages.error(request, 'Request unsuccessful!')
+                return render(request, 'book_a_table/book_a_table.html')
         else:        
             form = BookATableForm(request.POST)
             if form.is_valid():
@@ -55,6 +58,10 @@ def book_a_table(request):
                     messages.success(request, 'Table booked successfully! Pending confirmation from Family Favourites.')
                 except ValidationError as e:
                     form.add_error('date', e.message)
+                    return redirect('bookings')
+            else:
+                messages.error(request, 'Request unsuccessful!')
+                return render(request, 'book_a_table/book_a_table.html')
     else:
         if request.user.is_superuser:
             form = BookATableFormAdmin()
@@ -110,7 +117,6 @@ def delete_booking(request, booking_id):
         booking.delete()
         messages.success(request, 'Booking deleted successfully!')
         return redirect('bookings')
-             
+            
     return render(request, 'book_a_table/bookings.html', {})
 
-    

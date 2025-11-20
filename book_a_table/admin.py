@@ -12,4 +12,8 @@ class BookATableAdmin(ModelAdmin):
     list_display = ('book_table_id', 'user', 'first_name', 'last_name', 'email', 'phonenumber', 'date', 'time', 'number_of_guests', 'special_requests', 'occasion', 'created_on', 'approved')
     ordering = ('-date', '-time')
     search_fields = ('user__username', 'date')
-    list_filter = ('date', 'time')
+    list_filter = ('date', 'time', 'approved')
+    actions = ['booking_confirmed']
+    
+    def booking_confirmed(self, request, queryset):
+        queryset.update(approved=1)
