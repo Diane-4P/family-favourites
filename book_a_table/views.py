@@ -96,7 +96,7 @@ def edit_booking(request, booking_id):
         request.user.is_authenticated
         form = BookATableForm(request.POST, instance=booking)
     
-    return render(request, 'book_a_table/edit_booking.html', {'form': form, 'booking': booking})
+    return render(request, 'book_a_table/edit_bookings.html', {'form': form, 'booking': booking})
 
 
 @login_required
@@ -118,5 +118,5 @@ def delete_booking(request, booking_id):
         messages.success(request, 'Booking deleted successfully!')
         return redirect('bookings')
             
-    return render(request, 'book_a_table/bookings.html', {})
+    return render(request, 'book_a_table/delete_bookings.html', {})
 

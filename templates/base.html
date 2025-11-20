@@ -100,10 +100,16 @@
                                         {% endif %}
                                     </ul>
                                 </div>
-                                <div class="book-a-table">
-                                    <button class="book-table-btn btn btn-primary m-2 p-2">
+                                <div class="bookings">
+                                    {% if user.is_authenticated %}
+                                    <button class="bookings-btn btn btn-primary m-2 p-2">
+                                        <a class="nav-link {% if request.path == bookings_url %}active" aria-current="page{% endif %}" href="{% url 'bookings' %}">Bookings</a>
+                                    </button>
+                                    {% else %}
+                                    <button class="book-a-table-btn btn btn-primary m-2 p-2">
                                         <a class="nav-link {% if request.path == book_a_table_url %}active" aria-current="page{% endif %}" href="{% url 'book_a_table' %}">Book a Table</a>
                                     </button>
+                                    {% endif %}
                                 </div>
                             
                             
