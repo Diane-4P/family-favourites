@@ -72,7 +72,7 @@ def book_a_table(request):
 
 
 @login_required
-def edit_booking(request, booking_id):
+def edit_bookings(request, booking_id):
     """ 
     View to handle editing a booking - admin only 
     Other users can edit their own bookings via a different view
@@ -80,9 +80,13 @@ def edit_booking(request, booking_id):
     
     booking = get_object_or_404(BookATable, pk=booking_id)
         
+    if request.user.is_superuser:
+        formClass = BookATableFormAdmin
+    else:
+        formClass = BookATableForm
+        
     if request.method == 'POST':
-        if request.user.is_superuser:
-            form = BookATableFormAdmin(request.POST, instance=booking)
+        form = formClass(request.POST, instance=booking)
         if form.is_valid():
             edited_booking = form.save(commit=False)
             try:
@@ -93,14 +97,13 @@ def edit_booking(request, booking_id):
             except ValidationError as e:
                 form.add_error('date', e.message)
     else:
-        request.user.is_authenticated
-        form = BookATableForm(request.POST, instance=booking)
+        form = formClass(instance=booking)
     
     return render(request, 'book_a_table/edit_bookings.html', {'form': form, 'booking': booking})
 
 
 @login_required
-def delete_booking(request, booking_id):
+def delete_bookings(request, booking_id):
     """ 
     View to handle deleting a booking - admin only 
     Other users can delete their own bookings via a different view
@@ -118,5 +121,4 @@ def delete_booking(request, booking_id):
         messages.success(request, 'Booking deleted successfully!')
         return redirect('bookings')
             
-    return render(request, 'book_a_table/delete_bookings.html', {})
-
+    return render(request, 'book_a_table/delete_bookings.html', {'booking': booking})
