@@ -81,38 +81,36 @@
                     <div class="col-md-6 col-lg-4 register-book-container justify-content-end">    
                             <!-- User Authentication Links for dropdown menu -->
                         <div class="navbar-expand-lg register-book-btns">
-                                <div class="register-dropdown dropdown">
-                                    <a class="dropdown-toggle m-2 p-2 btn btn-primary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Register/Login
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        {% if user.is_authenticated %}
-                                        <li>
-                                            <a class="dropdown-item {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="{{ logout_url }}">Logout</a>
-                                        </li>
-                                        {% else %}
-                                        <li>
-                                        <a class="dropdown-item {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{{ signup_url }}">Register</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item {% if request.path == login_url %}active" aria-current="page{% endif %}" href="{{ login_url }}">Login</a>
-                                        </li>
-                                        {% endif %}
-                                    </ul>
-                                </div>
-                                <div class="bookings">
+                            <div class="register-dropdown dropdown">
+                                <a class="dropdown-toggle m-2 p-2 btn btn-primary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Register/Login
+                                </a>
+                                <ul class="dropdown-menu">
                                     {% if user.is_authenticated %}
-                                    <button class="bookings-btn btn btn-primary m-2 p-2">
-                                        <a class="nav-link {% if request.path == bookings_url %}active" aria-current="page{% endif %}" href="{% url 'bookings' %}">Bookings</a>
-                                    </button>
+                                    <li>
+                                        <a class="dropdown-item {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="{{ logout_url }}">Logout</a>
+                                    </li>
                                     {% else %}
-                                    <button class="book-a-table-btn btn btn-primary m-2 p-2">
-                                        <a class="nav-link {% if request.path == book_a_table_url %}active" aria-current="page{% endif %}" href="{% url 'book_a_table' %}">Book a Table</a>
-                                    </button>
+                                    <li>
+                                    <a class="dropdown-item {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{{ signup_url }}">Register</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item {% if request.path == login_url %}active" aria-current="page{% endif %}" href="{{ login_url }}">Login</a>
+                                    </li>
                                     {% endif %}
-                                </div>
-                            
-                            
+                                </ul>
+                            </div>
+                            <div class="bookings">
+                                {% if user.is_authenticated %}
+                                <button class="bookings-btn btn btn-primary m-2 p-2">
+                                    <a class="nav-link {% if request.path == bookings_url %}active" aria-current="page{% endif %}" href="{% url 'bookings' %}">Bookings</a>
+                                </button>
+                                {% else %}
+                                <button class="book-a-table-btn btn btn-primary m-2 p-2">
+                                    <a class="nav-link {% if request.path == book_a_table_url %}active" aria-current="page{% endif %}" href="{% url 'book_a_table' %}">Book a Table</a>
+                                </button>
+                                {% endif %}
+                            </div>                            
                         </div>
                     </div>
                     

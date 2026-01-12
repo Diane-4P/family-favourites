@@ -22,12 +22,12 @@
                 
                 <div class="booking-summary">
                     <!-- Welcome user and display upcoming bookings -->
-                     <p>Welcome {{ user.ursername }}. These are your bookings. Where you can view your existing booking, make changes or cancel upcoming bookings.</p>
-                     <a href=" url 'book_a_table'" class="btn action-btn mb-3 px-2 py-2">Make a Booking</a>
+                     <p>Welcome {{ user.username }}. These are your bookings. Where you can view your existing booking, make changes or cancel upcoming bookings.</p>
+                     <a href="{% url 'book_a_table' %}" class="btn action-btn mb-3 px-2 py-2">Make a Booking</a>
                      <a href="#collapse-bookings" class="btn action-btn mb-3 px-2 py-2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-bookings">View Bookings</a>
                 </div>
 
-                <div class="container-fluid my-2">
+                <div id="collapse-bookings" class="collapse container-fluid my-2">
                     <!-- Table of bookings  -->
                     <table class="table page-card-body">
                         <thead>
@@ -36,7 +36,6 @@
                                 {% if user.is_superuser %}
                                 <th scope="col">User</th>
                                 {% endif %}
-                                <th scope="col">Name</th>
                                 <th scope="col">Date</th>
                                 <th scope="col">Time</th>
                                 <th scope="col">Number of Guests</th>
@@ -53,7 +52,6 @@
                                 {% if user.is_superuser %}
                                 <td class="table-text">{{ booking.user }}</td>
                                 {% endif %}
-                                <td class="table-text">{{ booking.first_name }} {{ booking.last_name}}</td>
                                 <td class="table-text">{{ booking.date }}</td>
                                 <td class="table-text">{{ booking.get_time_display }}</td>
                                 <td class="table-text">{{ booking.number_of_guests }}</td>
@@ -73,9 +71,9 @@
                                         <!--  
                                             If booking is not in the past then show the Change/Cancel buttons, else show comment saying booking cannot be amended
                                         -->
-                                        {% if booking.past_date != True %}
-                                        <a href="edit/{{ booking.id }}" class="btn action-btn">Change</a>
-                                        <a href="delete/{{ booking.id }}" class="btn action-btn">Cancel</a>
+                                        {% if not booking.past_date %}
+                                        <a href="{% url 'edit_bookings' booking.pk %}" class="btn action-btn">Change</a>
+                                        <a href="{% url 'delete_bookings' booking.pk %}" class="btn action-btn">Cancel</a>
                                         {% else %}
                                         <p>Booking cannot be amended.</p>
                                         {% endif %}

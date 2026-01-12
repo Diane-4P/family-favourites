@@ -1,4 +1,4 @@
-{% {% extends "base.html" %} %}
+{% extends "base.html" %}
 {% load static %}
 {% load crispy_forms_tags %}
 
@@ -16,7 +16,7 @@
 <!-- Delete bookings form using Bootstrap 5.3.0 -->
  <div class="container-fluid my-2">
     <div class="card">
-        <h2 class="card-header text-center mb-4">Canel Booking</h2>
+        <h2 class="card-header text-center mb-4">Cancel Booking</h2>
         <div class="card-body">
             <div class="sign-up-container">
                 <div class="row g-3 justify-content-center text-center">
@@ -24,10 +24,10 @@
                         {% csrf_token %}
                         <p>Are you sure you want to cancel the booking?</p>
                         <p>
-                            Booking on {{ bookings.date }} at {{ bookings.time }} for {{ bookings.number_of_guests }}.
+                            Booking on {{ booking.date }} at {{ booking.time }} for {{ booking.number_of_guests }}.
                         </p>
-                        <button type="submit" class="action-btn mx-4">Yes</button>
-                        <a href="{{ bookings_url }}" class="btn action-btn mx-4">No</a>
+                        <button type="submit" class="action-btn mx-4">Yes, cancel</button>
+                        <a href="{% url 'bookings' %}" class="btn action-btn mx-4">No, go back</a>
                     </form>
                 </div>
             </div>
