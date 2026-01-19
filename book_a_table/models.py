@@ -84,7 +84,7 @@ class BookATable(models.Model):
     first_name = models.CharField(max_length=50, blank=True, null=True)
     last_name = models.CharField(max_length=50, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
-    phonenumber = PhoneNumberField(unique=True, null=False, blank=False, max_length=13, default='+441234567890')
+    phonenumber = PhoneNumberField(unique=True, null=True, blank=True, max_length=13, default='+441234567890')
     approved = models.IntegerField(choices=APPROVED, default=0)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)

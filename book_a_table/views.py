@@ -43,7 +43,7 @@ def book_a_table(request):
                     messages.success(request, 'Table booked successfully!')
                 except ValidationError as e:
                     form.add_error('date', e.message)
-                    return redirect('bookings')
+                return redirect('bookings')
             else:
                 messages.error(request, 'Request unsuccessful!')
                 return render(request, 'book_a_table/book_a_table.html')
@@ -58,7 +58,7 @@ def book_a_table(request):
                     messages.success(request, 'Table booked successfully! Pending confirmation from Family Favourites.')
                 except ValidationError as e:
                     form.add_error('date', e.message)
-                    return redirect('bookings')
+                return redirect('bookings')
             else:
                 messages.error(request, 'Request unsuccessful!')
                 return render(request, 'book_a_table/book_a_table.html')
