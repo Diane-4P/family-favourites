@@ -55,7 +55,15 @@
                                 <td class="table-text">{{ booking.date }}</td>
                                 <td class="table-text">{{ booking.get_time_display }}</td>
                                 <td class="table-text">{{ booking.number_of_guests }}</td>
-                                <td class="table-text">{{ booking.occasion }}, {{ booking.special_requests }}</td>
+                                <td>
+                                    <!-- If occasion or special requests details show details, else show hyphen -->
+                                    <div class="table-text">
+                                    {% if booking.occasion or booking.special_requests %}
+                                    {{ booking.get_occasion_display }}, {{ booking.special_requests }}</td>
+                                    {% else %} 
+                                    -
+                                    {% endif %}
+                                    </div>
                                 <td>
                                     <!-- If booking approval has been confirmed, else awaiting confirmation -->
                                     <div class="table-text">
