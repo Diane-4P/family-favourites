@@ -80,8 +80,8 @@
                                             If booking is not in the past then show the Change/Cancel buttons, else show comment saying booking cannot be amended
                                         -->
                                         {% if not booking.past_date %}
-                                        <a href="{% url 'edit_bookings' booking.pk %}" class="btn action-btn">Change</a>
-                                        <a href="{% url 'delete_bookings' booking.pk %}" class="btn action-btn">Cancel</a>
+                                        <a href="{% url 'edit_bookings' booking.pk %}" class="btn action-btn btn-secondary">Change</a>
+                                        <a href="{% url 'delete_bookings' booking.pk %}" class="btn action-btn btn-secondary">Cancel</a>
                                         {% else %}
                                         <p>Booking cannot be amended.</p>
                                         {% endif %}
