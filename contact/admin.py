@@ -9,6 +9,6 @@ from .models import Contact
 class ContactAdmin(ModelAdmin):
     """ Admin view for Contact model """
     
-    list_display = ('contact_id', 'user', 'first_name', 'last_name', 'email', 'phonenumber', 'message')
+    list_display = ('contact_id', 'first_name', 'last_name', 'email', 'phonenumber', 'message')
     search_fields = ('user__last_name', 'first_name')
     
