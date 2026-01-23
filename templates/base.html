@@ -110,7 +110,14 @@
                                     <a class="nav-link {% if request.path == book_a_table_url %}active" aria-current="page{% endif %}" href="{% url 'book_a_table' %}">Book a Table</a>
                                 </button>
                                 {% endif %}
-                            </div>                            
+                            </div>      
+                            <div class="contacts">
+                                {% if user.is_authenticated %}
+                                <button class="contacts-btn btn btn-primary m-2 p-2">
+                                    <a class="nav-link {% if request.path == contacts_url %}active" aria-current="page{% endif %}" href="{% url 'contacts' %}">Contacts</a>
+                                </button>                                
+                                {% endif %}
+                            </div>                      
                         </div>
                     </div>
                     
