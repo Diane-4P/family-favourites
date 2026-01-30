@@ -46,7 +46,7 @@ def book_a_table(request):
                 return redirect('bookings')
             else:
                 messages.error(request, 'Request unsuccessful!')
-                return render(request, 'book_a_table/book_a_table.html')
+                return render(request, 'book_a_table/book_a_table.html', {'form': form})
         else:        
             form = BookATableForm(request.POST)
             if form.is_valid():
@@ -61,7 +61,7 @@ def book_a_table(request):
                 return redirect('bookings')
             else:
                 messages.error(request, 'Request unsuccessful!')
-                return render(request, 'book_a_table/book_a_table.html')
+                return render(request, 'book_a_table/book_a_table.html', {'form': form})
     else:
         if request.user.is_superuser:
             form = BookATableFormAdmin()
