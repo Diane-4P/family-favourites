@@ -247,10 +247,6 @@ footer {
         margin-bottom: 1.5rem;
     }
     
-    .book-a-table {
-        visibility: hidden;
-    }
-
     .signup-container,
     .signup-text {
         font-size: .85rem;
@@ -313,11 +309,7 @@ footer {
         width: 85vw;
         margin: auto;
     }
-    
-    .book-a-table {
-        visibility: visible;
-    }
-
+ 
     .register-book-btns {
         display: flex;
         justify-content: space-evenly;
