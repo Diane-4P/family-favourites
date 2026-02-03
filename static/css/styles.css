@@ -27,6 +27,30 @@ header {
     text-align: center;
 }
 
+.btn-primary {    
+    /* Salome */
+    background-color: #bed !important;
+    color: black;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    /* Baby Bunting */
+    background-color: #ACCAEB;
+    /* Garnet Black Green */
+    color: #364B44;
+    text-decoration: underline;
+}
+
+.btn-secondary {
+    border: none;
+}
+
+a {
+    color: black;
+}
+
 /* Navigation section */
 nav {
     justify-content: space-between;
@@ -60,29 +84,6 @@ nav .nav-item {
     margin-bottom: 10px;
 }
 
-.btn-primary {    
-    /* Salome */
-    background-color: #bed !important;
-    color: black;
-    border: none;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-    /* Baby Bunting */
-    background-color: #ACCAEB;
-    /* Garnet Black Green */
-    color: #364B44;
-    text-decoration: underline;
-}
-
-.btn-secondary {
-    border: none;
-}
-
-a {
-    color: black;
-}
 
 .dropdown-menu li .active {
     /* Ocean Ridge */
@@ -101,6 +102,7 @@ a {
     cursor: pointer;
 }
 
+/* Main section */
 .card {
     width: 80vw;
     /* Lovage Green */
@@ -211,6 +213,7 @@ footer {
         height: 50px;
         margin-bottom: 5px;
         order: 2;
+        z-index: 1;
     }
 
     .navbar-toggler {
@@ -228,6 +231,7 @@ footer {
         background-color: #bed;
     }
  
+    /* Main section */
     .card-body {
         margin: 10px;
         padding: 10px;
@@ -290,16 +294,16 @@ footer {
         justify-content: flex-end;
     }
 
-    .card {        
-        width: 70vw;
-        margin: 25px auto;
-        padding: 20px;
-    }
-
     /* Menu section */
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr;
         margin: 0 1rem;
+    }
+    
+    .card {        
+        width: 70vw;
+        margin: 25px auto;
+        padding: 20px;
     }
 }
 
@@ -334,6 +338,7 @@ footer {
 }
 
 @media screen and (min-width: 1800px) {
+    /* Main section */
     .card {
         width: 50vw;
         margin: 5px auto;
