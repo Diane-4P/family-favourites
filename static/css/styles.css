@@ -7,13 +7,17 @@
 }
 
 /* Generic styles */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: 'League Gothic', sans-serif;
     margin-bottom: 10px;
 }
 
 h2 {
     font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
 }
 
 body {
@@ -345,6 +349,11 @@ footer {
     /* Menu section */
     .grid-template-kids-menu {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* Footer section */
+    h3 {
+        font-size: 1.5rem;
     }
 }
 
