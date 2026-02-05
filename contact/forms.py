@@ -15,7 +15,6 @@ class ContactForm(forms.ModelForm):
             'last_name': 'Last Name',
             'phonenumber': 'Telephone Number',           
         }
-        widgets = {
-            'phonenumber': forms.NumberInput(attrs={'max': 11}),
+        widgets = {            
             'message': forms.Textarea(attrs={'rows': 4}),                 
         }
