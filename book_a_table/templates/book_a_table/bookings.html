@@ -59,11 +59,12 @@
                                     <!-- If occasion or special requests details show details, else show hyphen -->
                                     <div class="table-text">
                                     {% if booking.occasion or booking.special_requests %}
-                                    {{ booking.get_occasion_display }}, {{ booking.special_requests }}</td>
+                                    {{ booking.get_occasion_display }}, {{ booking.special_requests }}
                                     {% else %} 
                                     -
                                     {% endif %}
                                     </div>
+                                </td>
                                 <td>
                                     <!-- If booking approval has been confirmed, else awaiting confirmation -->
                                     <div class="table-text">
