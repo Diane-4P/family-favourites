@@ -62,7 +62,7 @@ a {
 /* Navigation section */
 nav {
     justify-content: space-between;
-    align-items: left;
+    align-items: baseline;
     padding: 0 20px;
     height: 60px;
 }
@@ -140,6 +140,12 @@ nav .nav-item {
 .beers-drinks-menu p,
 .ciders-drinks-menu p {
     margin-bottom: 0.125rem;
+}
+
+.nav-tabs .nav-link:not(.active),
+.nav-tabs .nav-link.active {
+    /* Salome */
+    border-bottom-color: #bed;
 }
 
 /* Footer section */
