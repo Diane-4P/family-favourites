@@ -133,6 +133,11 @@ nav .nav-item {
     display: none !important;
 }
 
+.beers-drinks-menu p,
+.ciders-drinks-menu p {
+    margin-bottom: 0.125rem;
+}
+
 /* Footer section */
 footer {
     /* Ocean Ridge */
@@ -299,7 +304,9 @@ footer {
     }
 
     /* Menu section */
-    .grid-template-kids-menu {
+    .grid-template-main-menu,
+    .grid-template-kids-menu,
+    .grid-template-drinks-menu {
         grid-template-columns: 1fr 1fr;
         margin: 0 1rem;
     }

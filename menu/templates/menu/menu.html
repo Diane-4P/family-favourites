@@ -5,6 +5,7 @@
 
 {% block content %}
 
+<!-- Menus section - tab between each menu -->
 <div class="container-fluid my-2 py-2">
     <h1 class="card-header text-center mb-4">Menus</h1>
     <div class="card h-auto col">
@@ -19,151 +20,137 @@
                 <button class="nav-link btn-primary" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks-tab-pane" type="button" role="tab" aria-controls="drinks-tab-pane" aria-selected="false">Drinks</button>
             </li>
         </ul>
+        <!-- Main menu section -->
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="main-tab-pane" role="tabpanel" aria-labelledby="main-tab" tabindex="0">
                 <div class="my-2 p-2">
                     <div class="d-block mx-1">
                         <div class="grid-template-main-menu d-grid g-3">
-                            <div class="row p-4">
+                            <div class="p-4">
                                 <h2 class="text-uppercase">Starters</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Halloumi Fries</h3>
-                                            <p><strong>Halloumi Fries - <span>6.75</span></strong>
-                                            <p class="card-text">Served with chilli jam and rocket.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Soup of the day</h3>
-                                            <p><strong>Soup of the day - <span>5.25</span></strong>
-                                            <p class="card-text">Served with toasted ciabatta.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Halloumi Fries</h3>
+                                        <p><strong>Halloumi Fries - <span>6.75</span></strong>
+                                        <p class="card-text">Served with chilli jam and rocket.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Soup of the day</h3>
+                                        <p><strong>Soup of the day - <span>5.25</span></strong>
+                                        <p class="card-text">Served with toasted ciabatta.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Brushetta</h3>
-                                            <p><strong>Brushetta - <span>7.70</span></strong>
-                                            <p class="card-text">Toasted ciabatta bread with marinated Roma tomatoes, garlic, olive oil, basil and balsamic glaze.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Houmous, Pesto and Bread</h3>
-                                            <p><strong>Houmous, Pesto & Bread - <span>7.25</span></strong>
-                                            <p class="card-text">Red pepper houmous and basil pesto served with toasted ciabatta.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Brushetta</h3>
+                                        <p><strong>Brushetta - <span>7.70</span></strong>
+                                        <p class="card-text">Toasted ciabatta bread with marinated Roma tomatoes, garlic, olive oil, basil and balsamic glaze.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Houmous, Pesto and Bread</h3>
+                                        <p><strong>Houmous, Pesto & Bread - <span>7.25</span></strong>
+                                        <p class="card-text">Red pepper houmous and basil pesto served with toasted ciabatta.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <h2 class="text-uppercase">Mains</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Hunter's Chicken</h3>
-                                            <p><strong>Hunter's Chicken - <span>14.95</span></strong>
-                                            <p class="card-text">Chicken breast topped with smoked streaky bacon melted cheddar & mozzarella and Texan BBQ sauce. Served with chips, a dressed salad garnish and onion rings.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Grilled Gammon</h3>
-                                            <p><strong>Grilled Gammon - <span>13.95</span></strong>
-                                            <p class="card-text">8oz grilled gammon steak with chips and garden peas, topped with fried free-range egg and grilled pineapple.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Hunter's Chicken</h3>
+                                        <p><strong>Hunter's Chicken - <span>14.95</span></strong>
+                                        <p class="card-text">Chicken breast topped with smoked streaky bacon melted cheddar & mozzarella and Texan BBQ sauce. Served with chips, a dressed salad garnish and onion rings.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Grilled Gammon</h3>
+                                        <p><strong>Grilled Gammon - <span>13.95</span></strong>
+                                        <p class="card-text">8oz grilled gammon steak with chips and garden peas, topped with fried free-range egg and grilled pineapple.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Fish and Chips</h3>
-                                            <p><strong>Fish and Chips - <span>15.95</span></strong>
-                                            <p class="card-text">Freshly hand-battered fish with chips and tartare sauce. Served with mushy peas or garden peas.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Battered Halloumi and Chips</h3>
-                                            <p><strong>Battered Halloumi and Chips - <span>13.95</span></strong>
-                                            <p class="card-text">Freshly hand-battered halloumi with chips and tartare sauce. Served with mushy peas or garden peas.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Fish and Chips</h3>
+                                        <p><strong>Fish and Chips - <span>15.95</span></strong>
+                                        <p class="card-text">Freshly hand-battered fish with chips and tartare sauce. Served with mushy peas or garden peas.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Battered Halloumi and Chips</h3>
+                                        <p><strong>Battered Halloumi and Chips - <span>13.95</span></strong>
+                                        <p class="card-text">Freshly hand-battered halloumi with chips and tartare sauce. Served with mushy peas or garden peas.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <h2 class="text-uppercase">Sunday Roasts</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Roast Turkey Breast</h3>
-                                            <p><strong>Roast Turkey Breast - <span>16.45</span></strong>
-                                            <p class="card-text">Served with roast potatoes, vegetables, cauliflower cheese, sage & onion stuffing, Yorkshire pudding, pigs in blankets and gravy.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Lamb Shank</h3>
-                                            <p><strong>Lamb Shank - <span>19.95</span></strong>
-                                            <p class="card-text">Served with roast potatoes, vegetables, cauliflower cheese, sage & onion stuffing, Yorkshire pudding, pigs in blankets and mint gravy.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Roast Turkey Breast</h3>
+                                        <p><strong>Roast Turkey Breast - <span>16.45</span></strong>
+                                        <p class="card-text">Served with roast potatoes, vegetables, cauliflower cheese, sage & onion stuffing, Yorkshire pudding, pigs in blankets and gravy.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Lamb Shank</h3>
+                                        <p><strong>Lamb Shank - <span>19.95</span></strong>
+                                        <p class="card-text">Served with roast potatoes, vegetables, cauliflower cheese, sage & onion stuffing, Yorkshire pudding, pigs in blankets and mint gravy.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Roast Turkey Breast</h3>
-                                            <p><strong>Roast Turkey Breast - <span>6.25</span></strong>
-                                            <p class="card-text">Served with roast potatoes, vegetables, cauliflower cheese, sage & onion stuffing, Yorkshire pudding, pigs in blankets and gravy.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Mac and Cheese</h3>
-                                            <p><strong>Mac & Cheese - <span>6.25</span></strong>
-                                            <p class="card-text">Macaroni in a rich Cheddar cheese sauce with a grilled cheese topping. Served with toasted garlic ciabatta and dressed rocket.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Roast Turkey Breast</h3>
+                                        <p><strong>Roast Turkey Breast - <span>6.25</span></strong>
+                                        <p class="card-text">Served with roast potatoes, vegetables, cauliflower cheese, sage & onion stuffing, Yorkshire pudding, pigs in blankets and gravy.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Mac and Cheese</h3>
+                                        <p><strong>Mac & Cheese - <span>6.25</span></strong>
+                                        <p class="card-text">Macaroni in a rich Cheddar cheese sauce with a grilled cheese topping. Served with toasted garlic ciabatta and dressed rocket.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <h2 class="text-uppercase">Desserts</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Sticky Toffee Pudding</h3>
-                                            <p><strong>Sticky Toffee Pudding - <span>7.25</span></strong>
-                                            <p class="card-text">Served with your choice of custard or Jersey clotted cream ice cream.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Bramley Apple and Blackberry Crumble Pie</h3>
-                                            <p><strong>Bramley Apple & Blackberry Crumble Pie - <span>6.45</span></strong>
-                                            <p class="card-text">Served with raspberries and your choice of custard or Jersey clotted cream ice cream.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Sticky Toffee Pudding</h3>
+                                        <p><strong>Sticky Toffee Pudding - <span>7.25</span></strong>
+                                        <p class="card-text">Served with your choice of custard or Jersey clotted cream ice cream.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Bramley Apple and Blackberry Crumble Pie</h3>
+                                        <p><strong>Bramley Apple & Blackberry Crumble Pie - <span>6.45</span></strong>
+                                        <p class="card-text">Served with raspberries and your choice of custard or Jersey clotted cream ice cream.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Chocolate Fudge Cake</h3>
-                                            <p><strong>Chocolate Fudge Cake - <span>5.75</span></strong>
-                                            <p class="card-text">Served with your choice of Jersey clotted ice cream or custard.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Ice Cream</h3>
-                                            <p><strong>Ice Cream - <span>6.75</span></strong>
-                                            <p class="card-text">Your choice of three scoops of ice cream and sauce. Flavours: Chocolate, Lemon Sorbet, Vanilla & Coconut, Frozen Strawberry Yoghurt. Sauce: Chocolate, Strawberry, Raspberry, Salted Caramel.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Chocolate Fudge Cake</h3>
+                                        <p><strong>Chocolate Fudge Cake - <span>5.75</span></strong>
+                                        <p class="card-text">Served with your choice of Jersey clotted ice cream or custard.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Ice Cream</h3>
+                                        <p><strong>Ice Cream - <span>6.75</span></strong>
+                                        <p class="card-text">Your choice of three scoops of ice cream and sauce. Flavours: Chocolate, Lemon Sorbet, Vanilla & Coconut, Frozen Strawberry Yoghurt. Sauce: Chocolate, Strawberry, Raspberry, Salted Caramel.</p>
+                                    </article>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Kids menu section -->
             <div class="tab-pane fade d-flex justify-content-evenly" id="kids-tab-pane" role="tabpanel" aria-labelledby="kids-tab" tabindex="0">
                 <div class="my-2 p-2">
                     <div>
@@ -174,7 +161,7 @@
                         <div class="grid-template-kids-menu d-grid g-3">
                             <div class="p-4">
                                 <h2 class="text-uppercase">Mains</h2>
-                                <div class="col">
+                                <div class="col p-4">
                                     <article class="col p-1">
                                         <h3 class="visually-hidden">Two Pork Sausages</h3>
                                         <p><strong>Two Pork Sausages</strong>
@@ -198,18 +185,18 @@
                                 </div>
                             </div>
                             <div class="p-4">
-                                <section class="p-4">
+                                <section>
                                     <h2 class="text-uppercase">Veggies</h2>
-                                    <div class="veggies-kids-menu col">
+                                    <div class="veggies-kids-menu col p-4">
                                         <p class="col"><strong>Corn on the Cob</strong>
                                         <p><strong>Baked Beans</strong>
                                         <p><strong>Carrot & Cucumber Sticks</strong>
                                         <p><strong>Garden Peas</strong>
                                     </div>
                                 </section>
-                                <section class="p-4">
+                                <section>
                                     <h2 class="text-uppercase">Sides</h2>
-                                    <div class="sides-kids-menu col">
+                                    <div class="sides-kids-menu col p-4">
                                         <p class="col"><strong>Jacket Potato</strong>
                                         <p><strong>Mashed Potato</strong>
                                         <p><strong>Chips</strong>
@@ -219,137 +206,123 @@
                             </div>                    
                             <div class="p-4">
                                 <h2 class="text-uppercase">Desserts</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Chocolate Brownie</h3>
-                                            <p><strong>Chocolate Brownie - <span>2.00</span></strong>
-                                            <p class="card-text">With chocolate sauce and vanilla flavour ice cream.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Brownie and Rainbow Chocolate Sundae</h3>
-                                            <p><strong>Brownie & Rainbow Chocolate Sundae - <span>2.00</span></strong>
-                                            <p class="card-text">One scoop of vanilla and one scoop of chocolate flavoured ice cream, topped with chocolate brownie pieces, rainbow shelled chocolate drops and cream.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Chocolate Brownie</h3>
+                                        <p><strong>Chocolate Brownie - <span>2.00</span></strong>
+                                        <p class="card-text">With chocolate sauce and vanilla flavour ice cream.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Brownie and Rainbow Chocolate Sundae</h3>
+                                        <p><strong>Brownie & Rainbow Chocolate Sundae - <span>2.00</span></strong>
+                                        <p class="card-text">One scoop of vanilla and one scoop of chocolate flavoured ice cream, topped with chocolate brownie pieces, rainbow shelled chocolate drops and cream.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Strawberry Sundae</h3>
-                                            <p><strong>Strawberry Sundae - <span>2.00</span></strong>
-                                            <p class="card-text">Two scoops of vanilla flavour ice cream topped with strawberry pieces, strawberry flavour sauce and cream.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Ice Cream</h3>
-                                            <p><strong>Ice Cream - <span>2.00</span></strong>
-                                            <p class="card-text">Two scoops. (one scoop 1.00) Flavours: Vanilla, Chocolate, Lemon Sorbet, Vegan Vanilla. Sauce: Chocolate, Strawberry.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Strawberry Sundae</h3>
+                                        <p><strong>Strawberry Sundae - <span>2.00</span></strong>
+                                        <p class="card-text">Two scoops of vanilla flavour ice cream topped with strawberry pieces, strawberry flavour sauce and cream.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Ice Cream</h3>
+                                        <p><strong>Ice Cream - <span>2.00</span></strong>
+                                        <p class="card-text">Two scoops. (one scoop 1.00) Flavours: Vanilla, Chocolate, Lemon Sorbet, Vegan Vanilla. Sauce: Chocolate, Strawberry.</p>
+                                    </article>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Drinks menu section -->
             <div class="tab-pane fade" id="drinks-tab-pane" role="tabpanel" aria-labelledby="drinks-tab" tabindex="0">
                 <div class="my-2 p-2">
                     <div class="d-block mx-1">
                         <div class="grid-template-drinks-menu d-grid g-3">
-
                             <div class="p-4">
                                 <h2 class="text-uppercase">White Wines</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Marlborough Sauvignon Blanc</h3>
-                                            <p><strong>Marlborough Sauvignon Blanc - <span>7.49</span></strong>
-                                            <p class="card-text">Spy Valley, New Zealand 175ml.<br> Refined and elegant, with mouth-watering juicy citrus fruits. <br>250ml 10.39 and bottle 27.49.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Pinot Grigio, Counterpoint</h3>
-                                            <p><strong>Pinot Grigio, Counterpoint - <span>7.19</span></strong>
-                                            <p class="card-text">Australia 175ml. <br>Medium-bodied and soft, with pear flavours and a little hint of spice. <br>250ml 9.39 and bottle 25.99.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Marlborough Sauvignon Blanc</h3>
+                                        <p><strong>Marlborough Sauvignon Blanc - <span>7.49</span></strong>
+                                        <p class="card-text">Spy Valley, New Zealand 175ml.<br> Refined and elegant, with mouth-watering juicy citrus fruits. <br>250ml 10.39 and bottle 27.49.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Pinot Grigio, Counterpoint</h3>
+                                        <p><strong>Pinot Grigio, Counterpoint - <span>7.19</span></strong>
+                                        <p class="card-text">Australia 175ml. <br>Medium-bodied and soft, with pear flavours and a little hint of spice. <br>250ml 9.39 and bottle 25.99.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Chablis</h3>
-                                            <p><strong>Chablis - <span>7.69</span></strong>
-                                            <p class="card-text">Burgundy, France 175ml. <br>Elegant and complex, dry and lively, wonderfully creamy with white fruits and a long aftertaste. <br>250ml 10.59 and bottle 27.99.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Chardonnay, Journey's End</h3>
-                                            <p><strong>Chardonnay, Journey's End - <span>6.29</span></strong>
-                                            <p class="card-text">South Africa 175ml. <br>Smooth, creamy and aromatic with tropical flavours and a crisp finish. <br>250ml 7.99 and bottle 21.99.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Chablis</h3>
+                                        <p><strong>Chablis - <span>7.69</span></strong>
+                                        <p class="card-text">Burgundy, France 175ml. <br>Elegant and complex, dry and lively, wonderfully creamy with white fruits and a long aftertaste. <br>250ml 10.59 and bottle 27.99.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Chardonnay, Journey's End</h3>
+                                        <p><strong>Chardonnay, Journey's End - <span>6.29</span></strong>
+                                        <p class="card-text">South Africa 175ml. <br>Smooth, creamy and aromatic with tropical flavours and a crisp finish. <br>250ml 7.99 and bottle 21.99.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <h2 class="text-uppercase">Red Wines</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Pinot Noir</h3>
-                                            <p><strong>Pinot Noir - <span>7.39</span></strong>
-                                            <p class="card-text">Burgundy, France 175ml. <br>Rich and smooth with flavours of blackberry and cherry. <br>250ml 9.59 and bottle 26.49.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Malbec</h3>
-                                            <p><strong>Malbec - <span>6.59</span></strong>
-                                            <p class="card-text">Argentina 175ml. <br>Intense, big and smooth, with dark fruit and spice. <br>250ml 8.79 and bottle 23.99.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Pinot Noir</h3>
+                                        <p><strong>Pinot Noir - <span>7.39</span></strong>
+                                        <p class="card-text">Burgundy, France 175ml. <br>Rich and smooth with flavours of blackberry and cherry. <br>250ml 9.59 and bottle 26.49.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Malbec</h3>
+                                        <p><strong>Malbec - <span>6.59</span></strong>
+                                        <p class="card-text">Argentina 175ml. <br>Intense, big and smooth, with dark fruit and spice. <br>250ml 8.79 and bottle 23.99.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Merlot, Journey's End</h3>
-                                            <p><strong>Merlot, Journey's End - <span>6.49</span></strong>
-                                            <p class="card-text">South Africa 175ml. <br>Rich and juicy, full of ripe red berry flavours. <br>250ml 8.59 and bottle 22.99.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Rioja</h3>
-                                            <p><strong>Rioja - <span>6.39</span></strong>
-                                            <p class="card-text">Spain 175ml. <br>Elegant with intense red fruit notes combined with a touch of vanilla and a velvety texture. <br>250ml 8.19 and bottle 22.49.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Merlot, Journey's End</h3>
+                                        <p><strong>Merlot, Journey's End - <span>6.49</span></strong>
+                                        <p class="card-text">South Africa 175ml. <br>Rich and juicy, full of ripe red berry flavours. <br>250ml 8.59 and bottle 22.99.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Rioja</h3>
+                                        <p><strong>Rioja - <span>6.39</span></strong>
+                                        <p class="card-text">Spain 175ml. <br>Elegant with intense red fruit notes combined with a touch of vanilla and a velvety texture. <br>250ml 8.19 and bottle 22.49.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <h2 class="text-uppercase">Sparkling Wines</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Pink Prosecco, Doc</h3>
-                                            <p><strong>Pink Prosecco, Doc - <span>7.19</span></strong>
-                                            <p class="card-text">Italy 20cl. <br>An attractive soft pink colour, light and refreshing with a summer fruits finish. <br>Bottle 24.49.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Prosecco Doc</h3>
-                                            <p><strong>Prosecco Doc - <span>6.39</span></strong>
-                                            <p class="card-text">Italy 20cl. <br>Classy and aromatic, with elegant bubbles and hints of citrus and ripe fruits. <br>Bottle 23.99.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Pink Prosecco, Doc</h3>
+                                        <p><strong>Pink Prosecco, Doc - <span>7.19</span></strong>
+                                        <p class="card-text">Italy 20cl. <br>An attractive soft pink colour, light and refreshing with a summer fruits finish. <br>Bottle 24.49.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Prosecco Doc</h3>
+                                        <p><strong>Prosecco Doc - <span>6.39</span></strong>
+                                        <p class="card-text">Italy 20cl. <br>Classy and aromatic, with elegant bubbles and hints of citrus and ripe fruits. <br>Bottle 23.99.</p>
+                                    </article>
                                 </div>
                             </div>
-                            <div class="p-4">
+                            <div>
                                 <section class="p-4">
                                     <h2 class="text-uppercase">Beers</h2>
-                                    <div class="beers-kids-menu col">
-                                        <p class="col"><strong>Heineken - <span>3.75</span></strong>
+                                    <div class="beers-drinks-menu col p-4">
+                                        <p><strong>Heineken - <span>3.75</span></strong>
                                         <p><strong>Peroni Nastro Azzurro 0.00 - <span>3.25</span></strong>
                                         <p><strong>Old Speckled Hen - <span>4.75</span></strong>
                                         <p><strong>Guinness 0.0 - <span>3.50</span></strong>
@@ -357,8 +330,8 @@
                                 </section>
                                 <section class="p-4">
                                     <h2 class="text-uppercase">Ciders</h2>
-                                    <div class="ciders-kids-menu col">
-                                        <p class="col"><strong>Bulmers Original - <span>3.85</span></strong>
+                                    <div class="ciders-drinks-menu col p-4">
+                                        <p><strong>Bulmers Original - <span>3.85</span></strong>
                                         <p><strong>Thatchers Haze - <span>2.60</span></strong>
                                         <p><strong>Old Mount Kiwi & Lime- <span>3.75</span></strong>
                                         <p><strong>Old Mount Berries & Cherries - <span>3.75</span></strong>
@@ -367,36 +340,32 @@
                             </div>          
                             <div class="p-4">
                                 <h2 class="text-uppercase">Soft Drinks</h2>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Tango</h3>
-                                            <p><strong>Tango - <span>1.75</span></strong>
-                                            <p class="card-text">330ml Orange, Apple, Cherry and Mango.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Fruit Shoot</h3>
-                                            <p><strong>Fruit Shoot - <span>1.50</span></strong>
-                                            <p class="card-text">275ml Apple & Blackcurrant and Orange.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Tango</h3>
+                                        <p><strong>Tango - <span>1.75</span></strong>
+                                        <p class="card-text">330ml Orange, Apple, Cherry and Mango.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Fruit Shoot</h3>
+                                        <p><strong>Fruit Shoot - <span>1.50</span></strong>
+                                        <p class="card-text">275ml Apple & Blackcurrant and Orange.</p>
+                                    </article>
                                 </div>
                             </div>
                             <div class="p-4">
                                 <br>
-                                <div>
-                                    <div class="col p-4">
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">J20</h3>
-                                            <p><strong>J20 - <span>1.95</span></strong>
-                                            <p class="card-text">275ml Apple & Mango, Orange & Passion Fruit and Apple & Raspberry.</p>
-                                        </article>
-                                        <article class="col p-1">
-                                            <h3 class="visually-hidden">Coca-cola</h3>
-                                            <p><strong>Coca-Cola - <span>1.80</span></strong>
-                                            <p class="card-text">Zero sugar, original and diet.</p>
-                                        </article>
-                                    </div>
+                                <div class="col p-4">
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">J20</h3>
+                                        <p><strong>J20 - <span>1.95</span></strong>
+                                        <p class="card-text">275ml Apple & Mango, Orange & Passion Fruit and Apple & Raspberry.</p>
+                                    </article>
+                                    <article class="col p-1">
+                                        <h3 class="visually-hidden">Coca-cola</h3>
+                                        <p><strong>Coca-Cola - <span>1.80</span></strong>
+                                        <p class="card-text">Zero sugar, original and diet.</p>
+                                    </article>
                                 </div>
                             </div>
                         </div>
