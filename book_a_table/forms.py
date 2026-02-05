@@ -21,7 +21,6 @@ class BookATableForm(forms.ModelForm):
             'date': forms.DateInput(attrs={'type': 'date'}),
             'time': forms.Select(),
             'number_of_guests': forms.NumberInput(attrs={'min': 1, 'max': 10}),
-            'phonenumber': forms.NumberInput(attrs={'max': 11}),
             'occasion': forms.Select(),
             'special_requests': forms.Textarea(attrs={'rows': 4}),            
         }
@@ -43,7 +42,6 @@ class BookATableFormAdmin(forms.ModelForm):
             'date': forms.DateInput(attrs={'type': 'date'}),
             'time': forms.Select(),
             'number_of_guests': forms.NumberInput(attrs={'min': 1}),
-            'phonenumber': forms.NumberInput(attrs={'max': 11}),
             'occasion': forms.Select(),
             'special_requests': forms.Textarea(attrs={'rows': 4}),            
         }
