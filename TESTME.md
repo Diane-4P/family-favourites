@@ -41,12 +41,10 @@ o Description of errors and warnings
 
 ****
 
-## Lighthouse Performance / Page Speed
+## Lighthouse Performance
 
 - Lighthouse tab within Chrome Developer Tools
   - Testing the Performance, Accessibility, Best Practices and SEO of the site.
-- [Page Speed](https://pagespeed.web.dev/)
-  - Used when Lighthouse didn’t work.
 
 ****
 
