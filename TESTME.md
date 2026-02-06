@@ -354,6 +354,18 @@ There was an issue that popped up saying that Chrome extensions were affecting t
 
 ## Manual Testing and Functionality on each page
 
+Manual testing of the features was carried out with the tests and results below:
+
+- [Navbar Links, Dropdown Menu and Buttons](readme_documents/testing/manual_testing/navbar-dropdown-buttons-manual-testing.pdf)
+
+- [Contact Us Form](readme_documents/testing/manual_testing/contact-us-form-manual-testing.pdf)
+
+- [Register Form](readme_documents/testing/manual_testing/register-signup-form-manual-testing.pdf)
+
+- [Login Form](readme_documents/testing/manual_testing/login-signin-form-manual-testing.pdf)
+
+- [Book A Table Form](readme_documents/testing/manual_testing/book-a-table-form-manual-testing.pdf)
+
 ## Further Testing
 
 ****
