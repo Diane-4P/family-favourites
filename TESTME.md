@@ -30,7 +30,7 @@
 
 - [W3C Markup validator](https://validator.w3.org/)
 
-As the project uses Django templates the html has been validated by manually clicking through the restaurants pages, copying the source code and validating this rendered version of the html page using [W3C Markup validator](https://validator.w3.org/). There were some errors when first put through the validator but once the errors were corrected the following results of no errors or warnings of the checker are as follows.
+As the project uses Django templates the html has been validated by manually clicking through the restaurants pages, copying the source code and validating this rendered version of the html page using [W3C Markup validator](https://validator.w3.org/). There were some errors when first put through the validator but once the errors were corrected the following results of no errors or warnings of the checker are as follows:
 
 - Results of index.html
   - <details>
@@ -127,17 +127,158 @@ There was an error in the stylesheet that was corrected, but nothing was done ab
     ![Results style.css](readme_documents/testing/css_validation/stylesheet-css-validation-pass-results.png)
   </details>
 
-- [JS Hint](https://jshint.com/)
-o ### style.css
-o Results after adjustments were made (png)
-o Description of errors and warnings
+- [Code Institute's Python Linter](https://pep8ci.herokuapp.com/)
 
 ****
 
 ## Lighthouse Performance
 
-- Lighthouse tab within Chrome Developer Tools
-  - Testing the Performance, Accessibility, Best Practices and SEO of the site.
+When looking at the performance, accessibility, best practices and the SEO of the website, I used Lighthouse in Chrome's development tools. The only one performing below the green was the home page in mobile format, which got a result of 89.
+
+There was an issue that popped up saying that Chrome extensions were affecting the page's performance but apart from the one mentioned above the other pages were all in the green as you can see in the following results:
+
+- Home
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Home Desktop Results](readme_documents/testing/lighthouse_reports/home-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Home Mobile Results](readme_documents/testing/lighthouse_reports/home-mobile.png)
+  </details>
+
+- Menu
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Menu Desktop Results](readme_documents/testing/lighthouse_reports/menu-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Menu Mobile Results](readme_documents/testing/lighthouse_reports/menu-mobile.png)
+  </details>
+
+- Contact
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Contact Desktop Results](readme_documents/testing/lighthouse_reports/contact-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Contact Mobile Results](readme_documents/testing/lighthouse_reports/contact-mobile.png)
+  </details>
+
+- Register/Signup
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Register Desktop Results](readme_documents/testing/lighthouse_reports/register-signup-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Register Mobile Results](readme_documents/testing/lighthouse_reports/register-signup-mobile.png)
+  </details>
+
+- Login/Signin
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Login Desktop Results](readme_documents/testing/lighthouse_reports/login-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Login Mobile Results](readme_documents/testing/lighthouse_reports/login-mobile.png)
+  </details>
+
+- Logout/Signout
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Logout Desktop Results](readme_documents/testing/lighthouse_reports/logout-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Logout Mobile Results](readme_documents/testing/lighthouse_reports/logout-mobile.png)
+  </details>
+
+- Book a Table
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Book a Table Desktop Results](readme_documents/testing/lighthouse_reports/book-a-table-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Book a Table Mobile Results](readme_documents/testing/lighthouse_reports/book-a-table-mobile.png)
+  </details>
+
+- Bookings
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Bookings Desktop Results](readme_documents/testing/lighthouse_reports/bookings-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Bookings Mobile Results](readme_documents/testing/lighthouse_reports/bookings-mobile.png)
+  </details>
+
+- Change/Edit Bookings
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Change Bookings Desktop Results](readme_documents/testing/lighthouse_reports/change-booking-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Change Bookings Mobile Results](readme_documents/testing/lighthouse_reports/change-booking-mobile.png)
+  </details>
+
+- Cancel/Delete Bookings
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Canel Bookings Desktop Results](readme_documents/testing/lighthouse_reports/cancel-booking-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Cancel Bookings Mobile Results](readme_documents/testing/lighthouse_reports/cancel-booking-mobile.png)
+  </details>
+
+- Contacts
+  - <details>
+    <summary>Desktop Results</summary>
+
+    ![Contacts Desktop Results](readme_documents/testing/lighthouse_reports/contacts-desktop.png)
+  </details>
+
+  - <details>
+    <summary>Mobile Results</summary>
+
+    ![Contacts Mobile Results](readme_documents/testing/lighthouse_reports/contacts-mobile.png)
+  </details>
 
 ****
 
