@@ -11,7 +11,7 @@
 - [Browser Compatibility](#browser-compatibility)
 - [Responsiveness](#responsiveness)
 - [Validators](#validators)
-- [Lighthouse Performance](#lighthouse-performance--page-speed)
+- [Lighthouse Performance](#lighthouse-performance)
 - [Testing User Stories](#testing-user-defined-stories-from-the-ux-section-of-readmemd)
 - [Manual Testing and Functionality](#manual-testing-and-functionality-on-each-page)
 - [Known Bugs](#known-bugs-discovered)
@@ -29,7 +29,86 @@
 ## Validators
 
 - [W3C Markup validator](https://validator.w3.org/)
-o ## index.html
+
+As the project uses Django templates the html has been validated by manually clicking through the restaurants pages, copying the source code and validating this rendered version of the html page using [W3C Markup validator](https://validator.w3.org/). There were some errors when first put through the validator but once the errors were corrected the following results of no errors or warnings of the checker are as follows.
+
+- Results of index.html
+  - <details>
+    <summary>Index Page</summary>
+
+    ![Index Page](readme_documents/testing/html_validation/home-source-rendered-html-validation.png)
+  </details>
+
+- Results of menu.html
+  - <details>
+    <summary>Menu Page</summary>
+
+    ![Menu Page](readme_documents/testing/html_validation/menus-source-rendered-html-validation.png)
+  </details>
+
+- Results of contact.html
+  - <details>
+    <summary>Contact Page</summary>
+
+    ![Contact Page](readme_documents/testing/html_validation/contact-source-rendered-html-validation.png)
+  </details>
+
+- Results of Regiser signup.html
+  - <details>
+    <summary>Sign Up Page</summary>
+
+    ![Sign Up Page](readme_documents/testing/html_validation/register-signup-source-rendered-html-validation.png)
+  </details>
+
+- Results of Sign In login.html
+  - <details>
+    <summary>Login Page</summary>
+
+    ![Login Page](readme_documents/testing/html_validation/login-signin-source-rendered-html-validation.png)
+  </details>
+
+- Results of Sign Out logout.html
+  - <details>
+    <summary>Log Out Page</summary>
+
+    ![Log Out Page](readme_documents/testing/html_validation/logout-source-rendered-html-validation.png)
+  </details>
+
+- Results of book_a_table.html
+  - <details>
+    <summary>Book a Table Page</summary>
+
+    ![Book a Table Page](readme_documents/testing/html_validation/book-a-table-source-rendered-html-validation.png)
+  </details>
+
+- Results of bookings.html
+  - <details>
+    <summary>Bookings Page</summary>
+
+    ![Bookings Page](readme_documents/testing/html_validation/bookings-source-rendered-html-validation.png)
+  </details>
+
+- Results of Change edit_bookings.html
+  - <details>
+    <summary>Edit Bookings Page</summary>
+
+    ![Edit Bookings Page](readme_documents/testing/html_validation/change-booking-source-rendered-html-validation.png)
+  </details>
+
+- Results of Cancel delete_bookings.html
+  - <details>
+    <summary>Delete Bookings Page</summary>
+
+    ![Delete Bookings Page](readme_documents/testing/html_validation/cancel-booking-source-rendered-html-validation.png)
+  </details>
+
+- Results of contacts.html
+  - <details>
+    <summary>Contacts Page</summary>
+
+    ![Contacts Page](readme_documents/testing/html_validation/contacts-source-rendered-html-validation.png)
+  </details>
+
 o Results of html checker showing no errors or warnings (png)
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
 o ### style.css
