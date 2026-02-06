@@ -109,10 +109,24 @@ As the project uses Django templates the html has been validated by manually cli
     ![Contacts Page](readme_documents/testing/html_validation/contacts-source-rendered-html-validation.png)
   </details>
 
-o Results of html checker showing no errors or warnings (png)
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
-o ### style.css
-o Results of html checker showing no errors or warnings (png)
+
+There was an error in the stylesheet that was corrected, but nothing was done about the warning as it was an imported stylesheet that couldn't be confirmed by this checker. Results are as follows using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
+
+- Error results of style.css
+  - <details>
+    <summary>Errors of style.css</summary>
+
+    ![Error results](readme_documents/testing/css_validation/stylesheet-css-validation-error-results.png)
+  </details>
+
+- Results of style.css
+  - <details>
+    <summary>Results of style.css</summary>
+
+    ![Results style.css](readme_documents/testing/css_validation/stylesheet-css-validation-pass-results.png)
+  </details>
+
 - [JS Hint](https://jshint.com/)
 o ### style.css
 o Results after adjustments were made (png)
