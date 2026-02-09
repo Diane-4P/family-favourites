@@ -4,17 +4,18 @@ Imports from django and Contact models and forms
 from django import forms
 from .models import Contact
 
+
 class ContactForm(forms.ModelForm):
     """ Form for contacting Family Favourites """
-    
+
     class Meta:
         model = Contact
         fields = ['first_name', 'last_name', 'email', 'phonenumber', 'message']
         labels = {
             'first_name': 'First Name',
             'last_name': 'Last Name',
-            'phonenumber': 'Telephone Number',           
+            'phonenumber': 'Telephone Number',
         }
-        widgets = {            
-            'message': forms.Textarea(attrs={'rows': 4}),                 
+        widgets = {
+            'message': forms.Textarea(attrs={'rows': 4}),
         }
