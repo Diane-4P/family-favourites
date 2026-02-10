@@ -61,10 +61,10 @@ INSTALLED_APPS = [
     'book_a_table',
 ]
 
-SITE_ID =1
+SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL =  '/'
+LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
@@ -118,7 +118,7 @@ DATABASES = {
 
 if 'test' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
-    
+
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.herokuapp.com'
@@ -162,7 +162,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
