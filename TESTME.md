@@ -129,6 +129,145 @@ There was an error in the stylesheet that was corrected, but nothing was done ab
 
 - [Code Institute's Python Linter](https://pep8ci.herokuapp.com/)
 
+While using [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) I changed the erros which had white space on blank lines, needing white space, or needing extra blank lines, and some of the ones that stated that the lines were too long. Other lines that were too long that couldn't be changed due to causing other errors were left as they were.
+
+- Family Favourites Project
+  - <details>
+    <summary>project settings.py validation</summary>
+
+    ![Family Favourites settings](readme_documents/testing/python_linter_validation/family_favourites/family-favourites-settings-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>project urls.py validation</summary>
+
+    ![Family Favourites urls](readme_documents/testing/python_linter_validation/family_favourites/family-favourites-urls-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>project asgi.py validation</summary>
+
+    ![Family Favourites asgi](readme_documents/testing/python_linter_validation/family_favourites/family-favourites-asgi-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>project wsgi.py validation</summary>
+
+    ![Family Favourites wsgi](readme_documents/testing/python_linter_validation/family_favourites/family-favourites-wsgi-python-linter.png)
+  </details>
+
+- Home App
+  - <details>
+    <summary>home apps.py validation</summary>
+
+    ![Home apps](readme_documents/testing/python_linter_validation/home/home-apps-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>home urls.py validation</summary>
+
+    ![Home urls](readme_documents/testing/python_linter_validation/home/home-urls-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>home views.py validation</summary>
+
+    ![Home views](readme_documents/testing/python_linter_validation/home/home-views-python-linter.png)
+  </details>
+
+- Menu App
+  - <details>
+    <summary>menu apps.py validation</summary>
+
+    ![Menu apps](readme_documents/testing/python_linter_validation/menu/menu-apps-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>menu urls.py validation</summary>
+
+    ![Menu urls](readme_documents/testing/python_linter_validation/menu/menu-urls-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>menu views.py validation</summary>
+
+    ![Menu views](readme_documents/testing/python_linter_validation/menu/menu-views-python-linter.png)
+  </details>
+
+- Contact App
+  - <details>
+    <summary>contact admin.py validation</summary>
+
+    ![Contact admin](readme_documents/testing/python_linter_validation/contact/contact-admin-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>contact apps.py validation</summary>
+
+    ![Contact apps](readme_documents/testing/python_linter_validation/contact/contact-apps-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>contact forms.py validation</summary>
+
+    ![Contact forms](readme_documents/testing/python_linter_validation/contact/contact-forms-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>contact models.py validation</summary>
+
+    ![Contact models](readme_documents/testing/python_linter_validation/contact/contact-models-python-linter.png)
+  </details>
+  
+  - <details>
+    <summary>contact urls.py validation</summary>
+
+    ![Contact urls](readme_documents/testing/python_linter_validation/contact/contact-urls-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>contact views.py validation</summary>
+
+    ![Contact views](readme_documents/testing/python_linter_validation/contact/contact-views-python-linter.png)
+  </details>
+
+- Book a Table App
+  - <details>
+    <summary>book a table admin.py validation</summary>
+
+    ![Book a Table admin](readme_documents/testing/python_linter_validation/book_a_table/book-a-table-admin-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>book a table apps.py validation</summary>
+
+    ![Book a Table apps](readme_documents/testing/python_linter_validation/book_a_table/book-a-table-apps-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>book a table forms.py validation</summary>
+
+    ![Book a Table forms](readme_documents/testing/python_linter_validation/book_a_table/book-a-table-forms-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>book a table models.py validation</summary>
+
+    ![Book a Table models](readme_documents/testing/python_linter_validation/book_a_table/book-a-table-models-python-linter.png)
+  </details>
+  
+  - <details>
+    <summary>book a table urls.py validation</summary>
+
+    ![Book a Table urls](readme_documents/testing/python_linter_validation/book_a_table/book-a-table-urls-python-linter.png)
+  </details>
+
+  - <details>
+    <summary>book a table views.py validation</summary>
+
+    ![Book a Table views](readme_documents/testing/python_linter_validation/book_a_table/book-a-table-views-python-linter.png)
+  </details>
+
 ****
 
 ## Lighthouse Performance
