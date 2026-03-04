@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Asterisk wildcard selector to override some default styles added by the browser */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Generic styles */
+h1, h2, h3 {
+    font-family: 'League Gothic', sans-serif;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    /* Salome */
+    background-color: #bed;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    /* Ocean Ridge */
+    background-color: #7694b4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.btn-primary {    
+    /* Salome */
+    background-color: #bed !important;
+    color: black;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    /* Baby Bunting */
+    background-color: #ACCAEB;
+    /* Garnet Black Green */
+    color: #364B44;
+    text-decoration: underline;
+}
+
+.btn-secondary {
+    border: none;
+}
+
+a {
+    color: black;
+}
+
+/* Navigation section */
+nav {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 20px;
+    height: 60px;
+}
+
+nav .logo-link img{
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+nav .nav-item { 
+    text-decoration: none;
+}
+
+.nav-links-container {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-book-container {    
+    margin-bottom: 10px;
+}
+
+
+.dropdown-menu li .active {
+    /* Ocean Ridge */
+    background-color: #7694b4;
+}
+
+.dropdown-menu,
+.dropdown-item:hover {
+    /* Salome */
+    background-color: #bed;
+}
+
+.dropdown a {
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* Main section */
+.card {
+    width: 80vw;
+    /* Lovage Green */
+    background-color: #98B0A8;
+    margin: 10px auto;
+}
+
+.card-title {
+    font-size: 3.5rem;
+}
+
+/* About section */
+.about-section {
+    /* Lovage Green */
+    background-color: #98B0A8;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(152,176,168,0.1);
+}
+
+/* Menu section */
+.tab-pane.d-flex:not(.active) {
+    display: none !important;
+}
+
+.beers-drinks-menu p,
+.ciders-drinks-menu p {
+    margin-bottom: 0.125rem;
+}
+
+.nav-tabs .nav-link:not(.active),
+.nav-tabs .nav-link.active {
+    /* Salome */
+    border-bottom-color: #bed;
+}
+
+/* Footer section */
+footer {
+    /* Ocean Ridge */
+    background-color: #7694b4;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+.copyright {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.copyright .copy-icon {    
+    margin-bottom: .5rem;
+    font-size: .7rem;
+}
+
+.copyright .education {
+    font-size: .65rem;
+}
+
+.contact-us .contact-address,
+.times .opening-times,
+.times .serving-times {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+.contact-us .contact-telephone {
+    font-size: .75rem;
+}
+
+.social-icons {
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+
+}
+
+.social-icons p {
+    font-size: .75rem;
+}
+
+.fa-brands,
+.fa-solid,
+.fa-square-facebook,
+.fa-square-instagram,
+.fa-square-twitter,
+.fa-square-envelope {    
+    /* Garnet Black Green */
+    color: #364B44;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.veggies-kids-menu p,
+.sides-kids-menu p,
+.beers-kids-menu p,
+.ciders-kids-menu p {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 320px) {
+    /* Navigation section */
+    .header-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-logo {
+        order: 1;
+    }
+
+    .nav-links-container {
+        height: 50px;
+        margin-bottom: 5px;
+        order: 2;
+        z-index: 1;
+    }
+
+    .navbar-toggler {
+        /* Salome */
+        background-color: #bed;
+    }
+
+    .register-book-container{
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    .nav-links {
+        /* Salome */
+        background-color: #bed;
+    }
+ 
+    /* Main section */
+    .card-body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .about-section .card-title {
+        font-size: 2rem;
+    }
+
+    .card-text,
+    .login,
+    .form-control {
+        font-size: .75rem;
+    }
+
+    .book-now-btn, .btn-primary {
+        margin-bottom: 1.5rem;
+    }
+    
+    .signup-container,
+    .signup-text {
+        font-size: .85rem;
+    }
+
+    .form-btns button,
+    .form-btns a {
+        font-size: .75rem;
+    }
+
+    .signup-btn {
+        font-size: .85rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    /* Main section */
+    .book-now-btn, .btn-primary {
+        margin-bottom: 0;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    /* Navigation section */
+    .header-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-links-container {
+        order: -1;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .register-dropdown {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Menu section */
+    .grid-template-main-menu,
+    .grid-template-kids-menu,
+    .grid-template-drinks-menu {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+    }
+    
+    .card {        
+        width: 70vw;
+        margin: 25px auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Navigation section */
+    .nav-links {
+        background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Navigation section */
+    .hero-img {
+        width: 85vw;
+        margin: auto;
+    }
+ 
+    .register-book-btns {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        width: 60vw;
+        margin: 5px auto;
+    }
+
+    /* Menu section */
+    .grid-template-kids-menu {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* Footer section */
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    /* Main section */
+    .card {
+        width: 50vw;
+        margin: 5px auto;
+    }
+
+}
+
+@media screen and (min-width: 2500px) {
+    /* Hero image and card styling */
+    .hero-img,
+    .card {
+        width: 65vw;
+        margin: auto;
+    }
+}
