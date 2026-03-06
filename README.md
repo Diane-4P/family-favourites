@@ -1,6 +1,6 @@
 # Family Favourites
 
-[View Family Favourites deployed site here.](https://dashboard.heroku.com/apps/family-favourites).
+[View Family Favourites deployed site here.](https://family-favourites-b117b469baf2.herokuapp.com/).
 
 ![Mochups of (website name)](image from Am I Responsive)
 
