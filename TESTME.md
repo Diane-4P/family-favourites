@@ -272,7 +272,7 @@ While using [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) I ch
 
 ## Lighthouse Performance
 
-When looking at the performance, accessibility, best practices and the SEO of the website, I used Lighthouse in Chrome's development tools. The only one performing below the green was the home page in mobile format, which got a result of 89.
+When looking at the performance, accessibility, best practices and the SEO of the website, I used Lighthouse in Chrome's development tools. The only one performing below the green was the menu page in mobile format, which got a result of 89.
 
 There was an issue that popped up saying that Chrome extensions were affecting the page's performance but apart from the one mentioned above the other pages were all in the green as you can see in the following results:
 
