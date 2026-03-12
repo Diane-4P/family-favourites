@@ -8,8 +8,7 @@
 
 ## Table of Contents
 
-- [Browser Compatibility](#browser-compatibility)
-- [Responsiveness](#responsiveness)
+- [Browser Compatibility and Responsiveness](#browser-compatibility-and-responsiveness)
 - [Validators](#validators)
 - [Lighthouse Performance](#lighthouse-performance)
 - [Testing User Stories](#testing-user-defined-stories-from-the-ux-section-of-readmemd)
@@ -18,13 +17,17 @@
 
 ****
 
-## Browser Compatibility
+## Browser Compatibility and Responsiveness
 
+The Family Favourites site compatability was tested on the following browsers with each showing the website as intended:
 
+- Google Chrome
+- Firefox
+- Microsoft Edge
+- Opera 
+- DuckDuckGo
 
-****
-
-## Responsiveness
+The development tools on Chrome, Edge and Opera was used to test the responsiveness of the site on different size screens, from mobile, tablet, laptop and desktop pc's. When on mobile devices everything is reduced to a single column. The navigation links being reduced to a burger bar with the logo and dropdown menu positioned above. When on tablet the header is in a line with the navigation links still showing as a burger bar and the footer in two colums. Then on laptop or desktop the navigation bar is showing all the items separately within the header.
 
 ****
 
