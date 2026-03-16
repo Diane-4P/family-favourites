@@ -11,6 +11,7 @@
 - [Browser Compatibility and Responsiveness](#browser-compatibility-and-responsiveness)
 - [Validators](#validators)
 - [Lighthouse Performance](#lighthouse-performance)
+- [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
 - [Testing User Stories](#testing-user-defined-stories-from-the-ux-section-of-readmemd)
 - [Manual Testing and Functionality](#manual-testing-and-functionality-on-each-page)
 - [Known Bugs](#known-bugs-discovered)
@@ -423,6 +424,14 @@ There was an issue that popped up saying that Chrome extensions were affecting t
 
     ![Contacts Mobile Results](readme_documents/testing/lighthouse_reports/contacts-mobile.png)
   </details>
+
+****
+
+## WAVE Web Accessibility Evaluation Tool
+
+[WAVE](https://wave.webaim.org/) was used to check that the Family Favourites site is also accessible to people with disabilities. Any errors were dealt with, but I did leave the contrast errors of the page links for each page, as the page that was visibly accessible and the two other page links were greyer rather than black so the person could see which page they were currently on.
+
+- [WAVE Results](readme_documents/testing/wave_accessibility/wave-web-accessibility-evaluation.pdf)
 
 ****
 
