@@ -256,9 +256,9 @@ __Note:__ This will allow our skeleton project to deploy as initially we have no
 
 ```bash
 INSTALLED_APPS = [ 
-…, 
-'cloudinary_storage', 
-'django.contrib.staticfiles', 
+…,
+'django.contrib.staticfiles',
+'cloudinary_storage',
 'cloudinary', 
 …, 
 ] 
@@ -270,7 +270,6 @@ INSTALLED_APPS = [
 
 ```bash
 STATIC_URL=’static/’
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage' 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 
