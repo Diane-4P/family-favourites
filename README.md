@@ -211,6 +211,15 @@ To allow customers to book a table in advance the form below can be used. The fo
 | --- | --- |
 | ![Book a Table form](readme_documents/features/book-a-table-form.png) | Form to Book a Table at the restaurant |
 
+- __F08 Bookings__
+
+When you are logged in you can then click on the __Register/Login__ dropdown menu and click on the bookings link to go to the __Bookings Page__. Then click on the __View Bookings__ to view all bookings past and future. You get confirmation if the booking has been confirmed by the restaurant or still waiting for confirmation. Also, you can change or cancel any future bookings. You can click on the __Make a Booking__ link to make a new booking with the __Book a Table__ form.
+
+| Image | Description |
+| --- | --- |
+| ![Bookings page](readme_documents/features/bookings-page.png) | Bookings page where you can view previous bookings or book a table. |
+| ![View Bookings](readme_documents/features/view-bookings.png) | View of bookings previously booked and future bookings. |
+
 ### Features to Implement in the Future
 
 ****
