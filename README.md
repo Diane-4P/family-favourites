@@ -200,6 +200,16 @@ The contact form allows the users to contact the restaurant without having to bo
 | --- | --- |
 | ![Contact form](readme_documents/features/contact-form.png) | Form on contact page. |
 
+### Others
+
+- __F07 Book a Table Form__
+
+To allow customers to book a table in advance the form below can be used. The form allows the restaurant to know all the relevant information needed to confirm to the customer if a table is available for the booking. There are two call to action buttons of __Book Now__ and __Cancel__. When the user clicks the Book Now button then the form info is sent to the restaurant and if the user decides to cancel filling in or sending the form, then when the cancel button is clicked the user is redirected back to the bookings page. When the user hovers over the book now button the curser changes to a hand, the word is underlined and fades. When the user hovers over the cancel button the curser changes to a hand, the word is underlined and the background colour changes to baby bunting blue.
+
+| Image | Description |
+| --- | --- |
+| ![Book a Table form](readme_documents/features/book-a-table-form.png) | Form to Book a Table at the restaurant |
+
 ### Features to Implement in the Future
 
 ****
