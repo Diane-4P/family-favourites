@@ -153,8 +153,9 @@ There are also two call to action buttons to __Register/Login__ or to __Book a T
 | --- | --- |
 | ![Logo](readme_documents/features/logo.png) | Logo shows the full name and the icon of the site |
 | ![Navigation Menu](readme_documents/features/navigation-menu.png) | Navigation menu when on the home page. |
-| ![Register and Booking buttons](readme_documents/features/register-book-a-table-btns.png) | Navigation buttons for booking a table and to register or login. |
+| ![Register/login dropdown menu](readme_documents/features/register-dropdown-register-login.png) | Navigation dropdown menu to register or login. |
 | ![logged in](readme_documents/features/logged-in.png) | Message when user is logged in. |
+| ![logged in dropdown menu](readme_documents/features/logged-in-dropdown-menu.png) | Navigation dropdown menu when you are logged in to view bookings or contacts (only if admin user). |
 | ![Logged out](readme_documents/features/logged-out.png) | Message when user is logged out. |
 
 - __F03 Footer__
