@@ -220,6 +220,26 @@ When you are logged in you can then click on the __Register/Login__ dropdown men
 | ![Bookings page](readme_documents/features/bookings-page.png) | Bookings page where you can view previous bookings or book a table. |
 | ![View Bookings](readme_documents/features/view-bookings.png) | View of bookings previously booked and future bookings. |
 
+- __F09 Register or Login__
+
+If this is the first time you want to book a table then you will be required to register with the restaurant and you will be redirected to the __Register Form__. If you have previously registered with the restaurant then you can go to the __Login Form__. User receives confirmation that they have registered or logged in.
+
+| Image | Description |
+| --- | --- |
+| ![Register confirmation](readme_documents/features/register-signup-form.png) | Register with the restaurant to book a table. |
+| ![Register form](readme_documents/features/confirmation-registered-logged-in.png) | Confirmation that you are registered and logged in. |
+| ![Login form](readme_documents/features/register-login-form.png) | If already registered then you just need to login. |
+| ![Login confirmation](readme_documents/features/confirmation-logged-in.png) | Confirmation that you are logged in. |
+
+- __F10 Logout__
+
+When you have completed your task of booking, editing, deleting, or just viewing the user bookings then you can use the __Logout Form__
+
+| Image | Description |
+| --- | --- |
+| ![Logout form](readme_documents/features/register-logout-form.png) | When you have finished you can logout. |
+| ![Logout confirmation](readme_documents/features/confirmation-logged-out.png) | Confirmation that you are logged out. |
+
 ### Features to Implement in the Future
 
 ****
