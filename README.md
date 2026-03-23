@@ -226,8 +226,8 @@ If this is the first time you want to book a table then you will be required to 
 
 | Image | Description |
 | --- | --- |
-| ![Register confirmation](readme_documents/features/register-signup-form.png) | Register with the restaurant to book a table. |
-| ![Register form](readme_documents/features/confirmation-registered-logged-in.png) | Confirmation that you are registered and logged in. |
+| ![Register form](readme_documents/features/register-signup-form.png) | Register with the restaurant to book a table. |
+| ![Register confirmation](readme_documents/features/confirmation-registered-logged-in.png) | Confirmation that you are registered and logged in. |
 | ![Login form](readme_documents/features/register-login-form.png) | If already registered then you just need to login. |
 | ![Login confirmation](readme_documents/features/confirmation-logged-in.png) | Confirmation that you are logged in. |
 
@@ -239,6 +239,17 @@ When you have completed your task of booking, editing, deleting, or just viewing
 | --- | --- |
 | ![Logout form](readme_documents/features/register-logout-form.png) | When you have finished you can logout. |
 | ![Logout confirmation](readme_documents/features/confirmation-logged-out.png) | Confirmation that you are logged out. |
+
+- __F11 Change or Cancel Booking__
+
+As long as a booking date is current then you can __change__ or __cancel__ a booking, but if not then the booking will show that the booking cannot be amended. When you change a booking, the user will receive confirmation that the booking has been updated. You can view this change in the users view bookings. When you click on the cancel button, you are given details of the booking that you want to cancel and then you click on the __Yes, cancel__ button to confirm that you want to cancel the booking or __No, go back__ to go back to the bookings page. A cancellation confirmation is shown to confirm to the user that the booking has been deleted. This can once again be confirmed by looking at the view bookings of the user.
+
+| Image | Description |
+| --- | --- |
+| ![Change booking form](readme_documents/features/change-booking.png) | Register with the restaurant to book a table. |
+| ![Change confirmation](readme_documents/features/confirmation-change-updated.png) | Confirmation that you changed the booking and update was successful. |
+| ![Cancel form](readme_documents/features/cancel-booking.png) | If already registered then you just need to login. |
+| ![Cancel confirmation](readme_documents/features/confirmation-booking-deleted.png) | Confirmation that you deleted the booking successfully. |
 
 ### Features to Implement in the Future
 
