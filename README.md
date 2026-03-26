@@ -204,7 +204,8 @@ When admin is logged in then they can view the users that have contacted them.
 | --- | --- |
 | ![Contact form](readme_documents/features/contact-form.png) | Form on contact page. |
 | ![Admin Contacts page](readme_documents/features/admin-contacts-page.png) | Admin view on the website of the contacts. |
-| ![Admin View Contacts](readme_documents/features/admin-view-contacts.png) | Admin viewing the users that have contacted the restaurant. |
+| ![Admin View Contacts](readme_documents/features/admin-view-contacts.png) | Admin viewing the users that have contacted the restaurant via the website. |
+| ![Admin View Contacts on Dashboard](readme_documents/features/admin-view-contacts-dashboard.png) | Admin viewing the users that have contacted the restaurant via the administration dashboard. |
 
 ### Others
 
@@ -224,6 +225,7 @@ When you are logged in you can then click on the __Register/Login__ dropdown men
 | --- | --- |
 | ![Bookings page](readme_documents/features/bookings-page.png) | Bookings page where you can view previous bookings or book a table. |
 | ![View Bookings](readme_documents/features/view-bookings.png) | View of bookings previously booked and future bookings. |
+| ![Admin View Bookings](readme_documents/features/admin-view-bookings-dashboard.png) | Admin viewing the bookings that users have booked at the restaurant via the administration dashboard. |
 
 - __F09 Register or Login__
 
