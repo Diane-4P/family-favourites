@@ -198,9 +198,13 @@ The menus are separated to help the user find what they are looking for and is s
 
 The contact form allows the users to contact the restaurant without having to book a table or logging in. The form takes information that would be needed for the restaurant to contact the user. There are two call to action buttons of __Send__ and __Cancel__. When the user clicks on the send button the information within the form is sent to the restaurant and if the user decides to cancel filling in or sending the form, then when the cancel button is clicked the user is redirected back to the home page. When the user hovers over the send button the curser changes to a hand, the word is underlined and fades. When the user hovers over the cancel button the curser changes to a hand, the word is underlined and the background colour changes to baby bunting blue.
 
+When admin is logged in then they can view the users that have contacted them.
+
 | Image | Description |
 | --- | --- |
 | ![Contact form](readme_documents/features/contact-form.png) | Form on contact page. |
+| ![Admin Contacts page](readme_documents/features/admin-contacts-page.png) | Admin view on the website of the contacts. |
+| ![Admin View Contacts](readme_documents/features/admin-view-contacts.png) | Admin viewing the users that have contacted the restaurant. |
 
 ### Others
 
