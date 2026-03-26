@@ -145,17 +145,18 @@ The favicon was designed using the first letters of the restaurants name of Fami
 
 The logo consists of the full name of the site and the favicon icon. When the user hovers over the logo the curser changes to a hand and when its clicked the user will be taken back to the home page.
 
-The navigation menu links to the home, menu and contact pages. When the user hovers over the links there is an underline and when a user is on the page the line shows which page you are on.
+The navigation menu links to the home, menu and contact pages. When the user hovers over the links there is an underline and when a user is on the page the line shows which page you are on. When on a smaller device the __Burger Bar Menu__ will show.
 
-There are also two call to action buttons to __Register/Login__ or to __Book a Table__. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always on show.
+There is also the dropdown menu of __Register/Login__. When the user hovers over either button there is a line under the words. When a user is logged in or out then the user can see by the message just under the navigation section, which is always on show.
 
 | Image | Description |
 | --- | --- |
 | ![Logo](readme_documents/features/logo.png) | Logo shows the full name and the icon of the site |
 | ![Navigation Menu](readme_documents/features/navigation-menu.png) | Navigation menu when on the home page. |
+| ![Burger Bar Navigation Menu](readme_documents/features/burger-menu.png) | Navigation menu when on the home page on smaller screen. |
 | ![Register/login dropdown menu](readme_documents/features/register-dropdown-register-login.png) | Navigation dropdown menu to register or login. |
-| ![logged in](readme_documents/features/logged-in.png) | Message when user is logged in. |
-| ![logged in dropdown menu](readme_documents/features/logged-in-dropdown-menu.png) | Navigation dropdown menu when you are logged in to view bookings or contacts (only if admin user). |
+| ![Logged in](readme_documents/features/logged-in.png) | Message when user is logged in. |
+| ![Logged in dropdown menu](readme_documents/features/logged-in-dropdown-menu.png) | Navigation dropdown menu when you are logged in to view bookings or contacts (only if admin user). |
 | ![Logged out](readme_documents/features/logged-out.png) | Message when user is logged out. |
 
 - __F03 Footer__
