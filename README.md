@@ -260,6 +260,10 @@ As long as a booking date is current then you can __change__ or __cancel__ a boo
 
 ### Features to Implement in the Future
 
+The link below details the user defined story testing with reference to the features and any features that are to be implemented in the furture.
+
+[User Defined Story Testing](readme_documents/features/user-defined-story-testing.pdf)
+
 ****
 
 ## Structure
