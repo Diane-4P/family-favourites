@@ -24,7 +24,7 @@
                         {% csrf_token %}
                         <p>Are you sure you want to cancel the booking?</p>
                         <p>
-                            Booking on {{ booking.date }} at {{ booking.time }} for {{ booking.number_of_guests }}.
+                            Booking on {{ booking.date }} at {{ booking.get_time_display }} for {{ booking.number_of_guests }}.
                         </p>
                         <button type="submit" class="action-btn btn btn-primary mx-4">Yes, cancel</button>
                         <a href="{% url 'bookings' %}" class="btn action-btn btn-secondary mx-4">No, go back</a>
