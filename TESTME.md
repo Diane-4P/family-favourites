@@ -457,8 +457,28 @@ Manual testing of the features was carried out with the tests and results below:
 
 - [Book A Table Form](readme_documents/testing/manual_testing/book-a-table-form-manual-testing.pdf)
 
-## Further Testing
-
 ****
 
 ## Known bugs discovered
+
+- When you tab between the different menus on the menu page the page showed a lot of white space between the first and second tab, and between the second and third tabs. When I searched Google the AI showed that the Bootstrap's display needed to implement none. So when the following CSS was included there was no further white space showing on the menus.
+
+![CSS pane display](readme_documents/testing/bugs_images/pane-display-css.png)
+
+- The Home page didn’t have the underline to show that it was active and that, that was the page that you were currently on. This was due to the request path being home_url and not index_url. 
+
+![Request path equals home_url](readme_documents/testing/bugs_images/request-path-home-url.png)
+![Request path equals index_url](readme_documents/testing/bugs_images/request-path-index-url.png)
+
+- When the book a table form was filled in incorrectly the errors were not showing and the form wasn't repopulated with the information. This was due to the retun render request by rendering the template without passing the form back with its context.
+
+![Return request without passing form](readme_documents/testing/bugs_images/return-request-no-form.png)
+![Return request with passing form](readme_documents/testing/bugs_images/return-request-with-form.png)
+
+- When clicking on the button to update or delete a booking the user couldn't go to the template for the booking requested. The reason being that the id number was not being picked up giving the error below.
+
+![Edit booking template error](readme_documents/testing/bugs_images/edit-booking-template-error.png)
+
+To rectify this the booking.id was changed to booking.pk for both the edit and delete bookings template.
+
+![Edit booking primary key](readme_documents/testing/bugs_images/edit-booking-template-pk.png)
