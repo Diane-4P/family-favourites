@@ -414,13 +414,12 @@ These programs etc were used for this project:
   - Testing the validity of html files.
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
   - Testing the validity of css files.
-- [Am I Responsive]( https://ui.dev/amiresponsive)
+- [Am I Responsive](https://ui.dev/amiresponsive)
   - Checking the responsiveness of the website.
-
 - Lighthouse tab within Chrome Developer Tools
   - Testing the Performance, Accessibility, Best Practices and SEO of the site.
-- [Page Speed](https://pagespeed.web.dev/)
-  - Used when Lighthouse didn’t work.
+- [WAVE](https://wave.webaim.org/)
+  - Testing the Web Accessibility of the website by disabled people.
 
 ### Credit References
 
