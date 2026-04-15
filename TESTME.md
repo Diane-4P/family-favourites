@@ -4,6 +4,8 @@
 
 [View Family Favourites deployed site here.](https://family-favourites-b117b469baf2.herokuapp.com/)
 
+![Mochups of Family Favourites](readme_documents/responsiveness/am-i-responsive-mochups.png)
+
 ## Testing Performed
 
 ## Table of Contents

@@ -2,7 +2,7 @@
 
 [View Family Favourites deployed site here.](https://family-favourites-b117b469baf2.herokuapp.com/).
 
-![Mochups of (website name)](image from Am I Responsive)
+![Mochups of Family Favourites](readme_documents/responsiveness/mochup-generator-pages.png)
 
 ****
 
@@ -402,6 +402,8 @@ These programs etc were used for this project:
   - A library used to allow database urls to connect to the Postgres db.
 - [Whitenoise](https://whitenoise.readthedocs.io/en/latest/)
   - Used to allow Heroku to serve its own static files.
+- [Website Mockup Generator](https://websitemockupgenerator.com/)
+  - Mochups to show the different pages of the site.
 
 - [Beautifier]( https://beautifier.io/)
 - To uniform the layout by formatting the code for CSS and HTML.
