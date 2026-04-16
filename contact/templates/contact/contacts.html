@@ -7,9 +7,9 @@
 {% block content %}
 
 <!-- Alert for error messages -->
- <div id="error-alert" class="alert alert-danger" role="alert" style="display: none;">
+<div id="error-alert" class="alert alert-danger" role="alert" style="display: none;">
     {% for message in messages %}
-        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
     {% endfor %}
 </div>
 
@@ -22,8 +22,8 @@
                 
                 <div class="contacts-summary">
                     <!-- Welcome user and display of contacts from users -->
-                     <p>Welcome {{ user.username }}. These are the people who have contacted the restaurant</p>
-                     <a href="#collapse-contacts" class="btn action-btn mb-3 px-2 py-2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-contacts">View Contacts</a>
+                    <p>Welcome {{ user.username }}. These are the people who have contacted the restaurant</p>
+                    <a href="#collapse-contacts" class="btn action-btn mb-3 px-2 py-2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-contacts">View Contacts</a>
                 </div>
 
                 <div id="collapse-contacts" class="collapse container-fluid my-2">                    

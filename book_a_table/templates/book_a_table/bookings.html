@@ -7,9 +7,9 @@
 {% block content %}
 
 <!-- Alert for error messages -->
- <div id="error-alert" class="alert alert-danger" role="alert" style="display: none;">
+<div id="error-alert" class="alert alert-danger" role="alert" style="display: none;">
     {% for message in messages %}
-        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
     {% endfor %}
 </div>
 
@@ -22,9 +22,9 @@
                 
                 <div class="booking-summary">
                     <!-- Welcome user and display upcoming bookings -->
-                     <p>Welcome {{ user.username }}. These are your bookings. Where you can view your existing booking, make changes or cancel upcoming bookings.</p>
-                     <a href="{% url 'book_a_table' %}" class="btn action-btn mb-3 px-2 py-2">Make a Booking</a>
-                     <a href="#collapse-bookings" class="btn action-btn mb-3 px-2 py-2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-bookings">View Bookings</a>
+                    <p>Welcome {{ user.username }}. These are your bookings. Where you can view your existing booking, make changes or cancel upcoming bookings.</p>
+                    <a href="{% url 'book_a_table' %}" class="btn action-btn mb-3 px-2 py-2">Make a Booking</a>
+                    <a href="#collapse-bookings" class="btn action-btn mb-3 px-2 py-2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-bookings">View Bookings</a>
                 </div>
 
                 <div id="collapse-bookings" class="collapse container-fluid my-2">
@@ -58,11 +58,11 @@
                                 <td>
                                     <!-- If occasion or special requests details show details, else show hyphen -->
                                     <div class="table-text">
-                                    {% if booking.occasion or booking.special_requests %}
-                                    {{ booking.get_occasion_display }}, {{ booking.special_requests }}
-                                    {% else %} 
-                                    -
-                                    {% endif %}
+                                        {% if booking.occasion or booking.special_requests %}
+                                        {{ booking.get_occasion_display }}, {{ booking.special_requests }}
+                                        {% else %} 
+                                        -
+                                        {% endif %}
                                     </div>
                                 </td>
                                 <td>

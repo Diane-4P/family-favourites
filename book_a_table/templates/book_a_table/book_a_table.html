@@ -9,7 +9,7 @@
 <!-- Alert for error messages -->
  <div id="error-alert" class="alert alert-danger" role="alert" style="display: none;">
     {% for message in messages %}
-        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
     {% endfor %}
 </div>
 
