@@ -47,7 +47,7 @@
 
 ### Introduction
 
-I created the restaurant site as I love to go to a restaurant and have their carvery meals, which made me think of all the favourite meals that family like to have when they go out. With this in mind I created the Family Favourites restaurant.
+I created the restaurant site as I love to go to a restaurant and have their carvery meals, which made me think of all the favourite meals that families like to have when they go out. With this in mind I created the Family Favourites restaurant.
 
 ### Project Goals
 
@@ -161,9 +161,9 @@ There is also the dropdown menu of __Register/Login__. When the user hovers over
 
 - __F03 Footer__
 
-The copyright has the icon with a date and site name, with rights reserved. There are also social media icons which link to the home pages of Facebook, Twitter and Instagram. It also includes a envelope icon with a link to the contact page, if a user wants to contact via email. When a user hovers over the links the curser changes to a hand.
+The copyright has the icon with a date and site name, with rights reserved. There are also social media icons which link to the home pages of Facebook, Twitter and Instagram. The social media icons includes an envelope icon with a link to the contact page, if a user wants to contact via email. When a user hovers over the links the curser changes to a hand and they have the colour of Garnet Black Green (rgb(54, 75, 68)).
 
-The contact us gives details of address and phone number. There is also two call to action buttons of __Contact Us__ and __Book Now__. When you hover over the buttons they pale in colour, an underline appears and the curser changes to a hand. When the contact us button is clicked then the user is taken to the __Contact Us page__. when the book now button is clicked then if the user is logged in the user will go to the book a table page and if the user is not logged in then the user will go to the register or login page.
+The contact us gives details of address and phone number. There is also two call to action buttons of __Contact Us__ and __Book Now__. When you hover over the buttons they pale in colour, an underline appears and the curser changes to a hand. When the contact us button is clicked then the user is taken to the __Contact Us page__. when the book now button is clicked, and if the user is logged in, the user will go to the __Book a Table page__, and if the user is not logged in, then the user will go to the __Register or Login page__.
 
 Also, in the footer there are the opening times of the restaurant and serving times of the meals at the restaurant, so that the user is well informed.
 
@@ -198,7 +198,7 @@ The menus are separated to help the user find what they are looking for and is s
 
 The contact form allows the users to contact the restaurant without having to book a table or logging in. The form takes information that would be needed for the restaurant to contact the user. There are two call to action buttons of __Send__ and __Cancel__. When the user clicks on the send button the information within the form is sent to the restaurant and if the user decides to cancel filling in or sending the form, then when the cancel button is clicked the user is redirected back to the home page. When the user hovers over the send button the curser changes to a hand, the word is underlined and fades. When the user hovers over the cancel button the curser changes to a hand, the word is underlined and the background colour changes to baby bunting blue.
 
-When admin is logged in then they can view the users that have contacted them.
+When admin is logged in then they can view the users that have contacted them, either on the website or within the administration dashboard.
 
 | Image | Description |
 | --- | --- |
@@ -271,6 +271,12 @@ The link below details the user defined story testing with reference to the feat
 ### Database model
 
 This Entity Relationship Diagram (ERD) has been generated using [Lucid Charts](https://lucid.app/documents#/home?folder_id=recent) - see below.
+
+The ERD model contains 2 entities, which are the user and book a table model. The user model was created within the Django allauth. Each of the properties within the model have a Django built-in field classes e.g. IntegerField, CharField, DateField, Boolean, etc.
+
+The cardinality shows the relationship between the user to book a table as a one to many or many to many relationships. One user could have many bookings at the restaurant and many users could have bookings at the restaurant.
+
+The occasions show a one to one relationship within the book a table model as only one occasion can be chosen on the booking.
 
 <details>
 <summary>Entity Relationship Diagram</summary>
