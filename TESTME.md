@@ -137,7 +137,7 @@ There was an error in the stylesheet that was corrected, but nothing was done ab
 
 - [Code Institute's Python Linter](https://pep8ci.herokuapp.com/)
 
-While using [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) I changed the erros which had white space on blank lines, needing white space, or needing extra blank lines, and some of the ones that stated that the lines were too long. Other lines that were too long that couldn't be changed due to causing other errors were left as they were.
+While using [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) I changed the errors which had white space on blank lines, needing white space, or needing extra blank lines, and some of the ones that stated that the lines were too long. Other lines that were too long that couldn't be changed due to causing other errors were left as they were.
 
 - Family Favourites Project
   - <details>
