@@ -307,7 +307,7 @@ I then went to [Robert Cooper's](https://colornamer.robertcooper.me/) website to
 
 | Image with hex codes | ![Colour Palette](readme_documents/colour_scheme/colour-palette.png) |
 | --- | --- |
-|rgb values | rgb(187, 238, 221), rgb(54, 75, 68), rgb(152, 176, 168), rgb(172, 202, 235), rgb(118, 148, 180). |
+| rgb values | rgb(187, 238, 221), rgb(54, 75, 68), rgb(152, 176, 168), rgb(172, 202, 235), rgb(118, 148, 180). |
 | Colour names | Salome, Garnet Black Green, Lovage Green, Baby Bunting, Ocean Ridge. |
 
 ### Typography

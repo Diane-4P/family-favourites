@@ -27,7 +27,7 @@ The Family Favourites site compatability was tested on the following browsers wi
 - Google Chrome
 - Firefox
 - Microsoft Edge
-- Opera 
+- Opera
 - DuckDuckGo
 
 The development tools on Chrome, Edge and Opera was used to test the responsiveness of the site on different size screens, from mobile, tablet, laptop and desktop pc's. When on mobile devices everything is reduced to a single column. The navigation links being reduced to a burger bar with the logo and dropdown menu positioned above. When on tablet the header is in a line with the navigation links still showing as a burger bar and the footer in two colums. Then on laptop or desktop the navigation bar is showing all the items separately within the header.
@@ -467,7 +467,7 @@ Manual testing of the features was carried out with the tests and results below:
 
 ![CSS pane display](readme_documents/testing/bugs_images/pane-display-css.png)
 
-- The Home page didn’t have the underline to show that it was active and that, that was the page that you were currently on. This was due to the request path being home_url and not index_url. 
+- The Home page didn’t have the underline to show that it was active and that, that was the page that you were currently on. This was due to the request path being home_url and not index_url.
 
 ![Request path equals home_url](readme_documents/testing/bugs_images/request-path-home-url.png)
 ![Request path equals index_url](readme_documents/testing/bugs_images/request-path-index-url.png)

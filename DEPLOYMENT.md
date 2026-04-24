@@ -2,7 +2,7 @@
 
 [View README.md file.](/README.md)
 
-[View Family Favourites deployed site here.](add link)
+[View Family Favourites deployed site here.](https://family-favourites-b117b469baf2.herokuapp.com/)
 
 ## Deployment
 
@@ -21,7 +21,7 @@ How to set up a Django project and deploy it to Heroku.
 ### 1. Create a workspace and repository
 
 - Create a folder project on your computer in file explorer and inside VSCode open the project workspace you just created.
-- Create a virtual environment with Python v3.12.10 on VSCode. Add a .gitignore file to your workspace at the root level and add the .venv/ folder to the .gitignore.
+- Create a virtual environment with Python v3.12.10 on VSCode. Add a .gitignore file to your workspace at the root level and add the .venv folder to the .gitignore file.
 - Create a repository in GitHub with your project name, then copy ‘create the new repository on the command line’ and paste in the command line in VSCode and enter.
 
 ### 2. Install Django and supporting libraries
@@ -113,7 +113,7 @@ python3 manage.py makemigrations
 Python3 manage.py migrate 
 ```
 
-___Note:__ After running this command – any migrations that were displaying with an empty square bracket (e.g. [ ]), will now display with a cross (e.g. [X]), when the showmigrations command is run after the migrate command. This indicates that these migrations have been made to the database.
+__Note:__ After running this command – any migrations that were displaying with an empty square bracket (e.g. [ ]), will now display with a cross (e.g. [X]), when the showmigrations command is run after the migrate command. This indicates that these migrations have been made to the database.
 
 - Run the project on the server to test it is working with the following command in the terminal:
 
@@ -342,12 +342,12 @@ git commit –m “deployment commit”
 git push 
 ```
 
-- Or in the `source code` type the following:
+- Or in the `source control` type the following:
 - In the message line add – Deployment to Heroku.
 - Click button to commit message.
 - Click button to Sync changes to GitHub.
 
-### 18. Deploying manually through Herok
+### 18. Deploying manually through Heroku
 
 - In Heroku app click on the Deploy tab:
 - Scroll down to Manual Deploy
