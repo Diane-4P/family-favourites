@@ -10,7 +10,7 @@
 
 - [User Experience](#user-experience-ux)
   - [Strategy](#strategy)
-    - [Introduction](#introduction)
+    - [Project Overview](#project-overview)
     - [Project Goals](#project-goals)
   - [Scope](#scope)
     - [User Stories](#user-stories)
@@ -45,9 +45,13 @@
 
 ## Strategy
 
-### Introduction
+### Project Overview
 
-I created the restaurant site as I love to go to a restaurant and have their carvery meals, which made me think of all the favourite meals that families like to have when they go out. With this in mind I created the Family Favourites restaurant.
+__Family Favourites__ is a fictitious restaurant which I created as I love to go to a restaurants that has a carvery meals, as the Sunday roast has always been a family favourite. With this in mind I created the __Family Favourites__ restaurant.
+
+Users can see what the restaurant is about and view the menu on offer for adults and children in this family friendy restaurant. Users can register with the restaurant and sign in, which allows them to book a table, change a booking, delete a booking and see all the bookings that they have made. Users receive a confirmation message of what information they have input on the site. Users can also contact the restaurant by phone, contact form, or just drop in at the address, which is all provided on the website.
+
+The admin user can contact the user who has filled in the contact form. Admin can also add, update, delete, or confirm a table booking, and see all the bookings for the restaurant, which can be filtered by date.
 
 ### Project Goals
 
