@@ -278,9 +278,9 @@ This Entity Relationship Diagram (ERD) has been generated using [Lucid Charts](h
 
 The ERD model contains 2 entities, which are the user and book a table model. The user model was created within the Django allauth. Each of the properties within the model have a Django built-in field classes e.g. IntegerField, CharField, DateField, Boolean, etc.
 
-The cardinality shows the relationship between the user to book a table as a one to many or many to many relationships. One user could have many bookings at the restaurant and many users could have bookings at the restaurant.
+The users model shows the data captured during registration and how it relates as a foreign key within the book a table model, using their unique Primary Key (PK). The cardinality shows the relationship between the user to book a table as a one to many or many to many relationships. One user could have many bookings at the restaurant and many users could have bookings at the restaurant on the many tables available.
 
-The occasions show a one to one relationship within the book a table model as only one occasion can be chosen on the booking.
+The occasions show a one to one relationship within the book a table model as only one occasion can be chosen on the booking due to the constraints of the choices available within the book a table model. The time also has the constraints of what times are available (in 15 minute increments) during the opening hours of the restaurant.
 
 <details>
 <summary>Entity Relationship Diagram</summary>
