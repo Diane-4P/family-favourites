@@ -320,8 +320,8 @@ I got my inspiration for the font from restaurants that I researched for this pr
 
 | Image | Description |
 | --- | --- |
-| ![League Gothic](readme_documents/fonts/league-gothic-headings-font.png) | League Gothic for Headings. |
-| ![Roboto Slab](readme_documents/fonts/roboto-slab-body-font.png) | Roboto Slab for the Body. |
+| League Gothic for Headings. | ![League Gothic](readme_documents/fonts/league-gothic-headings-font.png) |
+| Roboto Slab for the Body. | ![Roboto Slab](readme_documents/fonts/roboto-slab-body-font.png) |
 
 ### Imagery
 
